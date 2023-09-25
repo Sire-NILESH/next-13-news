@@ -9,7 +9,7 @@ type Props = {
 
 const MainCard = ({ article }: Props) => {
   return (
-    <Card className="py-4 max-w-lg space-y-4">
+    <Card shadow="sm" className="py-4 max-w-lg space-y-4">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <Image
           alt="Card background"

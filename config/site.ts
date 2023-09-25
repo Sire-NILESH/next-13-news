@@ -9,19 +9,23 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
+      label: "Business",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "Health",
       href: "/pricing",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Science",
+      href: "/science",
     },
     {
-      label: "About",
+      label: "Gaming",
+      href: "/gaming",
+    },
+    {
+      label: "Sports",
       href: "/about",
     },
   ],
@@ -59,19 +63,23 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Docs",
+      label: "Business",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "Health",
       href: "/pricing",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Science",
+      href: "/science",
     },
     {
-      label: "About",
+      label: "Gaming",
+      href: "/gaming",
+    },
+    {
+      label: "Sports",
       href: "/about",
     },
     {

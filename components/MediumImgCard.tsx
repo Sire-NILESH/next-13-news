@@ -9,8 +9,8 @@ type Props = {
 
 const MediumImgCard = ({ article }: Props) => {
   return (
-    <Card className="py-4 max-w-md">
-      <CardBody className="overflow-visible py-2 flex flex-row justify-between gap-2">
+    <Card shadow="sm" className=" max-w-md h-full">
+      <CardBody className="overflow-visible py-3 flex flex-row justify-between gap-2">
         <div className="w-[60%] space-y-2">
           <div className="flex justify-between items-center">
             {/* <p className="block text-sm font-bold">
@@ -23,10 +23,10 @@ const MediumImgCard = ({ article }: Props) => {
           </div>
           <h4 className="font-bold text-sm">{article.title}</h4>
           {/* <small className="text-default-500">{article.description}</small> */}
-          <p className="block text-sm font-semibold">
+          {/* <p className="block text-sm font-semibold">
             {`Author : ${article.author}`}
             <span className="text-primary">{`, ${article.source.name}`}</span>
-          </p>
+          </p> */}
         </div>
 
         <div className="w-[40%]">
@@ -38,7 +38,7 @@ const MediumImgCard = ({ article }: Props) => {
                 ? article.urlToImage
                 : "https://images.pexels.com/photos/10224729/pexels-photo-10224729.jpeg?auto=compress&cs=tinysrgb&w=1600"
             }
-            //   width={300}
+            width={300}
             sizes="100%"
             fallbackSrc={
               "https://images.pexels.com/photos/10224729/pexels-photo-10224729.jpeg?auto=compress&cs=tinysrgb&w=1600"

@@ -8,22 +8,7 @@ type Props = {
 
 const MediumCard = ({ article }: Props) => {
   return (
-    <Card className="py-4 max-w-md space-y-4">
-      {/* <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <Image
-          alt="Card background"
-          className="object-cover rounded-xl"
-          src={
-            article.urlToImage
-              ? article.urlToImage
-              : "https://images.pexels.com/photos/10224729/pexels-photo-10224729.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          }
-          sizes="100%"
-          fallbackSrc={
-            "https://images.pexels.com/photos/10224729/pexels-photo-10224729.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          }
-        />
-      </CardHeader> */}
+    <Card shadow="sm" className="py-4 max-w-md space-y-4">
       <CardBody className="overflow-visible py-2 space-y-2">
         <div className="flex justify-between">
           {/* <p className="block text-sm font-bold">
