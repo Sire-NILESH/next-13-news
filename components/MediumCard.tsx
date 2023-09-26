@@ -7,23 +7,28 @@ type Props = {
 };
 
 const MediumCard = ({ article }: Props) => {
+  if (!article) return null;
+
   return (
-    <Card shadow="sm" className="py-4 max-w-md space-y-4">
+    <Card shadow="sm" className="h-full py-4 max-w-md space-y-4">
       <CardBody className="overflow-visible py-2 space-y-2">
         <div className="flex justify-between">
-          {/* <p className="block text-sm font-bold">
-            {article.source.name}
-          </p> */}
           <p className="block text-tiny font-semibold">
             {article.publishedAt &&
               format(parseISO(article.publishedAt), "LLLL d, yyyy")}
           </p>
         </div>
-        <h4 className="font-bold text-large">{article.title}</h4>
-        <small className="text-default-500">{article.description}</small>
+        <h4 className="font-bold text-large">
+          {article.title ? article.title : ""}
+        </h4>
+        <small className="text-default-500">
+          {article.description ? article.description : ""}
+        </small>
         <p className="block text-sm font-semibold">
-          {`Author : ${article.author}`}
-          <span className="text-primary">{`, ${article.source.name}`}</span>
+          {`Author : ${article.author ? article.author : "unknown"}`}
+          <span className="text-primary">{`, ${
+            article.source.name ? article.source.name : "unknown"
+          }`}</span>
         </p>
       </CardBody>
     </Card>

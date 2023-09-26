@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "ATLAS TODAY",
+  description: "Your Source for Today's Headlines and Tomorrow's Insights!",
   navItems: [
     {
       label: "Home",
@@ -10,11 +10,11 @@ export const siteConfig = {
     },
     {
       label: "Business",
-      href: "/docs",
+      href: "/business",
     },
     {
       label: "Health",
-      href: "/pricing",
+      href: "/health",
     },
     {
       label: "Science",
@@ -26,49 +26,33 @@ export const siteConfig = {
     },
     {
       label: "Sports",
-      href: "/about",
+      href: "/sports",
     },
+    // {
+    //   label: "Entertainment",
+    //   href: "/entertainment",
+    // },
+    // {
+    //   label: "Technology",
+    //   href: "/technology",
+    // },
+    // {
+    //   label: "General",
+    //   href: "/general",
+    // },
   ],
   navMenuItems: [
-    // {
-    // 	label: "Profile",
-    // 	href: "/profile",
-    // },
-    // {
-    // 	label: "Dashboard",
-    // 	href: "/dashboard",
-    // },
-    // {
-    // 	label: "Projects",
-    // 	href: "/projects",
-    // },
-    // {
-    // 	label: "Team",
-    // 	href: "/team",
-    // },
-    // {
-    // 	label: "Calendar",
-    // 	href: "/calendar",
-    // },
-    // {
-    // 	label: "Settings",
-    // 	href: "/settings",
-    // },
-    // {
-    // 	label: "Help & Feedback",
-    // 	href: "/help-feedback",
-    // },
     {
       label: "Home",
       href: "/",
     },
     {
       label: "Business",
-      href: "/docs",
+      href: "/business",
     },
     {
       label: "Health",
-      href: "/pricing",
+      href: "/health",
     },
     {
       label: "Science",
@@ -80,18 +64,56 @@ export const siteConfig = {
     },
     {
       label: "Sports",
-      href: "/about",
+      href: "/sports",
+    },
+    {
+      label: "Entertainment",
+      href: "/entertainment",
+    },
+    {
+      label: "Technology",
+      href: "/technology",
+    },
+    {
+      label: "General",
+      href: "/general",
     },
     {
       label: "Logout",
       href: "/logout",
     },
   ],
+  footerMenuItems: [
+    {
+      label: "About",
+      href: "#",
+    },
+    {
+      label: "News Letter",
+      href: "#",
+    },
+    {
+      label: "Pricing",
+      href: "#",
+    },
+    {
+      label: "Team",
+      href: "#",
+    },
+    {
+      label: "Contact",
+      href: "#",
+    },
+    {
+      label: "Terms",
+      href: "#",
+    },
+  ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    facebook: "#",
+    twitter: "#",
+    docs: "#",
+    discord: "#",
+    sponsor: "#",
   },
 };

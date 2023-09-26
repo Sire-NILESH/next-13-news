@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -42,12 +43,12 @@ export default function RootLayout({
           <div className="relative flex flex-col h-screen">
             <Navbar />
             <main className="2xl:w-[80%] xl:w-[90%] md:w-[95%] mx-auto pt-4 lg:pt-16 px-2 md:px-6 flex-grow">
-              {/* <main className="container mx-auto pt-4 lg:pt-16 px-6 flex-grow"> */}
-              {/* <main className="mx-auto xl:w-[90%] md:w-[95%] pt-4 lg:pt-16 px-6 flex-grow"> */}
-              {/* <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow"> */}
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
+
+            <Footer />
+
+            {/* <footer className="w-full flex items-center justify-center py-3">
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
@@ -57,7 +58,7 @@ export default function RootLayout({
                 <span className="text-default-600">Powered by</span>
                 <p className="text-primary">NextUI</p>
               </Link>
-            </footer>
+            </footer> */}
           </div>
         </Providers>
       </body>
