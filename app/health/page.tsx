@@ -1,7 +1,12 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import HighlightsBanner from "../../components/HighlightsBanner";
 import { data as HealthNews } from "@/dev-data/healthNews";
+import { Metadata } from "next";
+import HighlightsBanner from "../../components/HighlightsBanner";
+
+export const metadata: Metadata = {
+  title: "Health News",
+};
 
 export default function HealthPage() {
   return (

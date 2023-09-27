@@ -8,6 +8,10 @@ import MediumCard from "./MediumCard";
 import MediumImgCard from "./MediumImgCard";
 import { RightArrowIcon } from "./icons";
 
+const entertainmentNewsArticlesWithImgs = entertainmentNews.articles.filter(
+  (article) => Boolean(article.urlToImage)
+);
+
 const articles = data.articles;
 
 const MainHeadlines = () => {
@@ -37,9 +41,11 @@ const MainHeadlines = () => {
           </small>
         </header>
 
-        <MainCard article={entertainmentNews.articles[1]} />
-        <MainCard article={entertainmentNews.articles[4]} />
-        <MainCard article={entertainmentNews.articles[15]} />
+        <div className="flex flex-col justify-center items-start space-y-5">
+          <MainCard article={entertainmentNewsArticlesWithImgs[0]} />
+          <MainCard article={entertainmentNewsArticlesWithImgs[7]} />
+          <MainCard article={entertainmentNewsArticlesWithImgs[4]} />
+        </div>
       </div>
 
       <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5">

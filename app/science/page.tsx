@@ -2,6 +2,11 @@ import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
 import HighlightsBanner from "../../components/HighlightsBanner";
 import { data as ScienceNews } from "@/dev-data/scienceNews";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Science News",
+};
 
 export default function SciencePage() {
   return (

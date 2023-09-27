@@ -111,6 +111,7 @@ export const siteConfig = {
   ],
   links: {
     facebook: "#",
+    instagram: "#",
     twitter: "#",
     docs: "#",
     discord: "#",

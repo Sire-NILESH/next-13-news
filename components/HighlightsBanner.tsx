@@ -1,7 +1,7 @@
-import { Card, CardHeader } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
 import { Article } from "@/types";
+import { Link } from "@nextui-org/link";
 import { useMemo } from "react";
+import BannerImgCard from "./BannerImgCard";
 
 type Props = {
   articles: Article[];
@@ -14,101 +14,70 @@ const HighlightsBanner = ({ articles }: Props) => {
 
   return (
     <div className="container gap-2 grid grid-cols-12 grid-rows-2 px-8">
-      {/* <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8"> */}
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-0 flex-col !items-start bg-gradient-to-b from-gray-800/80 to-transparent">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            {filtered[0].source.name}
-          </p>
-          <h4 className="text-white font-medium text-large text-left">
-            {filtered[0].title}
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src={filtered[0].urlToImage ? filtered[0].urlToImage : undefined}
-          fallbackSrc={"/images/photo-placeholder.jpg"}
-        />
-      </Card>
+      <Link
+        isExternal
+        href={
+          filtered[0].url && !filtered[0].url.startsWith("https://removed.com")
+            ? filtered[0].url
+            : undefined
+        }
+        aria-label="Bannner News"
+        className="col-span-12 sm:col-span-4 h-[300px]"
+      >
+        <BannerImgCard article={filtered[0]} />
+      </Link>
 
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-0 flex-col !items-start bg-gradient-to-b from-gray-800/80 to-transparent">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            {filtered[1].source.name}
-          </p>
-          <h4 className="text-white font-medium text-large text-left">
-            {filtered[1].title}
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src={filtered[1].urlToImage ? filtered[1].urlToImage : undefined}
-          fallbackSrc={"/images/photo-placeholder.jpg"}
-        />
-      </Card>
+      <Link
+        isExternal
+        href={
+          filtered[1].url && !filtered[1].url.startsWith("https://removed.com")
+            ? filtered[1].url
+            : undefined
+        }
+        aria-label="Bannner News"
+        className="col-span-12 sm:col-span-4 h-[300px]"
+      >
+        <BannerImgCard article={filtered[1]} />
+      </Link>
 
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-0 flex-col !items-start bg-gradient-to-b from-gray-800/80 to-transparent">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            {filtered[2].source.name}
-          </p>
-          <h4 className="text-white font-medium text-large text-left">
-            {filtered[2].title}
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src={filtered[2].urlToImage ? filtered[2].urlToImage : undefined}
-        />
-      </Card>
+      <Link
+        isExternal
+        href={
+          filtered[2].url && !filtered[2].url.startsWith("https://removed.com")
+            ? filtered[2].url
+            : undefined
+        }
+        aria-label="Bannner News"
+        className="col-span-12 sm:col-span-4 h-[300px]"
+      >
+        <BannerImgCard article={filtered[2]} />
+      </Link>
 
-      <Card
-        isFooterBlurred
+      <Link
+        isExternal
+        href={
+          filtered[3].url && !filtered[3].url.startsWith("https://removed.com")
+            ? filtered[3].url
+            : undefined
+        }
+        aria-label="Bannner News"
         className="w-full h-[300px] col-span-12 sm:col-span-5"
       >
-        <CardHeader className="absolute z-10 top-0 flex-col items-start bg-gradient-to-b from-gray-800/80 to-transparent">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            {filtered[3].source.name}
-          </p>
-          <h4 className="text-white font-medium text-large text-left">
-            {filtered[3].title}
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card example background"
-          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-          src={filtered[3].urlToImage ? filtered[3].urlToImage : undefined}
-          fallbackSrc={"/images/photo-placeholder.jpg"}
-        />
-      </Card>
+        <BannerImgCard article={filtered[3]} />
+      </Link>
 
-      <Card
-        isFooterBlurred
+      <Link
+        isExternal
+        href={
+          filtered[4].url && !filtered[4].url.startsWith("https://removed.com")
+            ? filtered[4].url
+            : undefined
+        }
+        aria-label="Bannner News"
         className="w-full h-[300px] col-span-12 sm:col-span-7"
       >
-        <CardHeader className="absolute z-10 top-0 flex-col items-start bg-gradient-to-b from-gray-800/80 to-transparent">
-          <p className="text-tiny text-white/60 uppercase font-bold">
-            {filtered[4].source.name}
-          </p>
-          <h4 className="text-white/90 font-medium text-large text-left">
-            {filtered[4].title}
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Relaxing app background"
-          className="z-0 w-full h-full object-cover"
-          src={filtered[4].urlToImage ? filtered[4].urlToImage : undefined}
-          fallbackSrc={"/images/photo-placeholder.jpg"}
-        />
-      </Card>
+        <BannerImgCard article={filtered[4]} />
+      </Link>
     </div>
   );
 };

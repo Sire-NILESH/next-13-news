@@ -1,7 +1,12 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import HighlightsBanner from "../../components/HighlightsBanner";
 import { data as gameNews } from "@/dev-data/gameNews";
+import { Metadata } from "next";
+import HighlightsBanner from "../../components/HighlightsBanner";
+
+export const metadata: Metadata = {
+  title: "Gaming News",
+};
 
 export default function GamingPage() {
   return (

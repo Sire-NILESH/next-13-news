@@ -2,6 +2,11 @@ import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
 import HighlightsBanner from "../../components/HighlightsBanner";
 import { data as SportsNews } from "@/dev-data/sportsNews";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sports News",
+};
 
 export default function SportsPage() {
   return (

@@ -1,7 +1,12 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import HighlightsBanner from "../../components/HighlightsBanner";
 import { data as EntertainmentNews } from "@/dev-data/entertainmentNews";
+import { Metadata } from "next";
+import HighlightsBanner from "../../components/HighlightsBanner";
+
+export const metadata: Metadata = {
+  title: "Entertainment News",
+};
 
 export default function EntertainmentPage() {
   return (

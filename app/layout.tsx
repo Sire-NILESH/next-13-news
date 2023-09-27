@@ -1,17 +1,16 @@
-import "@/styles/globals.css";
-import { Metadata } from "next";
-import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
-import { Providers } from "./providers";
-import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
-import clsx from "clsx";
 import Footer from "@/components/Footer";
+import { Navbar } from "@/components/navbar";
+import { fontSans } from "@/config/fonts";
+import { siteConfig } from "@/config/site";
+import "@/styles/globals.css";
+import clsx from "clsx";
+import { Metadata } from "next";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   themeColor: [
@@ -42,23 +41,12 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main className="2xl:w-[80%] xl:w-[90%] md:w-[95%] mx-auto pt-4 lg:pt-16 px-2 md:px-6 flex-grow">
+
+            <main className="2xl:w-[80%] xl:w-[90%] md:w-[95%] mx-auto pt-4 lg:pt-16 px-4 md:px-6 flex-grow">
               {children}
             </main>
 
             <Footer />
-
-            {/* <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">NextUI</p>
-              </Link>
-            </footer> */}
           </div>
         </Providers>
       </body>

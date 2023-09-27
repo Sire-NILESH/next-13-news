@@ -1,7 +1,12 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import HighlightsBanner from "../../components/HighlightsBanner";
 import { data as GeneralNews } from "@/dev-data/topHeadlines";
+import { Metadata } from "next";
+import HighlightsBanner from "../../components/HighlightsBanner";
+
+export const metadata: Metadata = {
+  title: "General News",
+};
 
 export default function GeneralPage() {
   return (

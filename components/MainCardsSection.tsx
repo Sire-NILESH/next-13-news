@@ -8,10 +8,9 @@ type Props = {
   subtitle: string;
 };
 
-const MainCardsSection = ({ articles, title, subtitle }: Props)=> {
+const MainCardsSection = ({ articles, title, subtitle }: Props) => {
+  if (articles && articles.length === 0) return null;
 
-   if (articles && articles.length === 0) return null;
-   
   return (
     <section className="space-y-5">
       <header className="mx-4 space-y-2">
@@ -22,7 +21,7 @@ const MainCardsSection = ({ articles, title, subtitle }: Props)=> {
         <p className="text-left text-tiny">{subtitle}</p>
       </header>
 
-      <div className="flex flex-col items-center lg:flex-row lg:items-stretch gap-4 justify-center">
+      <div className="flex flex-col items-center lg:flex-row lg:items-stretch gap-4 justify-center w-full">
         <MainCard article={articles[0]} />
         <MainCard article={articles[1]} />
         <MainCard article={articles[2]} />

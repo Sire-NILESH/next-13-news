@@ -25,7 +25,7 @@ const MediumCardsSection = ({ articles, title, subtitle }: Props) => {
         {articles.map((article, i) => (
           <div
             key={i}
-            className="col-span-4 md:col-span-2 lg:col-span-1 justify-self-center"
+            className="col-span-4 md:col-span-2 lg:col-span-1 justify-self-center w-full"
           >
             <MediumCard article={article} />
           </div>
