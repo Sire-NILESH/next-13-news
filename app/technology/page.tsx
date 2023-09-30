@@ -1,14 +1,16 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import { data as TechnologyNews } from "@/dev-data/techNews";
 import { Metadata } from "next";
 import HighlightsBanner from "../../components/HighlightsBanner";
+import { getNews } from "@/lib/requests";
 
 export const metadata: Metadata = {
   title: "Technology News",
 };
 
-export default function TechnologyPage() {
+export default async function TechnologyPage() {
+  const technologyNews = await getNews("technology");
+
   return (
     <section className="flex flex-col items-center justify-center gap-5 w-full">
       <div className="inline-block max-w-lg text-center justify-center">
@@ -21,10 +23,10 @@ export default function TechnologyPage() {
       </div>
 
       <div className="mb-28">
-        <HighlightsBanner articles={TechnologyNews.articles} />
+        <HighlightsBanner articles={technologyNews.articles} />
       </div>
 
-      <InfoPageCards articles={TechnologyNews.articles} />
+      <InfoPageCards articles={technologyNews.articles} />
     </section>
   );
 }

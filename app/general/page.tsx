@@ -1,19 +1,22 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import { data as GeneralNews } from "@/dev-data/topHeadlines";
 import { Metadata } from "next";
 import HighlightsBanner from "../../components/HighlightsBanner";
+import { getNews } from "@/lib/requests";
+import { Headline } from "@/types";
 
 export const metadata: Metadata = {
   title: "General News",
 };
 
-export default function GeneralPage() {
+export default async function GeneralPage() {
+  const generalNews: Headline = await getNews("general");
+
   return (
     <section className="flex flex-col items-center justify-center gap-5 w-full">
       <div className="inline-block max-w-lg text-center justify-center">
         <h1 className={title()}>Highlights in&nbsp;</h1>
-        <h1 className={title({ color: "violet" })}>General news&nbsp;</h1>
+        <h1 className={title({ color: "violet" })}>General&nbsp;</h1>
         <br />
         <h2 className={subtitle({ class: "mt-4" })}>
           {"A glance at quick insights into the headlines and trends."}
@@ -21,10 +24,10 @@ export default function GeneralPage() {
       </div>
 
       <div className="mb-28">
-        <HighlightsBanner articles={GeneralNews.articles} />
+        <HighlightsBanner articles={generalNews.articles} />
       </div>
 
-      <InfoPageCards articles={GeneralNews.articles} />
+      <InfoPageCards articles={generalNews.articles} />
     </section>
   );
 }

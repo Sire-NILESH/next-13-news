@@ -1,14 +1,17 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
 import HighlightsBanner from "../../components/HighlightsBanner";
-import { data as ScienceNews } from "@/dev-data/scienceNews";
 import { Metadata } from "next";
+import { getNews } from "@/lib/requests";
+import { Headline } from "@/types";
 
 export const metadata: Metadata = {
   title: "Science News",
 };
 
-export default function SciencePage() {
+export default async function SciencePage() {
+  const scienceNews: Headline = await getNews("science");
+
   return (
     <section className="flex flex-col items-center justify-center gap-5 w-full">
       <div className="inline-block max-w-lg text-center justify-center">
@@ -21,10 +24,10 @@ export default function SciencePage() {
       </div>
 
       <div className="mb-28">
-        <HighlightsBanner articles={ScienceNews.articles} />
+        <HighlightsBanner articles={scienceNews.articles} />
       </div>
 
-      <InfoPageCards articles={ScienceNews.articles} />
+      <InfoPageCards articles={scienceNews.articles} />
     </section>
   );
 }

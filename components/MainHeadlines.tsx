@@ -1,21 +1,31 @@
 import { Button } from "@nextui-org/button";
 import NextLink from "next/link";
-import { data as entertainmentNews } from "./../dev-data/entertainmentNews";
-import { data as techNews } from "./../dev-data/techNews";
-import { data } from "./../dev-data/topHeadlines";
+// import { data as entertainmentNews } from "./../dev-data/entertainmentNews";
+// import { data as techNews } from "./../dev-data/techNews";
+// import { data } from "./../dev-data/topHeadlines";
 import MainCard from "./MainCard";
 import MediumCard from "./MediumCard";
 import MediumImgCard from "./MediumImgCard";
 import { RightArrowIcon } from "./icons";
+import { Article } from "@/types";
 
-const entertainmentNewsArticlesWithImgs = entertainmentNews.articles.filter(
-  (article) => Boolean(article.urlToImage)
-);
+// const entertainmentNewsArticlesWithImgs = entertainmentNews.articles.filter(
+//   (article) => Boolean(article.urlToImage)
+// );
 
-const articles = data.articles;
+// const articles = data.articles;
 
-const MainHeadlines = () => {
-  data;
+type Props = {
+  mainArticles: Article[];
+  mediumArticles: Article[];
+  mediumImgArticles: Article[];
+};
+
+const MainHeadlines = ({
+  mainArticles,
+  mediumArticles,
+  mediumImgArticles,
+}: Props) => {
   return (
     <div className="w-full grid grid-cols-12 gap-x-5 gap-y-28">
       <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5">
@@ -42,16 +52,18 @@ const MainHeadlines = () => {
         </header>
 
         <div className="flex flex-col justify-center items-start space-y-5">
-          <MainCard article={entertainmentNewsArticlesWithImgs[0]} />
-          <MainCard article={entertainmentNewsArticlesWithImgs[7]} />
-          <MainCard article={entertainmentNewsArticlesWithImgs[4]} />
+          <MainCard article={mainArticles[0]} />
+          <MainCard article={mainArticles[7]} />
+          <MainCard article={mainArticles[4]} />
         </div>
       </div>
 
       <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5">
         <header className="mx-4 space-y-2">
           <div className="flex items-center gap-5">
-            <h4 className="font-semibold uppercase text-xl">{"Latest News"}</h4>
+            <h4 className="font-semibold uppercase text-xl">
+              {"General News"}
+            </h4>
             <Button
               as={NextLink}
               isIconOnly
@@ -70,7 +82,7 @@ const MainHeadlines = () => {
         </header>
 
         <div className="space-y-5">
-          {articles.slice(1, 7).map((article, i) => (
+          {mediumArticles.slice(1, 7).map((article, i) => (
             <div key={i} className="flex justify-center">
               <MediumCard article={article} />
             </div>
@@ -100,7 +112,7 @@ const MainHeadlines = () => {
         </header>
 
         <div className="grid grid-cols-4 gap-x-3 gap-y-5">
-          {techNews.articles.slice(3, 13).map((article, i) => (
+          {mediumImgArticles.slice(3, 13).map((article, i) => (
             <div
               key={i}
               className="col-span-4 md:col-span-2 lg:col-span-4 justify-self-center"

@@ -13,7 +13,7 @@ const HighlightsBanner = ({ articles }: Props) => {
   }, [articles]);
 
   return (
-    <div className="container gap-2 grid grid-cols-12 grid-rows-2 px-8">
+    <div className="container gap-2 grid grid-cols-12 grid-rows-2 px-3 md:px-8">
       <Link
         isExternal
         href={
@@ -22,7 +22,7 @@ const HighlightsBanner = ({ articles }: Props) => {
             : undefined
         }
         aria-label="Bannner News"
-        className="col-span-12 sm:col-span-4 h-[300px]"
+        className="col-span-12 sm:col-span-4 h-[300px] w-full"
       >
         <BannerImgCard article={filtered[0]} />
       </Link>
@@ -35,7 +35,7 @@ const HighlightsBanner = ({ articles }: Props) => {
             : undefined
         }
         aria-label="Bannner News"
-        className="col-span-12 sm:col-span-4 h-[300px]"
+        className="col-span-12 sm:col-span-4 h-[300px] w-full"
       >
         <BannerImgCard article={filtered[1]} />
       </Link>
@@ -48,7 +48,7 @@ const HighlightsBanner = ({ articles }: Props) => {
             : undefined
         }
         aria-label="Bannner News"
-        className="col-span-12 sm:col-span-4 h-[300px]"
+        className="col-span-12 sm:col-span-4 h-[300px] w-full"
       >
         <BannerImgCard article={filtered[2]} />
       </Link>

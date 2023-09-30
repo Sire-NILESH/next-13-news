@@ -1,14 +1,17 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import { data as gameNews } from "@/dev-data/gameNews";
 import { Metadata } from "next";
 import HighlightsBanner from "../../components/HighlightsBanner";
+import { getKeywordNews } from "@/lib/requests";
+import { Headline } from "@/types";
 
 export const metadata: Metadata = {
   title: "Gaming News",
 };
 
-export default function GamingPage() {
+export default async function GamingPage() {
+  const gamingNews: Headline = await getKeywordNews("game");
+
   return (
     <section className="flex flex-col items-center justify-center gap-5 w-full">
       <div className="inline-block max-w-lg text-center justify-center">
@@ -23,10 +26,10 @@ export default function GamingPage() {
       </div>
 
       <div className="mb-28">
-        <HighlightsBanner articles={gameNews.articles} />
+        <HighlightsBanner articles={gamingNews.articles} />
       </div>
 
-      <InfoPageCards articles={gameNews.articles} />
+      <InfoPageCards articles={gamingNews.articles} />
     </section>
   );
 }

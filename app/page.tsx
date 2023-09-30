@@ -1,7 +1,13 @@
 import MainHeadlines from "@/components/MainHeadlines";
 import { subtitle, title } from "@/components/primitives";
+import { getNews } from "@/lib/requests";
+import { Headline } from "@/types";
 
-export default function Home() {
+export default async function Home() {
+  const entertainmentNews: Headline = await getNews("entertainment");
+  const generalNews: Headline = await getNews("general");
+  const technologyNews: Headline = await getNews("technology");
+
   return (
     <section className="flex flex-col items-center justify-center gap-10 md:gap-24 py-8">
       <div className="inline-block max-w-2xl text-center justify-center">
@@ -15,7 +21,12 @@ export default function Home() {
           {"Your Source for Today's Headlines and Tomorrow's Insights!"}
         </h2>
       </div>
-      <MainHeadlines />
+
+      <MainHeadlines
+        mainArticles={entertainmentNews.articles}
+        mediumArticles={generalNews.articles}
+        mediumImgArticles={technologyNews.articles}
+      />
     </section>
   );
 }

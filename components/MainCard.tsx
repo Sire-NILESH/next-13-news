@@ -24,11 +24,11 @@ const MainCard = ({ article }: Props) => {
     >
       <Card shadow="sm" className="h-full w-full py-4 space-y-4">
         <CardBody className="overflow-visible py-2 space-y-2">
-          <div className="w-full h-[50%] mb-4">
+          <div className="w-full h-[15rem] mb-4 overflow-hidden rounded-xl">
             <Image
               alt="Card background"
               removeWrapper
-              className="object-cover rounded-xl h-full w-full"
+              className="object-cover w-full"
               src={
                 article.urlToImage
                   ? article.urlToImage

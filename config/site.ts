@@ -89,7 +89,7 @@ export const siteConfig = {
       href: "#",
     },
     {
-      label: "News Letter",
+      label: "Newsletter",
       href: "#",
     },
     {

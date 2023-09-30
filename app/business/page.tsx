@@ -1,14 +1,17 @@
 import InfoPageCards from "@/components/InfoPageCards";
 import { subtitle, title } from "@/components/primitives";
-import { data as BusinessNews } from "@/dev-data/businessNews";
 import { Metadata } from "next";
 import HighlightsBanner from "../../components/HighlightsBanner";
+import { getNews } from "@/lib/requests";
+import { Headline } from "@/types";
 
 export const metadata: Metadata = {
   title: "Business News",
 };
 
-export default function BusinessPage() {
+export default async function BusinessPage() {
+  const businessNews: Headline = await getNews("business");
+
   return (
     <section className="flex flex-col items-center justify-center gap-5 w-full">
       <div className="inline-block max-w-lg text-center justify-center">
@@ -21,10 +24,10 @@ export default function BusinessPage() {
       </div>
 
       <div className="mb-28">
-        <HighlightsBanner articles={BusinessNews.articles} />
+        <HighlightsBanner articles={businessNews.articles} />
       </div>
 
-      <InfoPageCards articles={BusinessNews.articles} />
+      <InfoPageCards articles={businessNews.articles} />
     </section>
   );
 }

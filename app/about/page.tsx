@@ -39,7 +39,7 @@ export default function AboutPage() {
           isExternal
           as={NextLink}
           className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.github}
+          href={"#"}
         >
           <GithubIcon size={20} />
           GitHub
