@@ -9,7 +9,7 @@ import { Category, Country, KeywordNews } from "@/types";
 export async function getNews(category: Category, country: Country = "us") {
   const res = await fetch(
     `${process.env.BASE_URL}/top-headlines?country=${country}&category=${category}&pageSize=100&apiKey=${process.env.API_KEY}`,
-    { next: { revalidate: 60 * 60 * 24 } }
+    { next: { revalidate: 86400 } }
   ); //this will revalidate the data for every 24 hrs.
 
   if (!res.ok) throw new Error("failed to fetch data 💥💥💥");
@@ -20,7 +20,7 @@ export async function getNews(category: Category, country: Country = "us") {
 export async function getKeywordNews(keyword: KeywordNews) {
   const res = await fetch(
     `${process.env.BASE_URL}/everything?q=${keyword}&pageSize=100&apiKey=${process.env.API_KEY}`,
-    { next: { revalidate: 60 * 60 * 24 } }
+    { next: { revalidate: 86400 } }
   ); //this will revalidate the data for every 24 hrs.
 
   if (!res.ok) throw new Error("failed to fetch data 💥💥💥");

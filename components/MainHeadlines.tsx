@@ -8,12 +8,20 @@ import MediumCard from "./MediumCard";
 import MediumImgCard from "./MediumImgCard";
 import { RightArrowIcon } from "./icons";
 import { Article } from "@/types";
+import { useMemo } from "react";
 
 // const entertainmentNewsArticlesWithImgs = entertainmentNews.articles.filter(
 //   (article) => Boolean(article.urlToImage)
 // );
 
 // const articles = data.articles;
+
+const getNewsWithImgs = (articles: Article[]) => {
+  const filtered = articles.filter((article) => Boolean(article.urlToImage));
+
+  if (filtered.length > 3) return filtered;
+  return articles;
+};
 
 type Props = {
   mainArticles: Article[];
@@ -26,6 +34,10 @@ const MainHeadlines = ({
   mediumArticles,
   mediumImgArticles,
 }: Props) => {
+  const filteredMainArticlesWithImgs = useMemo(() => {
+    return getNewsWithImgs(mainArticles);
+  }, [mainArticles]);
+
   return (
     <div className="w-full grid grid-cols-12 gap-x-5 gap-y-28">
       <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5">
@@ -52,9 +64,9 @@ const MainHeadlines = ({
         </header>
 
         <div className="flex flex-col justify-center items-start space-y-5">
-          <MainCard article={mainArticles[0]} />
-          <MainCard article={mainArticles[7]} />
-          <MainCard article={mainArticles[4]} />
+          <MainCard article={filteredMainArticlesWithImgs[0]} />
+          <MainCard article={filteredMainArticlesWithImgs[7]} />
+          <MainCard article={filteredMainArticlesWithImgs[4]} />
         </div>
       </div>
 
@@ -77,12 +89,12 @@ const MainHeadlines = ({
           </div>
 
           <small className="block text-default-500">
-            {"Bringing you the Latest Headlines from around the world."}
+            {"Bringing you the headlines from around the world."}
           </small>
         </header>
 
         <div className="space-y-5">
-          {mediumArticles.slice(1, 7).map((article, i) => (
+          {mediumArticles.slice(0, 6).map((article, i) => (
             <div key={i} className="flex justify-center">
               <MediumCard article={article} />
             </div>
