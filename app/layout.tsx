@@ -42,7 +42,7 @@ export default function RootLayout({
           <div className="relative flex flex-col h-screen">
             <Navbar />
 
-            <main className="2xl:w-[80%] xl:w-[90%] md:w-[95%] mx-auto pt-4 lg:pt-16 px-4 md:px-6 flex-grow">
+            <main className="2xl:w-[80%] xl:w-[90%] md:w-[95%] max-w-[1568px] mx-auto pt-4 lg:pt-16 px-4 md:px-6 flex-grow">
               {children}
             </main>
 

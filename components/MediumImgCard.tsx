@@ -47,7 +47,7 @@ const MediumImgCard = ({ article, showAuthor }: Props) => {
             )}
           </div>
 
-          <div className="w-[30%] h-full max-h-[10rem]">
+          <div className="w-[30%] h-full max-h-[13rem]">
             <Image
               alt="Card image"
               removeWrapper
