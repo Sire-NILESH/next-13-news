@@ -13,11 +13,7 @@ const MediumCard = ({ article }: Props) => {
   return (
     <Link
       isExternal
-      href={
-        article.url && !article.url.startsWith("https://removed.com")
-          ? article.url
-          : undefined
-      }
+      href={article.url ? article.url : undefined}
       aria-label="News article"
       className="max-w-md h-full w-full"
     >
@@ -25,9 +21,9 @@ const MediumCard = ({ article }: Props) => {
         <CardBody className="overflow-visible py-2 space-y-2">
           <div className="flex justify-between">
             <p className="block text-tiny font-semibold">
-              {article.publishedAt &&
-              article.publishedAt !== "1970-01-01T00:00:00Z"
-                ? format(parseISO(article.publishedAt), "LLLL d, yyyy")
+              {article.published_at &&
+              article.published_at !== "1970-01-01T00:00:00Z"
+                ? format(parseISO(article.published_at), "LLLL d, yyyy")
                 : "unknown"}
             </p>
           </div>
@@ -39,8 +35,8 @@ const MediumCard = ({ article }: Props) => {
           </small>
           <p className="block text-sm font-semibold">
             {`Author : ${article.author ? article.author : "unknown"}`}
-            <span className="text-primary">{`, ${
-              article.source.name ? article.source.name : "unknown"
+            <span className="text-secondary">{`, ${
+              article.source ? article.source : "unknown"
             }`}</span>
           </p>
         </CardBody>

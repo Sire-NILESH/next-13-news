@@ -1,1130 +1,1376 @@
-export const data = {
-  status: "ok",
-  totalResults: 69,
-  articles: [
+import { Headline } from "@/types";
+
+export const data: Headline = {
+  pagination: {
+    limit: 100,
+    offset: 0,
+    count: 100,
+    total: 10000,
+  },
+  data: [
     {
-      source: {
-        id: null,
-        name: "CNBC",
-      },
-      author: "Hakyung Kim",
+      author: "",
       title:
-        "Stocks making the biggest moves in premarket trading: AstraZeneca, Paramount, Nike and more - CNBC",
+        "Building the financial foundations of a small business: An interior designer shares her journey and learnings",
       description:
-        "These are the stocks posting the largest moves in early trading.",
-      url: "https://www.cnbc.com/2023/09/25/stocks-making-the-biggest-moves-in-premarket-trading-azn-para-nke-and-more.html",
-      urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107302604-1695071250324-gettyimages-1689146179-mt_26500_tqzunxvm.jpeg?v=1695645100&w=1920&h=1080",
-      publishedAt: "2023-09-25T12:19:04Z",
-      content:
-        "Check out the companies making headlines before the bell.\r\nAstraZeneca Shares rose 1.4% after Jefferies upgraded the stock to buy from hold. The upgrade comes after one of its breast cancer therapies… [+2243 chars]",
+        "The economic roller-coaster of recent times has undoubtedly been challenging, particularly for Australia’s self-employed.",
+      url: "https://www.theage.com.au/business/small-business/building-the-financial-foundations-of-a-small-business-an-interior-designer-shares-her-journey-and-learnings-20230609-p5dfdd.html?ref=rss&utm_medium=rss&utm_source=rss_business",
+      source: "The Age",
+      image:
+        "https://static.ffx.io/images/$zoom_0.5298%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_95/t_crop_custom/q_86%2Cf_auto/c726dac2123aabd72c41725a9870132bdf9234f6",
+      category: "business",
+      language: "en",
+      country: "au",
+      published_at: "2023-06-25T22:00:00+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "CNBC",
-      },
-      author: "Sarah Min, Yun Li",
-      title:
-        "Stock futures fall as the market enters last week of September with losses: Live updates - CNBC",
+      author: "Cointelegraph",
+      title: "Token issuers in Japan exempt from 30% crypto tax on paper gains",
       description:
-        "Stocks have struggled this month as the Federal Reserve signaled higher interest rates for longer, sending bond yields rising.",
-      url: "https://www.cnbc.com/2023/09/24/stock-market-today-live-updates.html",
-      urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107099147-NYSE-Trading-Floor-OB-Photo-220804-CC-PRESS-4.jpg?v=1695593030&w=1920&h=1080",
-      publishedAt: "2023-09-25T12:05:00Z",
-      content:
-        "Stock futures fell Monday with the market set to kick off the final week of trading in September with big losses.\r\nFutures on the Dow Jones Industrial Average were lower by 67 points, or about 0.2%. … [+1318 chars]",
+        "Token issuers in Japan exempt from 30% crypto tax on paper gains",
+      url: "https://www.investing.com/news/cryptocurrency-news/token-issuers-in-japan-exempt-from-30-crypto-tax-on-paper-gains-3112625",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-25T22:20:10+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Yahoo Entertainment",
-      },
-      author: "Lou Carlozo",
-      title:
-        "‘To drive around in a Dodge Charger and no one thinks you're cool': This Seattle man dropped $35K on a car one year after bankruptcy — here's the harsh reality he was forced to face - Yahoo Finance",
+      author: null,
+      title: "NHS performs less well than international peers, research shows",
       description:
-        "He went to a YouTuber for advice and accountability — and that's exactly what he got.",
-      url: "https://finance.yahoo.com/news/drive-around-dodge-charger-no-120000339.html",
-      urlToImage:
-        "https://media.zenfs.com/en/moneywise_327/ec575493208822cb1f74c98e9c891cce",
-      publishedAt: "2023-09-25T12:00:00Z",
-      content:
-        "To drive around in a Dodge Charger and no one thinks you're cool': This Seattle man dropped $35K on a car one year after bankruptcy here's the harsh reality he was forced to face\r\nFor some, an emotio… [+4035 chars]",
+        "UK health service is ‘middling at best’ with fewer doctors and nurses than comparable countries, says King’s Fund",
+      url: "https://www.ft.com/content/0b73a259-fdb3-42bb-8a5b-bc7c586a8415",
+      source: "Financial Times",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-25T23:01:19+00:00",
     },
     {
-      source: {
-        id: "reuters",
-        name: "Reuters",
-      },
-      author: "Amanda Cooper",
-      title:
-        "Shares drop as 'higher-for-longer' rate outlook rattles investors - Reuters",
+      author: "Bloomberg News",
+      title: "T. Rowe Price on Intervention Alert as Yen Nears 150 per Dollar",
       description:
-        "Global shares fell on Monday, extending last week’s slide as central banks reinforced the message that interest rates would stay higher for longer, while investors braced for high-stakes U.S. inflation data on Friday.",
-      url: "https://www.reuters.com/markets/global-markets-wrapup-1-pix-2023-09-25/",
-      urlToImage:
-        "https://www.reuters.com/resizer/vsbRlEyoJLic70WO22gZeWtWBVA=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/TSSDP5ETMZNGFGC663AP6TFSKE.jpg",
-      publishedAt: "2023-09-25T11:45:00Z",
-      content:
-        "LONDON, Sept 25 (Reuters) - Global shares fell on Monday, extending last weeks slide as central banks reinforced the message that interest rates would stay higher for longer, while investors braced f… [+4491 chars]",
+        "The yen is nearing levels that will likely prompt Japan to again jump in and defend the currency, according to T. Rowe Price’s Quentin Fitzsimmons.",
+      url: "https://financialpost.com/pmn/business-pmn/t-rowe-price-on-intervention-alert-as-yen-nears-150-per-dollar",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T00:09:33+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "OilPrice.com",
-      },
-      author: "Tsvetana Paraskova",
-      title:
-        "U.S. Energy Storage Additions Hit A Record-High In Q2 - OilPrice.com",
+      author: "BusinessWorld",
+      title: "IDEAYALA 2023 puts spotlight on budding kiddie entrepreneurs",
       description:
-        "Energy storage installations in the U.S. hit a record high in the second quarter of 2023, with developers adding 5,597 megawatt hours.",
-      url: "https://oilprice.com/Latest-Energy-News/World-News/US-Energy-Storage-Additions-Hit-A-Record-High-In-Q2.html",
-      urlToImage:
-        "https://d32r1sh890xpii.cloudfront.net/news/718x300/2023-09-25_yekvd3outk.jpg",
-      publishedAt: "2023-09-25T11:30:00Z",
-      content:
-        "The Energy Information Administration has…\r\nThe total number of active…\r\nBy Tsvetana Paraskova - Sep 25, 2023, 6:30 AM CDTU.S. developers added 5,597 megawatt hours (MWh) of energy storage installati… [+2225 chars]",
+        "This year’s IDEAYALA initiative challenged the next generation of budding entrepreneurs, aged five to 17, to form original businesses and put their ideas into action as they took over the gallery of Greenbelt 5 last May 20 and 21. Launched in 2014, IDEAYALA aims to inspire, train, and challenge the youth to innovate and develop [&#8230;]",
+      url: "https://www.bworldonline.com/sparkup/2023/06/26/530408/ideayala-2023-puts-spotlight-on-budding-kiddie-entrepreneurs/",
+      source: "Business World",
+      image:
+        "https://www.bworldonline.com/wp-content/uploads/2023/06/SPARK_R2-Snack-Stack-selling-booth-during-the-IDEAYALA-OL-300x224.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T00:50:44+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Barron's",
-      },
-      author: "Joe Woelfel, Emily Dattilo",
-      title:
-        "Paramount, Warner Bros. Discovery, Amazon, HP Inc., CarMax, Nike, and More Market Movers - Barron's",
+      author: "zee business",
+      title: "Asian markets news: Russian turmoil tests safe-haven demand",
       description:
-        "Media stocks rise as striking writers reach a tentative agreement with Hollywood studios that would end a monthslong strike, while Amazon will be investing up to $4 billion in artificial-intelligence company Anthropic.",
-      url: "https://www.barrons.com/articles/stock-market-movers-94db1db",
-      urlToImage: "https://images.barrons.com/im-788853/social",
-      publishedAt: "2023-09-25T11:24:00Z",
-      content:
-        "Stock futures dipped Monday as Wall Street begins the last week of September, a month that so far has seen the \r\nS&amp;P 500\r\n drop 4.2% and the \r\nNasdaq Composite\r\n slump 5.9%. Investors will be key… [+2909 chars]",
+        "Asian markets news: Asian markets on Monday kick off what looks like a pretty light week for regional economic, policy and corporate drivers, with all eyes on how investors react to the extraordinary events in Russia over the weekend.",
+      url: "https://www.zeebiz.com/markets/global-markets/news-asian-markets-today-news-index-russian-turmoil-dow-jones-241688",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T00:50:07+00:00",
     },
     {
-      source: {
-        id: "usa-today",
-        name: "USA Today",
-      },
-      author: "USA TODAY",
-      title:
-        "Powerball jackpot nears $800 million, 4th largest in game's history: When is next drawing? - USA TODAY",
-      description: null,
-      url: "https://www.usatoday.com/story/money/2023/09/25/powerball-next-drawing/70959110007/",
-      urlToImage: null,
-      publishedAt: "2023-09-25T11:11:34Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Barron's",
-      },
-      author: "Brian Swint",
-      title:
-        "Booking Blocked From Buying Swedish Travel Site Etraveli. It Will Appeal. - Barron's",
+      author: "Kamil Kowalcze",
+      title: "Global Inflation Risk Rises Despite Lower Prices, Economist Says",
       description:
-        "The European Union argued the $1.8 billion deal to buy Etraveli would allow the U.S. company to reduce competition and increase prices.",
-      url: "https://www.barrons.com/articles/booking-etraveli-deal-blocked-eu-travel-62e52eef",
-      urlToImage: "https://images.barrons.com/im-807672/social",
-      publishedAt: "2023-09-25T11:10:00Z",
-      content: null,
+        "Global Inflation Risk Rises Despite Lower Prices, Economist Says",
+      url: "https://www.bqprime.com/business/global-inflation-risk-rises-despite-lower-prices-economist-says",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T00:43:51+00:00",
     },
     {
-      source: {
-        id: "usa-today",
-        name: "USA Today",
-      },
-      author: "USA TODAY",
-      title:
-        "Car recall check: Toyota, Dodge, Kia among 105,000 recalled - USA TODAY",
-      description: null,
-      url: "https://www.usatoday.com/story/money/cars/recalls/2023/09/25/car-recall-check-toyota-dodge-kia/70949033007/",
-      urlToImage: null,
-      publishedAt: "2023-09-25T11:04:27Z",
-      content: null,
+      author: "Anjali Rai",
+      title: "Indian Rupee Opens Firm Against The U.S Dollar",
+      description: "Indian Rupee Opens Firm Against The U.S Dollar",
+      url: "https://www.bqprime.com/markets/indian-rupee-opens-firm-against-the-us-dollar-6",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T03:55:39+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "YouTube",
-      },
+      author: "Isabel Vieira",
+      title: "Wesfarmers ups bid to acquire SILK",
+      description:
+        "Wesfarmers' health division has upped its offer to $180 million to acquire SILK Laser Clinics after previously walking away from negotiations.",
+      url: "https://www.businessnews.com.au/article/Wesfarmers-ups-bid-to-acquire-SILK",
+      source: "Business News.com.au",
+      image:
+        "https://static.businessnews.com.au/sites/default/files/articles-2023-06/181220-246%201.jpg",
+      category: "business",
+      language: "en",
+      country: "au",
+      published_at: "2023-06-26T03:57:17+00:00",
+    },
+    {
+      author: "Jeff Newmond",
+      title: "IET Fellow Junade Ali Becomes Youngest Member Ever",
+      description:
+        "Today (Monday 26th June), Dr Junade Ali CEng has become the youngest Fellow of the Institution of Engineering and Technology (IET). Dr Ali, aged 27, is believed to be the youngest Fellow of any UK professional engineering institution. His unprecedented achievement is made all the more remarkable given that he is a secondary school drop-out [&#8230;]The post IET Fellow Junade Ali Becomes Youngest Member Ever first appeared on BusinessMole.",
+      url: "https://www.businessmole.com/iet-fellow-junade-ali-becomes-youngest-member-ever/",
+      source: "Businessmole",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T05:23:21+00:00",
+    },
+    {
       author: null,
       title:
-        "Lachlan Murdoch is taking over from his father Rupert Murdoch – but for how long? | 7.30 - ABC News In-depth",
+        "Inflation below 5% but certain challenges still remain: RBI Governor Shaktikanta Das",
       description:
-        "The dust is still settling from Rupert Murdoch's announcement that he would be stepping down from day-to-day operations of the family's media companies.While...",
-      url: "https://www.youtube.com/watch?v=zC6pF7_J3ZM",
-      urlToImage: "https://i.ytimg.com/vi/zC6pF7_J3ZM/maxresdefault.jpg",
-      publishedAt: "2023-09-25T11:00:51Z",
-      content: null,
+        "In the MPC announcements, the governor had said a close and continued vigil on the evolving inflation is absolutely necessary, especially as the monsoon outlook and the impact of El Nino remain uncertain. ",
+      url: "https://www.businesstoday.in/latest/economy/story/inflation-below-5-but-certain-challenges-still-remain-rbi-governor-shaktikanta-das-387028-2023-06-26?utm_source=rssfeed",
+      source: "Business Today | Latest Stock Market And Economy News India",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "in",
+      published_at: "2023-06-26T05:26:18+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Jalopnik",
-      },
-      author: "Kyle Hyatt",
-      title:
-        "The 2024 Nissan Z Is The Track Special For People Who Don't Know About Other Cars - Jalopnik",
-      description:
-        "While the Z Nismo isn't technically bad, it's another case of Nissan showing up a day late and a lot of performance short",
-      url: "https://jalopnik.com/the-2024-nissan-z-is-the-track-special-for-people-who-d-1850862508",
-      urlToImage:
-        "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/b8c67cd6ef57bf048f56d089fa398e95.jpg",
-      publishedAt: "2023-09-25T11:00:00Z",
-      content:
-        "Nissans Z isnt exactly a revolutionary car, even for a brand not known for refreshing its product more than once every couple of decades, but when it debuted, it definitely got people all fired up. P… [+4547 chars]",
-    },
-    {
-      source: {
-        id: "cbs-news",
-        name: "CBS News",
-      },
       author: null,
       title:
-        'Lego drops prototype blocks made of recycled plastic bottles as they "didn\'t reduce carbon emissions" - CBS News',
+        "&#039;Best finisher in the business&#039;: MS Dhoni magic gives Candy Crush massive boost, 3.6 downloads in just 3 hours!",
       description:
-        'Danish toy giant Lego said 2 years of experimentation with blocks made from recycled plastic bottles showed they "didn\'t reduce carbon emissions."',
-      url: "https://www.cbsnews.com/news/lego-recycled-plastic-prototype-blocks-pet-didnt-reduce-carbon-emissions/",
-      urlToImage:
-        "https://assets2.cbsnewsstatic.com/hub/i/r/2023/01/24/31d3179f-e249-4086-96ea-e11684af62b3/thumbnail/1200x630/2ca705f2b1aa9fec36931867e4276497/lego1.jpg?v=f5251b37272e6b1bc4e5456ab4445a67",
-      publishedAt: "2023-09-25T10:41:34Z",
-      content:
-        "Copenhagen, Denmark — Denmark's Lego said on Monday that it remains committed to its quest to find sustainable materials to reduce carbon emissions, even after an experiment by the world's largest to… [+2575 chars]",
+        "A recent viral video of Dhoni shows him onboard an IndiGo flight and playing Candy Crush to kill time on the flight. As this video went viral, surprisingly, along with MS Dhoni, even the hashtag Candy Crush began trending on Twitter’s trend list.",
+      url: "https://www.businesstoday.in/latest/trends/story/best-finisher-in-the-business-ms-dhoni-magic-gives-candy-crush-massive-boost-36-downloads-in-just-3-hours-387048-2023-06-26?utm_source=rssfeed",
+      source: "Business Today | Latest Stock Market And Economy News India",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "in",
+      published_at: "2023-06-26T07:17:10+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Barron's",
-      },
+      author: "zee business",
+      title: "Apple Vision Pro may turn any surface into touchscreen display",
+      description:
+        "An Apple Vision Pro developer has learned that the headset can create controls and displays, and make them appear on any surface in the user's room.",
+      url: "https://www.zeebiz.com/technology/news-apple-apple-vision-pro-apple-iphone-apple-virtual-reality-artificial-intelligence-apple-vision-pro-launch-date-apple-vision-pro-price-apple-music-ios-241763",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T07:18:41+00:00",
+    },
+    {
+      author: "zee business",
+      title:
+        "The Kerala Story filmmakers announce next film 'Bastar' to release in 2024",
+      description:
+        'Director Sudipto Sen and producer Vipul Shah, the duo behind "The Kerala Story", on Monday announced their next project "Bastar". According to the makers, "Bastar", based on a "true incident", will hit the screens on April 5, 2024.',
+      url: "https://www.zeebiz.com/trending/entertainment/news-bastar-movie-bastar-release-date-director-sudipto-sen-producer-vipul-shah-sunshine-pictures-the-kerala-story-move-maker-241761",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T07:17:03+00:00",
+    },
+    {
+      author: "BQ Contributor",
+      title:
+        "Dinesh Karthik Inaugurates T Natarajan's Cricket Academy In Tamil Nadu's Chinnappampatti; See Photos",
+      description:
+        "Dinesh Karthik Inaugurates T Natarajan's Cricket Academy In Tamil Nadu's Chinnappampatti; See Photos",
+      url: "https://www.bqprime.com/sports/dinesh-karthik-inaugurates-t-natarajans-cricket-academy-in-tamil-nadus-chinnappampatti-see-photos-bqc",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T07:19:44+00:00",
+    },
+    {
+      author: "Investing.com",
+      title: "UBS Upgrades Moderna to Buy",
+      description: "UBS Upgrades Moderna to Buy",
+      url: "https://www.investing.com/news/pro/ubs-upgrades-moderna-to-buy-432SI-3112823",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T08:09:02+00:00",
+    },
+    {
+      author: "Investing.com",
+      title:
+        "BMO Capital downgrades Celanese to 'market perform' with a price target of $119.00",
+      description:
+        "BMO Capital downgrades Celanese to 'market perform' with a price target of $119.00",
+      url: "https://www.investing.com/news/pro/celanese-receives-investment-bank-analyst-rating-update-3112822",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/news/World_News_10_M_1440052130.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T08:05:41+00:00",
+    },
+    {
+      author: "Investing.com",
+      title:
+        "UBS downgrades Alphabet A to 'neutral' with a price target of $132.00",
+      description:
+        "UBS downgrades Alphabet A to 'neutral' with a price target of $132.00",
+      url: "https://www.investing.com/news/pro/google-inc-receives-investment-bank-analyst-rating-update-3112821",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image: "https://i-invdn-com.investing.com/news/LYNXNPEB7B00X_M.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T08:05:41+00:00",
+    },
+    {
+      author: null,
+      title: "Warning: OTLY is at high risk of performing badly",
+      description: "Warning: OTLY is at high risk of performing badly",
+      url: "https://seekingalpha.com/warnings/3982621-warning-otly-is-high-risk-of-performing-badly?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T08:25:29+00:00",
+    },
+    {
+      author: "BQ Desk",
+      title: "Income Tax Surveys Continue On Shree Cement Premises",
+      description: "Income Tax Surveys Continue On Shree Cement Premises",
+      url: "https://www.bqprime.com/markets/income-tax-surveys-continue-on-shree-cement-premises",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T08:30:47+00:00",
+    },
+    {
+      author: "Angela Serratore",
+      title: "$1.7 Million Homes in California",
+      description:
+        "An 1888 Craftsman home in Berkeley, a midcentury retreat in Palm Springs and a French Normandy house in Los Angeles.",
+      url: "https://www.nytimes.com/2023/06/26/realestate/million-dollar-homes-california.html",
+      source: "The New York Times",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T09:00:32+00:00",
+    },
+    {
+      author: "GlobeNewswire",
+      title:
+        "That’s Crispy: Crispy Minis® Unveils Brand Partnership with Beloved Canadian Actress Annie Murphy",
+      description:
+        "MISSISSAUGA, Ontario, June 26, 2023 (GLOBE NEWSWIRE) &#8212; The Crispy Minis® brand is thrilled to announce an exciting new partnership with Canadian icon and actress, Annie Murphy. This partnership marks the beginning of a fresh era for the brand, focused on encouraging Canadians to embrace their crispy side. What’s crispy? It&#8217;s a vibe; being cute [&#8230;]",
+      url: "https://financialpost.com/globe-newswire/thats-crispy-crispy-minis-unveils-brand-partnership-with-beloved-canadian-actress-annie-murphy",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T10:01:36+00:00",
+    },
+    {
+      author: "GlobeNewswire",
+      title: "First Quantum Provides Notice Of Second Quarter 2023 Results",
+      description:
+        "TORONTO, June 26, 2023 (GLOBE NEWSWIRE) &#8212; First Quantum Minerals Ltd. (“First Quantum” or “the Company”) (TSX: FM) will release second quarter 2023 financial and operating results on Tuesday, July 25, 2023 after the close of the Toronto Stock Exchange. The Company will host a conference call and webcast to discuss the results on Wednesday, [&#8230;]",
+      url: "https://financialpost.com/globe-newswire/first-quantum-provides-notice-of-second-quarter-2023-results",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T10:01:23+00:00",
+    },
+    {
+      author: "zee business",
+      title:
+        "Football transfer window: How transfers take place? How clubs invest billions - Explained",
+      description:
+        "Football transfer window: As most players are either enjoying the break after a long season or are on national duty, the main focus now turns to the clubs and the agents who represent the players for a change in the clubs, a better wage, or an extension of the contract. But all this might sound Greek to anyone who doesn't know how to speak football. For them, here's an explainer on each and every jargon that is used in a football transfer window.",
+      url: "https://www.zeebiz.com/trending/sports/news-transfer-window-transfer-news-football-transfer-window-explainer-man-united-erik-ten-hag-real-madrid-messi-inter-miami-arsenal-transfer-mbappe-ronaldo-transfer-241803",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T10:15:48+00:00",
+    },
+    {
+      author: "Business Wire",
+      title:
+        "New Found Provides Update on Industry-leading 3-D Seismic Survey at Its Queensway Gold Project",
+      description:
+        "VANCOUVER, British Columbia &#8212; New Found Gold Corp. (“New Found” or the “Company”) (TSX-V: NFG, NYSE-A: NFGC) is pleased to provide an update on its industry-leading 3-D seismic survey that will cover 47 km2 along the Appleton (“AFZ”) and JBP Fault Zones (“JBPFZ”) at its Queensway Project. New Found’s 100%-owned Queensway Project comprises a 1,662km2 [&#8230;]",
+      url: "https://financialpost.com/pmn/business-wire-news-releases-pmn/new-found-provides-update-on-industry-leading-3-d-seismic-survey-at-its-queensway-gold-project",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T10:30:33+00:00",
+    },
+    {
+      author: "zee business",
+      title:
+        "Taylor Swift asks fans during Eras Tour to be 'kind and gentle' on social media",
+      description:
+        "Pop-singer Taylor Swift gave a speech during her tour, where she asked her fans to act with “kindness and gentleness” on social media. This comes ahead of the release of her “Speak Now (Taylor's version)” album (not to be confused with her third album “Speak Now” from 2010).",
+      url: "https://www.zeebiz.com/world/news-taylor-swift-news-taylor-swift-speech-american-singer-taylor-swift-speech-during-tour-taylor-worldwide-tour-mexico-japan-australia-singapore-europe-241805",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T10:25:40+00:00",
+    },
+    {
       author: null,
       title:
-        "Shutdown, Strikes, Sticky Inflation, and More… Brace for a Bumpy Fourth Quarter. - Barron's",
+        "UBS downgrades Google-parent Alphabet, cites stiffer competition and generative A.I. headwinds",
       description:
-        "Hollywood writers reach deal to end strike, President Biden to join auto workers on picket line, and other news to start your day.",
-      url: "https://www.barrons.com/articles/what-to-know-today-3d27718",
-      urlToImage: "https://images.barrons.com/im-36096186/social",
-      publishedAt: "2023-09-25T10:29:00Z",
-      content:
-        "The good news, Federal Reserve Chairman Jerome Powell pointed out last week, is that the U.S. economy has been more resilient than almost anyone expected so far.Inflation has slowed quickly to around… [+10525 chars]",
+        "The bank downgraded the tech giant to neutral from buy, albeit with a higher $132 per share price target compared to the previous $123 forecast.",
+      url: "https://www.cnbc.com/2023/06/26/ubs-downgrades-googl-cites-stiffer-competition-and-generative-ai-headwinds.html",
+      source: "Cnbc | World Business News Leader",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T10:28:00+00:00",
     },
     {
-      source: {
-        id: "reuters",
-        name: "Reuters",
-      },
-      author: "Donny Kwok, Scott Murdoch",
+      author: "Business Matters",
       title:
-        "Evergrande debt setback, Oceanwide blow rattle China property stocks - Reuters",
+        "Ryan Reynolds and Rob McElhenney join investors buying into Alpine F1 team",
       description:
-        "Another obstacle to embattled developer China Evergrande Group's long-pending debt restructuring plan rekindled fears for China's crisis-hit property sector on Monday, sparking a stock sell-off.",
-      url: "https://www.reuters.com/world/china/evergrande-shares-sink-after-saying-it-is-unable-issue-new-debt-2023-09-25/",
-      urlToImage:
-        "https://www.reuters.com/resizer/fm68FMGzI4tPuxG7GEdzm_6a6Cg=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/RI5DGSXMIFKDTH6QCCOZCOWJPE.jpg",
-      publishedAt: "2023-09-25T10:28:22Z",
-      content:
-        "HONG KONG/SYDNEY, Sept 25 (Reuters) - Another obstacle to embattled developer China Evergrande Group's long-pending debt restructuring plan rekindled fears for China's crisis-hit property sector on M… [+5289 chars]",
+        "Ryan Reynolds and Rob McElhenney have expanded their sporting portfolio by investing in Oxfordshire-based Formula One team Alpine Racing.Read more: Ryan Reynolds and Rob McElhenney join investors buying into Alpine F1 team",
+      url: "https://bmmagazine.co.uk/get-funded/ryan-reynolds-and-rob-mcelhenney-join-investors-buying-into-alpine-f1-team/",
+      source: "Business Matters | The Uk's Leading Sme Business Magazine",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "gb",
+      published_at: "2023-06-26T11:38:42+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Barron's",
-      },
-      author: "Jack Denton",
-      title:
-        "Bitcoin Falls With Key Level at Risk. Macro Catalysts Are Looming for Cryptos. - Barron's",
-      description:
-        "In the absence of crypto-native catalysts, traders are likely to focus on the same macroeconomic data releases this week that will move the stock market.",
-      url: "https://www.barrons.com/articles/bitcoin-ethereum-price-crypto-markets-today-47f44d33",
-      urlToImage: "https://images.barrons.com/im-844022/social",
-      publishedAt: "2023-09-25T10:18:00Z",
-      content: null,
-    },
-    {
-      source: {
-        id: "reuters",
-        name: "Reuters",
-      },
-      author: "Chris Prentice, Carolina Mandl",
-      title:
-        "SEC collects Wall Street's private messages as WhatsApp probe escalates - Reuters",
-      description:
-        "The U.S. securities regulator has collected thousands of staff messages from more than a dozen major investment companies, escalating its probe into Wall Street's use of private messaging apps, said four people with direct knowledge of the matter.",
-      url: "https://www.reuters.com/technology/sec-collects-wall-streets-private-messages-whatsapp-probe-escalates-sources-2023-09-25/",
-      urlToImage:
-        "https://www.reuters.com/resizer/WM7YfJSvyqHaHM5WSKqCvUvGcGg=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/K2Q4SKU4GNKK5OT4ITQGMD3VDI.jpg",
-      publishedAt: "2023-09-25T10:09:00Z",
-      content:
-        "NEW YORK, Sept 25 (Reuters) - The U.S. securities regulator has collected thousands of staff messages from more than a dozen major investment companies, escalating its probe into Wall Street's use of… [+5917 chars]",
-    },
-    {
-      source: {
-        id: "the-verge",
-        name: "The Verge",
-      },
-      author: "Jess Weatherbed",
-      title:
-        "Amazon will invest up to $4 billion in OpenAI rival Anthropic - The Verge",
-      description:
-        "Amazon announced on Monday that it will invest up to $4 billion into Anthropic — the AI startup founded by former OpenAI employees that’s best known for its Claude chatbot.",
-      url: "https://www.theverge.com/2023/9/25/23888841/amazon-4-billion-investment-anthropic-claude-ai-openai-microsoft",
-      urlToImage:
-        "https://cdn.vox-cdn.com/thumbor/ZNyuXY77d8DzJxRvjt7l1RVYsiY=/0x0:5760x3240/1200x628/filters:focal(2880x1620:2881x1621)/cdn.vox-cdn.com/uploads/chorus_asset/file/24950437/Amazon_Anthropic_partnership.jpg",
-      publishedAt: "2023-09-25T10:06:30Z",
-      content:
-        "Amazon will invest up to $4 billion into OpenAI rival Anthropic\r\nAmazon will invest up to $4 billion into OpenAI rival Anthropic\r\n / The partnership could help Amazon better compete against Google an… [+2537 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "CNBC",
-      },
-      author: "Elliot Smith",
-      title:
-        "'Private equity is now king' for the ultra-rich, says Tiger 21, an exclusive club of investors - CNBC",
-      description:
-        "Tiger 21 members, who manage around $150 billion in assets, have increased their allocation to private equity threefold, founder Sonnenfeldt says.",
-      url: "https://www.cnbc.com/2023/09/25/private-equity-is-now-king-for-the-ultra-rich-says-tiger-21-an-exclusive-club-of-investors.html",
-      urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107000769-16420929282022-01-13t161951z_1765176913_rc2eyr94cxjv_rtrmadp_0_tpg-ipo.jpeg?v=1695636067&w=1920&h=1080",
-      publishedAt: "2023-09-25T10:01:07Z",
-      content:
-        'Private equity is currently "king" among members of Tiger 21 a network of ultra-high net worth entrepreneurs and investors according to its founder and chairman, Michael Sonnenfeldt.\r\nThe private equ… [+3990 chars]',
-    },
-    {
-      source: {
-        id: null,
-        name: "Yahoo Entertainment",
-      },
       author: null,
       title:
-        "Why the Federal Reserve hasn't spooked the stock market...yet - Yahoo Finance",
-      description: null,
-      url: "https://finance.yahoo.com/news/why-the-federal-reserve-hasnt-spooked-the-stock-marketyet-100042641.html",
-      urlToImage: null,
-      publishedAt: "2023-09-25T10:00:42Z",
-      content: null,
+        "Odisha man secures seat in IIM Ahmedabad after 9 unsuccessful attempts",
+      description:
+        "Nath gave his first CAT exam in 2014, and he has been appearing for the exam every year since then.",
+      url: "https://www.businesstoday.in/latest/trends/story/odisha-man-secures-seat-in-iim-ahmedabad-after-9-unsuccessful-attempts-387113-2023-06-26?utm_source=rssfeed",
+      source: "Business Today | Latest Stock Market And Economy News India",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "in",
+      published_at: "2023-06-26T12:20:51+00:00",
     },
     {
-      source: {
-        id: "cnn",
-        name: "CNN",
-      },
-      author: "Arit John",
+      author: "zee business",
       title:
-        "Trump and Biden’s Michigan visits will present competing strategies for winning union voters - CNN",
+        "Airtel Business CEO Ajaya Chitkara quits, enterprise arm divided into three segments",
       description:
-        "When United Auto Workers went on strike against General Motors four years ago, Joe Biden and Donald Trump took very different approaches.",
-      url: "https://www.cnn.com/2023/09/25/politics/trump-biden-michigan-union-voters/index.html",
-      urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230820163850-trump-biden-split-082023.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-09-25T10:00:00Z",
-      content:
-        "When United Auto Workers went on strike against General Motors four years ago, Joe Biden and Donald Trump took very different approaches. \r\nTrump, the incumbent Republican president whod clashed with… [+9873 chars]",
+        "The Chief Executive Officer of Bharti Airtel's enterprise arm Airtel Business, Ajay Chitkara, has resigned from the company, according to a filing.",
+      url: "https://www.zeebiz.com/companies/news-airtel-bharti-airtel-airtel-business-ceo-resigns-ajay-chitkara-airtel-business-ceo-resigns-gopal-vittal-airtel-md-and-ceo-241819",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T12:22:26+00:00",
     },
     {
-      source: {
-        id: "business-insider",
-        name: "Business Insider",
-      },
-      author: "Rob Price",
-      title: "How LinkedIn Got Weird - Business Insider",
+      author: null,
+      title:
+        "Sugarcane planting declines in Tamil Nadu due to high cultivation cost ",
       description:
-        "Divorce, trouble peeing, and stealing hotel food: Why did a job network become everyone's favorite place for oversharing?",
-      url: "https://www.businessinsider.com/how-linkedin-got-weird-work-life-blurred-lines-of-oversharing-2023-9",
-      urlToImage:
-        "https://i.insider.com/650dd5cbe453d50019f7debe?width=1200&format=jpeg",
-      publishedAt: "2023-09-25T09:30:00Z",
-      content:
-        "It was a hard day for Matthew Sciannella: He was officially getting divorced.\r\nAfter 12 years of marriage and multiple children, he and his wife had drifted apart during the pandemic. In early 2021, … [+17411 chars]",
+        "Labour cost in the state is 2-3 times higher than Uttar Pradesh",
+      url: "https://www.thehindubusinessline.com/economy/agri-business/sugarcane-planting-declines-in-tamil-nadu-due-to-high-cultivation-cost/article67011294.ece",
+      source: "Business Line",
+      image:
+        "https://bl-i.thgim.com/public/companies/kmnd9g/article54411226.ece/alternates/LANDSCAPE_1200/gopalaratnamjpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T12:37:47+00:00",
     },
     {
-      source: {
-        id: "reuters",
-        name: "Reuters",
-      },
       author: "Reuters",
       title:
-        "China bans Nomura senior investment banker from leaving mainland -sources - Reuters",
+        "GM's EV truck customers must wait for Tesla-compatible charge ports",
       description:
-        'Authorities in China have ordered a senior Nomura Holdings <a href="https://www.reuters.com/markets/companies/8604.T" target="_blank">(8604.T)</a> banker overseeing the firm\'s investment banking operations there not to leave the mainland, two sources with kno…',
-      url: "https://www.reuters.com/markets/asia/china-bans-nomura-senior-investment-banker-leaving-mainland-sources-2023-09-25/",
-      urlToImage:
-        "https://www.reuters.com/resizer/sWam5WcTMeZKDZYO0KpCfLDH6nw=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/6DV3NXVMGFIFRDUQNF3CS6SMBY.jpg",
-      publishedAt: "2023-09-25T09:09:00Z",
-      content:
-        "HONG KONG, Sept 25 (Reuters) - Authorities in China have ordered a senior Nomura Holdings (8604.T) banker overseeing the firm's investment banking operations there not to leave the mainland, two sour… [+3447 chars]",
+        "GM's EV truck customers must wait for Tesla-compatible charge ports",
+      url: "https://www.investing.com/news/stock-market-news/gms-ev-truck-customers-must-wait-for-teslacompatible-charge-ports-3113329",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ5P0FU_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T13:06:12+00:00",
     },
     {
-      source: {
-        id: "business-insider",
-        name: "Business Insider",
-      },
-      author: "Matthew Loh",
+      author: "Reuters",
+      title: "Factbox-Governments race to regulate AI tools",
+      description: "Factbox-Governments race to regulate AI tools",
+      url: "https://www.investing.com/news/economy/factboxgovernments-race-to-regulate-ai-tools-3113327",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ501DY_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T13:05:44+00:00",
+    },
+    {
+      author: "Business Wire",
       title:
-        "China may have enough empty homes for close to 10 times US' population - Business Insider",
+        "3D BioFibR Enters the Bioprinting and 3D Cell Culture Market with the Launch of Two CollaFibR™ Tissue Engineering Products",
       description:
-        "China's empty homes, based on experts' high estimates of vacant houses, could house nearly 10 times the population of the US.",
-      url: "https://www.businessinsider.com/china-vacant-homes-3-billion-people-housing-crisis-ex-official-2023-9",
-      urlToImage:
-        "https://i.insider.com/65112683e4e6ee001901c6f6?width=1200&format=jpeg",
-      publishedAt: "2023-09-25T09:05:00Z",
-      content:
-        "There could be enough vacant homes in China to house up to 3 billion people, a former top China official said.\r\nTo put that number in perspective, that's nearly 10 times the population of the US.\r\nAn… [+3280 chars]",
+        "HALIFAX, Nova Scotia &#8212; 3DBioFibR, a leading innovator in tissue engineering, announced today it is launching two new collagen fiber products, μCollaFibR™ (pronounced micro-CollaFibR™) and CollaFibR™ 3D scaffold. Made using 3D BioFibR’s proprietary and new dry-spinning technology to create collagen fibers at commercial scales, these off-the-shelf products offer significant advantages for tissue engineering and tissue [&#8230;]",
+      url: "https://financialpost.com/pmn/business-wire-news-releases-pmn/3d-biofibr-enters-the-bioprinting-and-3d-cell-culture-market-with-the-launch-of-two-collafibr-tissue-engineering-products",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T13:11:13+00:00",
     },
     {
-      source: {
-        id: "business-insider",
-        name: "Business Insider",
-      },
-      author: "Taylor Rains",
+      author: "Business Wire",
       title:
-        "World's largest plane before and after Russia destroyed it: Photos - Business Insider",
+        "Xtellar Introduces Industry-First Flexible Bio-Based EVA Pellets for Large-Format 3D Printing",
       description:
-        "The one-of-a-kind Antonov An-225 could hold 550,000 pounds of freight. Here's how Ukraine is salvaging the plane, which was wide as a football field.",
-      url: "https://www.businessinsider.com/worlds-largest-plane-before-after-russia-destroyed-it-ukraine-photos-2023-9",
-      urlToImage:
-        "https://i.insider.com/650de3d323ce9d0019089ad1?width=1200&format=jpeg",
-      publishedAt: "2023-09-25T08:48:00Z",
-      content:
-        'After Russia\'s February 2022 invasion of Ukraine, the world\'s largest airplane and the only one of its kind was destroyed.\r\nTaking its first flight in December 1988, the An-225 "Myira," meaning "drea… [+1569 chars]',
+        "Bio-based flexible EVA (Ethylene Vinyl Acetate) pellets offer sustainable, lightweight, flexible capabilities for large-format additive manufacturing. PHILADELPHIA &#8212; Xtellar, a market leader in 3D printing materials innovation formed by combining Braskem’s 3D materials division and Taulman3D, has introduced an industry-first for large-format 3D printing. Launched at RAPID + TCT 2023 to a strong reception, Xtellar’s [&#8230;]",
+      url: "https://financialpost.com/pmn/business-wire-news-releases-pmn/xtellar-introduces-industry-first-flexible-bio-based-eva-pellets-for-large-format-3d-printing",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T13:07:36+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "CNBC",
-      },
-      author: "Silvia Amaro",
-      title:
-        "China-EU relationship is at a crossroads, top official says in Beijing - CNBC",
-      description:
-        "China's relationship with the European Union needs to change, as the bloc's trade chief asks for more openness and fairness from Beijing.",
-      url: "https://www.cnbc.com/2023/09/25/china-eu-relationship-is-at-a-crossroads-trade-chief-dombrovskis-said.html",
-      urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107305730-1695629681658-gettyimages-1093142910-60144978.jpeg?v=1695629757&w=1920&h=1080",
-      publishedAt: "2023-09-25T07:46:41Z",
-      content:
-        "It is a make-or-break moment for China's relationship with the European Union, as the bloc's trade chief asks for more openness and fairness from Beijing.\r\n\"We stand at a crossroads. We can choose a … [+3803 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Theblock.co",
-      },
-      author: "Timmy Shen",
-      title:
-        "Hong Kong to disclose crypto license applicants in wake of JPEX probes - The Block - Crypto News",
-      description:
-        "Hong Kong’s Securities and Futures Commission said today that it will also issue a dedicated list of suspicious trading platforms.",
-      url: "https://www.theblock.co/post/252704/hong-kong-to-disclose-crypto-license-applicants-in-wake-of-jpex-probes",
-      urlToImage:
-        "https://www.tbstat.com/wp/uploads/2019/11/shutterstock_254987725-1-1010x675.jpg",
-      publishedAt: "2023-09-25T05:26:02Z",
-      content:
-        "Hong Kong will reveal a list of firms that have applied for its newly launched retail crypto trading licenses in the wake of the controversy surrounding JPEX, authorities said today.\r\nThe Securities … [+2328 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Watcher.guru",
-      },
-      author: "Watcher Guru",
-      title:
-        "Hong Kong's Mixin Network Hack Leads to $200 Million Loss - Watcher Guru",
-      description: null,
-      url: "https://watcher.guru/news/hong-kongs-mixin-network-hack-leads-to-200-million-loss",
-      urlToImage: null,
-      publishedAt: "2023-09-25T05:21:11Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "CNBC",
-      },
-      author: "Jenni Reid",
-      title:
-        "Central banks across Europe pause for breath after mammoth rate hike run, but face 'triple dilemma' - CNBC",
-      description:
-        "Several European central banks look set for a pause, but resurgent inflationary pressures and slowing growth may complicate the job ahead.",
-      url: "https://www.cnbc.com/2023/09/25/europes-central-banks-pause-for-breath-after-mammoth-rate-hike-run-.html",
-      urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107281303-1691072755542-gettyimages-1574441639-AFP_33QH4YW.jpeg?v=1695618939&w=1920&h=1080",
-      publishedAt: "2023-09-25T05:15:39Z",
-      content:
-        "Governor of the Bank of England Andrew Bailey attends the Monetary Policy Report press conference at the Bank of England, in London, on August 3, 2023. The Bank of England on Thursday hiked its key i… [+7236 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "[Removed]",
-      },
-      author: null,
-      title: "[Removed]",
-      description: "[Removed]",
-      url: "https://removed.com",
-      urlToImage: null,
-      publishedAt: "1970-01-01T00:00:00Z",
-      content: "[Removed]",
-    },
-    {
-      source: {
-        id: "bloomberg",
-        name: "Bloomberg",
-      },
-      author: "David Morris",
-      title:
-        "JPMorgan M&A Head Sees Up to $150 Billion Funds Focused on India - Bloomberg",
-      description:
-        "Investors have about $2 trillion of funds available to invest, and about $100 billion to $150 billion of that is focused on India, according to Anu Aiyengar, JPMorgan Chase &amp; Co.’s global head of mergers and acquisitions.",
-      url: "https://www.bloomberg.com/news/articles/2023-09-25/jpmorgan-m-a-head-sees-up-to-150-billion-funds-focused-on-india",
-      urlToImage:
-        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/in5c1CHHFtJE/v1/1200x800.jpg",
-      publishedAt: "2023-09-25T04:56:58Z",
-      content:
-        "Sign up for the India Edition newsletter by Menaka Doshi an insider's guide to the emerging economic powerhouse, and the billionaires and businesses behind its rise, delivered weekly.\r\nInvestors have… [+209 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Foreign Affairs",
-      },
-      author: "Yasheng Huang",
-      title:
-        "China's Economic Turmoil Was Inevitable - Foreign Affairs Magazine",
-      description: "The illusory success of state capitalism.",
-      url: "https://www.foreignaffairs.com/china/chinas-economic-turmoil-was-inevitable",
-      urlToImage:
-        "https://cdn-live.foreignaffairs.com/sites/default/files/styles/social_share/public/images/2023/09/21/RTXIR70C.JPG?itok=3pv1OmXX",
-      publishedAt: "2023-09-25T04:00:00Z",
-      content:
-        "As Chinas economy steadily grew in recent decades, its advocates championed the country as an antithesisand an antidoteto liberal economics and politics. This argument seemed credible as China grew r… [+9651 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "ForexLive",
-      },
-      author: "Eamonn Sheridan",
-      title:
-        "Heads up - Bank of Japan Governor Ueda will be holding a news conference soon - ForexLive",
-      description:
-        "Bank of Japan Governor Kazuo Ueda is to meet business leaders in Osaka, western Japan today. He'll be holding a news conference . This is coming up at 0530 GMT, which is 0130 US Eastern time.",
-      url: "https://www.forexlive.com/centralbank/heads-up-bank-of-japan-governor-ueda-will-be-holding-a-news-conference-soon-20230925/",
-      urlToImage:
-        "https://images.forexlive.com/images/Ueda%20art_id_1b38a32a-f633-4c11-ba1b-5643fcf1bdb2_size975.jpg",
-      publishedAt: "2023-09-25T03:10:00Z",
-      content:
-        "High risk warning:\r\nForeign exchange trading carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade fo… [+1940 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Teslarati",
-      },
-      author: "https://www.facebook.com/sim.alva",
-      title:
-        "Tesla ramps hiring efforts for Optimus humanoid robot program - TESLARATI",
-      description:
-        "From a simple search on Tesla's Careers page, one could see over 50 positions open for the Optimus humanoid robot program.",
-      url: "https://www.teslarati.com/tesla-ramps-hiring-optimus-humanoid-robot-program/",
-      urlToImage:
-        "https://www.teslarati.com/wp-content/uploads/2023/09/optimus-tesla.jpeg",
-      publishedAt: "2023-09-25T02:53:25Z",
-      content:
-        "Tesla shared a rather impressive update on its Optimus program over the weekend. In a short video posted on social media, Tesla demonstrated some of Optimus’ current capabilities, such as its self-ca… [+3157 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Yahoo Entertainment",
-      },
       author: null,
       title:
-        "Ford says 'significant gaps' remain in UAW labor contract talks - Yahoo Finance",
-      description: null,
-      url: "https://finance.yahoo.com/news/ford-says-significant-gaps-remain-023944879.html",
-      urlToImage: null,
-      publishedAt: "2023-09-25T02:39:00Z",
-      content: null,
+        "IBM to buy software co Apptio for $4.6 bn to bolster cloud offerings",
+      description:
+        "IBM said it will finance the transaction with cash on hand and expects the deal to close in the latter half of 2023.",
+      url: "https://www.businesstoday.in/latest/corporate/story/ibm-to-buy-software-co-apptio-for-46-bn-to-bolster-cloud-offerings-387128-2023-06-26?utm_source=rssfeed",
+      source: "Business Today | Latest Stock Market And Economy News India",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "in",
+      published_at: "2023-06-26T13:27:33+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Post Magazine",
-      },
+      author: "Shira Sapir",
+      title: "Wissotzky Tea declared monopoly by Competition Authority",
+      description:
+        "The Israel Competition Authority found that Wissotzky's share in sales of green tea and herbal tea to retailers is higher than 70%.",
+      url: "https://en.globes.co.il/en/article-1001450440#utm_source=RSS",
+      source: "Globes English | Israel Business Arena",
+      image:
+        "https://res.cloudinary.com/globes/image/upload/t_800X392/v1613215144/old/1344130.jpg",
+      category: "business",
+      language: "en",
+      country: "il",
+      published_at: "2023-06-26T14:10:27+00:00",
+    },
+    {
       author: null,
       title:
-        "Hong Kong stocks slide after China Evergrande scraps creditor meetings - South China Morning Post",
+        "Zymeworks joins Russell 3000, Russell 2000, and Russell microcap indexes",
       description:
-        "Hong Kong stocks fell after China Evergrande Group, the world’s most indebted developer, said it would cancel creditor meetings, dealing a setback to its debt restructuring plans and triggering concerns about the crucial property sector.",
-      url: "https://www.scmp.com/business/china-business/article/3235669/hong-kong-stocks-tumble-after-china-evergrande-scraps-creditor-meetings-triggering-concerns-about",
-      urlToImage:
-        "https://cdn.i-scmp.com/sites/default/files/styles/og_image_scmp_generic/public/d8/images/canvas/2023/09/25/ff6c352f-363a-4dae-9ddc-c69e10361d94_104d3d5a.jpg?itok=QbYRe7GT&v=1695609363",
-      publishedAt: "2023-09-25T02:36:05Z",
-      content:
-        "Hong Kong stocks fell, opening the week on a sombre note, over concerns Chinas property woes will intensify after China Evergrande Group, the worlds most indebted developer, cancelled creditor meetin… [+3010 chars]",
+        "Zymeworks joins Russell 3000, Russell 2000, and Russell microcap indexes",
+      url: "https://seekingalpha.com/news/3982775-zymeworks-joins-russell-3000-russell-2000-and-russell-microcap-indexes?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T14:26:50+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "STLtoday.com",
-      },
-      author: "Steph Kukuljan",
+      author: null,
+      title: "Maiden Holdings rejoins Russell 3000 index",
+      description: "Maiden Holdings rejoins Russell 3000 index",
+      url: "https://seekingalpha.com/news/3982785-maiden-holdings-rejoins-russell-3000-index?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T14:35:23+00:00",
+    },
+    {
+      author: "Reuters",
       title:
-        "AOC, Cori Bush throw support behind UAW workers at rally in Wentzville - St. Louis Post-Dispatch",
+        "Analysis-Mutiny lays bare prospect for Putin of 'forever war' in Ukraine",
       description:
-        "U.S. Reps. Cori Bush and Alexandria Ocasio-Cortez visited the local UAW hall in Wentzville on Sunday to deliver a message to automakers: No deals, no wheels.",
-      url: "https://www.stltoday.com/news/local/metro/aoc-cori-bush-throw-support-behind-uaw-workers-at-rally-in-wentzville/article_ed1296a8-5b2a-11ee-9484-f34f5ead4072.html",
-      urlToImage:
-        "https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/e/d1/ed1296a8-5b2a-11ee-9484-f34f5ead4072/6510df29c1ee7.preview.jpg?crop=1189%2C624%2C214%2C378&resize=1189%2C624&order=crop%2Cresize",
-      publishedAt: "2023-09-25T02:15:00Z",
-      content:
-        "WENTZVILLE The auto workers strike here continued to draw political interest, this time attracting two prominent Democratic congresswomen to a rally for workers on Sunday.\r\nDemocratic U.S. Reps. Cori… [+4037 chars]",
+        "Analysis-Mutiny lays bare prospect for Putin of 'forever war' in Ukraine",
+      url: "https://www.investing.com/news/world-news/analysismutiny-lays-bare-prospect-for-putin-of-forever-war-in-ukraine-3112855",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ5P08A_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T14:52:08+00:00",
     },
     {
-      source: {
-        id: "bloomberg",
-        name: "Bloomberg",
-      },
-      author: "Anup Roy",
+      author: "zee business",
+      title: "Boult sixth anniversary offers discounts founder Varun Gupta",
+      description:
+        "According to the IDC report, Boult has secured 366.5 per cent year-on-year growth, holding a significant 9.3 per cent market share in the first quarter of 2023.",
+      url: "https://www.zeebiz.com/technology/news-boult-sixth-anniversary-offers-discounts-founder-varun-gupta-241840",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T14:52:24+00:00",
+    },
+    {
+      author: "Mariam Ahmed",
       title:
-        "Indians Have Five Days to Deposit $3 Billion in Soon-to-Be-Withdrawn Banknotes - Bloomberg",
+        "Charleston TV station hires Roberts as morning news anchor/reporter",
       description:
-        "India’s highest value banknote will be withdrawn in less than a week — and there’s still almost 240 billion rupees ($2.9 billion) worth of the notes in circulation.",
-      url: "https://www.bloomberg.com/news/articles/2023-09-25/indians-have-days-to-find-and-deposit-3-billion-in-withdrawn-rs-2-000-notes",
-      urlToImage:
-        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ie2NtWfG1.XA/v0/1200x800.jpg",
-      publishedAt: "2023-09-25T01:57:20Z",
-      content:
-        "Sign up for the India Edition newsletter by Menaka Doshi an insider's guide to the emerging economic powerhouse, and the billionaires and businesses behind its rise, delivered weekly.\r\nIndias highest… [+145 chars]",
+        "Shelbey Roberts has joined CBS station WCSC-TV Ch. 5 in Charleston, S.C. as a morning news anchor/reporter. Recently, she was at WMBD-TV Ch. 31, a CBS affiliate in Peoria, Ill. There, Roberts held the posts of morning news anchor, reporter, noon producer, evening news anchor and reporter. She also worked as a weekend multimedia journalist [&#8230;]",
+      url: "https://talkingbiznews.com/media-moves/charleston-tv-station-hires-roberts-as-morning-news-anchor-reporter/",
+      source: "Talking Biz News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:13:02+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "San Francisco Chronicle",
-      },
-      author: "J.K. Dineen",
+      author: null,
+      title: "J&J submits application to EMA for combination PAH drug",
+      description: "J&J submits application to EMA for combination PAH drug",
+      url: "https://seekingalpha.com/news/3982795-johnson-johnson-janssen-submits-application-ema-combination-pah-drug?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:10:25+00:00",
+    },
+    {
+      author: "aplatas@thebtngroup.com (Angelique Platas)",
+      title: "Hilton to Hire 1,500 Refugees in EU",
+      description:
+        "Hilton Worldwide plans to hire 1,500 refugees throughout Europe during the next three years, the company announced last week during the Tent Foundation European Business Summit.&#160; &#160;",
+      url: "https://www.businesstravelnews.com/Lodging/Hilton-to-Hire-1500-Refugees-in-EU?utm_source=website&utm_medium=RSS&utm_campaign=btnrss2018",
+      source: "Business Travel News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:15:07+00:00",
+    },
+    {
+      author: "Mariam Ahmed",
+      title: "The Telegraph taps Diver to serve as U.S. editor",
+      description:
+        "The Telegraph has promoted Tony Diver to the post of U.S. editor. Recently, he served as a Whitehall correspondent and acting Sunday political editor. Diver has been with The Telegraph for more than four years, in roles including news reporter and political correspondent. He also freelanced for The Telegraph, The Times, BuzzFeed, The Spectator, Radio [&#8230;]",
+      url: "https://talkingbiznews.com/media-moves/the-telegraph-taps-diver-to-serve-as-u-s-editor/",
+      source: "Talking Biz News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:59:24+00:00",
+    },
+    {
+      author: "Mariam Ahmed",
+      title: "NY Times appoints Kendall-Ball photo department staff editor",
+      description:
+        "The following excerpt was sent out from The New York Times&#8217; Meaghan Looram and Clinton Cargill: We are delighted to welcome Greg Kendall-Ball to the Photo department as a staff editor. He will join the digital team, focused on Live and Express coverage and home screen curation, reporting to Clinton. Greg began his journalism career [&#8230;]",
+      url: "https://talkingbiznews.com/media-moves/ny-times-appoints-kendall-ball-photo-department-staff-editor/",
+      source: "Talking Biz News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:58:40+00:00",
+    },
+    {
+      author: "Investing.com",
       title:
-        "This is the latest store to close in S.F. Embarcadero Center - San Francisco Chronicle",
+        "Macquarie maintains Evolution Mining at 'underperform' with a price target of AUD3.10",
       description:
-        "This is the latest high-profile store to close in S.F. Embarcadero Center downtown",
-      url: "https://www.sfchronicle.com/bayarea/article/sf-embarcadero-center-banana-republic-close-gap-18386263.php",
-      urlToImage:
-        "https://s.hdnux.com/photos/01/34/15/11/24171111/3/rawImage.jpg",
-      publishedAt: "2023-09-25T01:09:10Z",
-      content:
-        "The Banana Republic store at the Embarcadero Center in downtown San Francisco has closed, the latest example of Gap Inc. scaling back its retail footprint in its hometown.The stores last day was Satu… [+1675 chars]",
+        "Macquarie maintains Evolution Mining at 'underperform' with a price target of AUD3.10",
+      url: "https://www.investing.com/news/pro/evolution-mining-receives-investment-bank-analyst-rating-update-3113501",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/news/World_News_10_M_1440052130.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:58:48+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "ksltv.com",
-      },
-      author: "https://www.facebook.com/kslcom/",
+      author: "Sahyaja S",
       title:
-        "Frustrated student-loan borrowers brace for payments to resume, but they have repayment options - KSL.com",
+        "Zee's Subhash Chandra Only Holds A Titular Chairmanship, Says His Counsel At SAT",
       description:
-        "People with student debt have spent the last several years in a political tug-of-war, so it's hard to figure out what is and isn't happening. KSL Investigates hopes to answer those questions.",
-      url: "https://ksltv.com/?p=588341",
-      urlToImage:
-        "https://img.ksl.com/slc/2948/294842/29484299.jpg?filter=kslv2/responsive_story_lg",
-      publishedAt: "2023-09-25T01:06:18Z",
-      content:
-        "Estimated read time: 2-3\r\n minutes\r\nSALT LAKE CITY People with student debt have spent the last several years in a political tug-of-war.\r\nFirst, they were told not to worry about it during the COVID-… [+2270 chars]",
+        "Zee's Subhash Chandra Only Holds A Titular Chairmanship, Says His Counsel At SAT",
+      url: "https://www.bqprime.com/law-and-policy/zees-subhash-chandra-only-holds-a-titular-chairmanship-says-his-counsel-at-sat",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:58:59+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "MarketWatch",
-      },
-      author: "Vivien Lou Chen",
+      author: "BusinessWorld",
+      title: "Errant companies swamp SEC with amnesty filings",
+      description:
+        "THE SECURITIES and Exchange Commission (SEC) has noted a large number of companies filing for amnesty after failing to submit regulatory requirements, its top official said on Monday. “We are very busy now with our amnesty program. We had to sort out schedules and processes kasi ang daming nag-a-apply (because there are plenty of applicants),” [&#8230;]",
+      url: "https://www.bworldonline.com/corporate/2023/06/27/530838/errant-companies-swamp-sec-with-amnesty-filings/",
+      source: "Business World",
+      image:
+        "https://www.bworldonline.com/wp-content/uploads/2022/08/SEC-logo-300x169.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T16:07:02+00:00",
+    },
+    {
+      author: "BusinessWorld",
+      title: "Are the Oscars going to take animated films more seriously?",
+      description:
+        "“ANIMATION is cinema. Animation is not a genre. And, animation is ready to be taken to the next step — we are all ready for it, please help us, keep animation in the conversation.” This was Guillermo del Toro’s testament accepting the Academy Award for Best Animated Feature Film in 2023 for Guillermo del Toro’s [&#8230;]",
+      url: "https://www.bworldonline.com/arts-and-leisure/2023/06/27/530690/are-the-oscars-going-to-take-animated-films-more-seriously/",
+      source: "Business World",
+      image:
+        "https://www.bworldonline.com/wp-content/uploads/2023/06/spiderverse-300x169.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T16:06:09+00:00",
+    },
+    {
+      author: "BusinessWorld",
+      title: "Grab commits to livelihood plan despite restructuring",
+      description:
+        "MYTAXI.PH, Inc., the company behind Grab Philippines, said the job layoff announced last week would not affect its commitment to provide 500,000 livelihood opportunities to Filipinos. “The Philippines has always been an important market for Grab. We remain steadfast in our promise to create 500,000 livelihood opportunities in the Philippines and will continue to make [&#8230;]",
+      url: "https://www.bworldonline.com/corporate/2023/06/27/530837/grab-commits-to-livelihood-plan-despite-restructuring/",
+      source: "Business World",
+      image:
+        "https://www.bworldonline.com/wp-content/uploads/2021/09/Grab-logo-300x169.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T16:06:02+00:00",
+    },
+    {
+      author: null,
+      title: "Defence stocks fall after aborted uprising in Russia",
+      description:
+        "Some investors take profits on high-flying sector, betting that challenge to Putin’s regime could shorten Ukraine war",
+      url: "https://www.ft.com/content/ede7f80e-6e84-40fe-8ae7-131b6cc6884f",
+      source: "Financial Times",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T16:22:06+00:00",
+    },
+    {
+      author: "D-e_v@IS",
+      title: "The Most Influential Woman in Mortgage Industry – 2023, June2023",
+      description:
+        "The post The Most Influential Woman in Mortgage Industry &#8211; 2023, June2023 appeared first on Insights Success.",
+      url: "https://insightssuccess.com/the-most-influential-woman-in-mortgage-industry-2023/",
+      source: "Insights Success",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T16:41:55+00:00",
+    },
+    {
+      author: null,
+      title: "NKLA and EOSE among industrial movers",
+      description: "NKLA and EOSE among industrial movers",
+      url: "https://seekingalpha.com/news/3982840-nkla-and-eose-among-industrial-movers?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T16:57:01+00:00",
+    },
+    {
+      author: "Business Wire",
       title:
-        "Stock investors face a wall of worry into year's end, creating the need for protection - MarketWatch",
+        "Health Care Administrative Professionals Vote in Favour of Strike",
       description:
-        "‘With inflation, interest rates and earnings growth fears in the U.S., it’s important for investors to have exposure to non-U.S. equities,’ says Michael Landsberg",
-      url: "https://www.marketwatch.com/story/stock-investors-face-a-wall-of-worry-into-the-year-end-creating-the-need-for-protection-82081d88",
-      urlToImage: "https://images.mktw.net/im-856377/social",
-      publishedAt: "2023-09-25T00:37:00Z",
-      content:
-        "Investors face a growing list of risks heading into the fourth quarter that just keeps getting bigger from rising interest rates to a possible revival of inflation and gridlock in Washington that may… [+6282 chars]",
+        "HALIFAX, Nova Scotia &#8212; Administrative Professionals, represented by CUPE, NSGEU, and Unifor under the Council of Health Administrative Unions, voted strongly in favour of strike action following their rejection of a tentative agreement in April, with 81.5% of those who voted authorizing a strike. The three unions represent approximately 5000 members from all hospital sites [&#8230;]",
+      url: "https://financialpost.com/pmn/business-wire-news-releases-pmn/health-care-administrative-professionals-vote-in-favour-of-strike",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T17:30:20+00:00",
     },
     {
-      source: {
-        id: "the-wall-street-journal",
-        name: "The Wall Street Journal",
-      },
-      author: "Lauren Weber",
+      author: "PTI",
       title:
-        "Perdue and Tyson Under Federal Investigation Over Child Labor - The Wall Street Journal",
+        "Instant Line Of Credit, Industry Networking Top Priorities Of MSMEs: Survey",
       description:
-        "Probe follows a report that poultry suppliers used contractors that employed migrant children as young as 13",
-      url: "https://www.wsj.com/business/perdue-and-tyson-under-federal-investigation-over-child-labor-2b1df09b",
-      urlToImage: "https://images.wsj.net/im-857198/social",
-      publishedAt: "2023-09-24T23:31:00Z",
-      content: null,
+        "Instant Line Of Credit, Industry Networking Top Priorities Of MSMEs: Survey",
+      url: "https://www.bqprime.com/business/instant-line-of-credit-industry-networking-top-priorities-of-msmes-survey",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T17:52:55+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Yahoo Entertainment",
-      },
+      author: null,
+      title: "Nordson to acquire ARAG Group for €960M",
+      description: "Nordson to acquire ARAG Group for €960M",
+      url: "https://seekingalpha.com/news/3982859-nordson-to-acquire-arag-group-for-960m?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T17:51:48+00:00",
+    },
+    {
+      author: null,
+      title: "Orange county Bancorp joins Russell 2000 Index",
+      description: "Orange county Bancorp joins Russell 2000 Index",
+      url: "https://seekingalpha.com/news/3982863-orange-county-bancorp-joins-russell-2000-index?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T18:06:24+00:00",
+    },
+    {
       author: null,
       title:
-        "Fight erupts during UAW strike outside Stellantis plant, racial slurs and insults thrown - Yahoo News",
-      description: null,
-      url: "https://news.yahoo.com/fight-erupts-during-uaw-strike-212059114.html",
-      urlToImage: null,
-      publishedAt: "2023-09-24T23:21:19Z",
-      content: null,
+        "WisdomTree Emerging Markets Quality Dividend Growth Fund declares quarterly distribution of $0.1500",
+      description:
+        "WisdomTree Emerging Markets Quality Dividend Growth Fund declares quarterly distribution of $0.1500",
+      url: "https://seekingalpha.com/news/3982917-wisdomtree-emerging-markets-quality-dividend-growth-fund-declares-quarterly-distribution-of-01500?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T18:52:02+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "KXAN.com",
-      },
-      author: "Kelsey Thompson",
+      author: null,
+      title: "Teleflex recalls some catheters due to leakage concerns",
+      description: "Teleflex recalls some catheters due to leakage concerns",
+      url: "https://seekingalpha.com/news/3982913-teleflex-recalls-some-catheters-due-leakage-concerns?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T18:51:01+00:00",
+    },
+    {
+      author: "GlobeNewswire",
+      title: "Major Drilling Announces Publication of Sustainability Report",
+      description:
+        "MONCTON, New Brunswick, June 26, 2023 (GLOBE NEWSWIRE) &#8212; Major Drilling Group International Inc. (“Major Drilling” or the “Company”) (TSX: MDI), a leading provider of specialized drilling services to the mining sector, today published its Sustainability Report covering the reporting period of calendar 2022.  “We’re proud to announce the publication of our second annual Sustainability [&#8230;]",
+      url: "https://financialpost.com/globe-newswire/major-drilling-announces-publication-of-sustainability-report",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T20:30:22+00:00",
+    },
+    {
+      author: "Daniel Tencer",
       title:
-        "Austin leaders reflect on ‘defining moment’ in mass transit development - KXAN.com",
+        "82% of 18-44 year-olds have posted a video online in the past year, YouTube poll finds",
       description:
-        "As Austin’s Project Connect light rail program gears up for its federal funding and environmental processes, area transit leaders gathered Sunday to reflect on the past year of transportation developments.",
-      url: "https://www.kxan.com/news/local/austin/austin-leaders-reflect-on-defining-moment-in-mass-transit-development/",
-      urlToImage:
-        "https://www.kxan.com/wp-content/uploads/sites/40/2023/09/IMG_8686.jpg?w=1280",
-      publishedAt: "2023-09-24T20:37:45Z",
-      content:
-        "AUSTIN (KXAN) As Austin’s Project Connect light rail program gears up for its federal funding and environmental processes, area transit leaders gathered Sunday to reflect on the past year of transpor… [+3368 chars]",
+        "In the world of digital media, virtually everyone is a creator – a fact that has significant implications for the music industry. According to the 2023 edition of the YouTube Culture and Trends Report, which the Alphabet-owned video streaming service released to coincide with the opening of the VidCon 2023 conference in Anaheim, Calif., last &#8230; ContinuedSource",
+      url: "https://www.musicbusinessworldwide.com/82-of-18-44-year-olds-have-posted-a-video-online-in-the-past-year-youtube-poll-finds/",
+      source: "Music Business Worldwide",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T21:05:47+00:00",
     },
     {
-      source: {
-        id: "financial-times",
-        name: "Financial Times",
-      },
-      author: "Chris Cook, David Sheppard",
+      author: "Reuters",
+      title: "Russia's Putin says he let mutiny continue to avoid bloodshed",
+      description:
+        "Russia's Putin says he let mutiny continue to avoid bloodshed",
+      url: "https://www.investing.com/news/world-news/russias-putin-thanks-those-wagner-fighters-who-helped-avoid-bloodshed-3113594",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ5P0QQ_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T21:06:09+00:00",
+    },
+    {
+      author: "GlobeNewswire",
       title:
-        "Russia dodges G7 price cap sanctions on most of its oil exports - Financial Times",
+        "Jourdan Closes Second Tranche of Flow-Through Private Placement Financing",
       description:
-        "Shift in seaborne trade suggests Kremlin will benefit from rising prices despite west’s $60-a-barrel cap",
-      url: "https://www.ft.com/content/cad37c16-9cbd-473c-aa2f-102c21393d2e",
-      urlToImage:
-        "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fwww.ft.com%2F__origami%2Fservice%2Fimage%2Fv2%2Fimages%2Fraw%2Fhttps%253A%252F%252Fd1e00ek4ebabms.cloudfront.net%252Fproduction%252F107206f3-05bc-4a29-9eaf-0f7eea5507d0.jpg%3Fsource%3Dnext-article%26fit%3Dscale-down%26quality%3Dhighest%26width%3D700%26dpr%3D1?source=next-opengraph&fit=scale-down&width=900",
-      publishedAt: "2023-09-24T20:00:36Z",
-      content:
-        "Russia has succeeded in avoiding G7 sanctions on most of its oil exports, a shift in trade flows that will boost the Kremlins revenues as crude rises towards $100 a barrel.\r\nAlmost three-quarters of … [+4208 chars]",
+        "NOT FOR DISTRIBUTION TO UNITED STATES NEWS WIRE SERVICES OR DISSEMINATION IN THE UNITED STATES TORONTO, June 26, 2023 (GLOBE NEWSWIRE) &#8212;  JOURDAN RESOURCES INC. (TSXV: JOR; FRA: 2JR1) (“Jourdan” or the “Company“) is pleased to announce that it has closed its second tranche of a previously announced non-brokered private placement financing of common shares [&#8230;]",
+      url: "https://financialpost.com/globe-newswire/jourdan-closes-second-tranche-of-flow-through-private-placement-financing",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T00:46:01+00:00",
     },
     {
-      source: {
-        id: "the-verge",
-        name: "The Verge",
-      },
-      author: "Wes Davis",
+      author: "GlobeNewswire",
       title:
-        "Meta could announce AI chatbots for young people on Instagram and Facebook soon - The Verge",
+        "Gatos Silver Completes 2021 and 2022 Securities Filings and Announces Date for 2023 Annual Stockholders’ Meeting",
       description:
-        "Instagram, Facebook, and WhatsApp parent company Meta will reportedly announce AI chatbots with personalities designed to drive engagement among younger users.",
-      url: "https://www.theverge.com/2023/9/24/23887773/meta-ai-chatbots-gen-ai-personas-young",
-      urlToImage:
-        "https://cdn.vox-cdn.com/thumbor/aFVf1nZ5PjZNbxd151IaoqXfmvA=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23951355/STK043_VRG_Illo_N_Barclay_1_Meta.jpg",
-      publishedAt: "2023-09-24T19:30:44Z",
-      content:
-        "Metas AI chatbot plan includes a sassy robot for younger users\r\nMetas AI chatbot plan includes a sassy robot for younger users\r\n / The Wall Street Journal reports Meta has plans to develop dozens of … [+2261 chars]",
+        "VANCOUVER, British Columbia, June 26, 2023 (GLOBE NEWSWIRE) &#8212; Gatos Silver, Inc. (NYSE/TSX: GATO) (“Gatos Silver” or the “Company”) today announced that it has completed disclosure of outstanding 2021 and 2022 securities regulatory filings and has reached an agreement in principle to settle the US class action lawsuit. The Company also today announced that it [&#8230;]",
+      url: "https://financialpost.com/globe-newswire/gatos-silver-completes-2021-and-2022-securities-filings-and-announces-date-for-2023-annual-stockholders-meeting",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T02:52:13+00:00",
     },
     {
-      source: {
-        id: "financial-times",
-        name: "Financial Times",
-      },
-      author: "Amy Kazmin",
-      title: "Italy waters down bank windfall tax - Financial Times",
-      description:
-        "ECB had warned the move by Giorgia Meloni’s government risked making lenders more vulnerable to a downturn",
-      url: "https://www.ft.com/content/b12e38dc-e512-4638-87dd-0020e09aaa58",
-      urlToImage:
-        "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fwww.ft.com%2F__origami%2Fservice%2Fimage%2Fv2%2Fimages%2Fraw%2Fhttps%253A%252F%252Fd1e00ek4ebabms.cloudfront.net%252Fproduction%252Ff9d1b35b-242d-4c77-80fb-447347b90805.jpg%3Fsource%3Dnext-article%26fit%3Dscale-down%26quality%3Dhighest%26width%3D700%26dpr%3D1?source=next-opengraph&fit=scale-down&width=900",
-      publishedAt: "2023-09-24T19:02:48Z",
-      content:
-        "Italy is further diluting its windfall tax on banks with a new clause giving lenders an alternative to paying the levy, a concession to critics of the measure that include the European Central Bank.\r… [+2784 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Fox Business",
-      },
-      author: "Eric Revell",
+      author: "BQ Contributor",
       title:
-        "New IRS rule on reselling concert, sporting event tickets could impact large number of Americans - Fox Business",
+        "PM Modi To Flag Off These 5 New Vande Bharat Express Trains On June 27",
       description:
-        "A new Internal Revenue Service rule targeting ticket resellers for concerts and sporting events could impact a large number of Americans after lowering tax reporting thresholds.",
-      url: "https://www.foxbusiness.com/economy/new-irs-rule-reselling-concert-sporting-event-tickets-impact-large-number-americans",
-      urlToImage:
-        "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2023/09/0/0/IRS-Ticketmaster-Split.jpg?ve=1&tl=1",
-      publishedAt: "2023-09-24T18:22:35Z",
-      content:
-        "People who have made money from reselling tickets to concerts or sporting events this year will face new scrutiny from the Internal Revenue Service (IRS)\r\n when it comes time to file their 2023 taxes… [+4161 chars]",
+        "PM Modi To Flag Off These 5 New Vande Bharat Express Trains On June 27",
+      url: "https://www.bqprime.com/web-stories/pm-modi-to-flag-off-these-5-new-vande-bharat-express-trains-on-june-27-bqc",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T02:51:38+00:00",
     },
     {
-      source: {
-        id: "bloomberg",
-        name: "Bloomberg",
-      },
-      author: "Charles Daly, Anton Wilen",
-      title:
-        "Landlord SBB Gets $720 Million Cash Injection in Brookfield Deal - Bloomberg",
-      description:
-        "Struggling Swedish landlord SBB took a major step toward stabilizing its finances with a cash injection and a plan to divide up its operations, sending a signal that money is available despite the country’s real estate crisis.",
-      url: "https://www.bloomberg.com/news/articles/2023-09-24/landlord-sbb-gets-720-million-cash-injection-in-brookfield-deal",
-      urlToImage:
-        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iN7DtIYdxyNQ/v1/1200x800.jpg",
-      publishedAt: "2023-09-24T17:03:45Z",
-      content:
-        "Want the lowdown on European markets? In your inbox before the open, every day. Sign up here.\r\nStruggling Swedish landlord SBB took a major step toward stabilizing its finances with a cash injection … [+120 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Yahoo Entertainment",
-      },
-      author: "Josh Schafer",
-      title:
-        "Labor strikes, inflation and Nike earnings: What to know this week - Yahoo Finance",
-      description:
-        "A stacked calendar with inflation data and updates on several macro economic headwinds awaits investors in the week ahead.",
-      url: "https://finance.yahoo.com/news/labor-strikes-inflation-and-nike-earnings-what-to-know-this-week-143054933.html",
-      urlToImage:
-        "https://s.yimg.com/ny/api/res/1.2/_qEPKlky7cq653nhVbzjww--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-09/004c8a90-5986-11ee-bbb7-3809d31f3d73",
-      publishedAt: "2023-09-24T14:30:54Z",
-      content:
-        "After a hawkish outlook from the Federal Reserve sent stocks tumbling last week, the news onslaught is expected to continue in the week ahead.\r\nUpdates on labor strikes, a fresh read on the Fed's pre… [+9440 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "EL PAÍS",
-      },
-      author: "Miguel Jiménez",
-      title: "US car giants gripped by history-making strike - EL PAÍS USA",
-      description:
-        "Autoworkers are fighting to stay in the middle class in a conflict that will have a far-reaching impact on labor, industry and politics",
-      url: "https://english.elpais.com/economy-and-business/2023-09-24/us-car-giants-gripped-by-history-making-strike.html",
-      urlToImage:
-        "https://images.english.elpais.com/resizer/-M765S_RfG57H-S8K_WLZNrb2ag=/1200x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/ZOYZJYLBWVESDLDCPERLMHNESI.jpg",
-      publishedAt: "2023-09-24T13:17:10Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "CNBC",
-      },
-      author: "Ashton Jackson",
-      title:
-        "Verizon's CEO swears by a simple 1-question morning routine: It gets you into the 'right mood and right energy' - CNBC",
-      description:
-        "Verizon CEO Hans Vestberg says he's asked himself the same question every morning since 2009, and it's made him a better boss. Here's how.",
-      url: "https://www.cnbc.com/2023/09/24/verizon-ceo-shares-simple-morning-routine-for-right-mood-energy.html",
-      urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107304106-1695242709831-gettyimages-1485581443-dk020037_5ugcmuxy.jpeg?v=1695560401&w=1920&h=1080",
-      publishedAt: "2023-09-24T13:00:02Z",
-      content:
-        "For Verizon CEO Hans Vestberg, self-reflection is serious business.\r\nThe 58-year-old kicks off every day with a self-assessment, and he's a better boss because of it, he said on Tuesday at the Fast C… [+2866 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Eatingwell.com",
-      },
-      author: "https://www.facebook.com/EatingWell/",
-      title:
-        "10+ Dietitian-Favorite Anti-Inflammatory Fall Recipes - EatingWell",
-      description:
-        "Try these delicious and nourishing recipes that are packed with fall flavors and can help you reduce chronic inflammation in your body.",
-      url: "https://www.eatingwell.com/gallery/8074843/dietitian-favorite-anti-inflammatory-fall-recipes/",
-      urlToImage:
-        "https://www.eatingwell.com/thmb/UAft_OL3fCfQ5QcK7TcaYAhlwtA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/garlic-herb-roast-pork-tenderloin-with-parsnip-puree-and-kale-f0ae9d2165a04261ace03892d1e35b85.jpg",
-      publishedAt: "2023-09-24T12:57:00Z",
-      content:
-        "The weather has cooled off, leaves are starting to change and football is back: fall is here! Even though the summer always feels too short, I really enjoy it when autumn starts to take over. Beyond … [+4559 chars]",
-    },
-    {
-      source: {
-        id: "bloomberg",
-        name: "Bloomberg",
-      },
-      author: "Saritha Rai",
-      title:
-        "Apple to Scale Up India Production Fivefold to $40 Billion - Bloomberg",
-      description:
-        "Apple Inc. plans to increase production in India more than fivefold within the next five years, PTI reported, citing government officials it didn’t identify.",
-      url: "https://www.bloomberg.com/news/articles/2023-09-24/apple-to-scale-up-india-production-fivefold-to-40-billion-pti",
-      urlToImage:
-        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i2c4iQTjzZ74/v1/1200x800.jpg",
-      publishedAt: "2023-09-24T12:53:32Z",
-      content:
-        "Apple Inc. plans to increase production in India more than fivefold within the next five years, PTI reported, citing government officials it didnt identify.\r\nThe company surpassed $7 billion producti… [+167 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "InStyle",
-      },
-      author: "https://www.facebook.com/InStyle",
-      title:
-        "Stock Up on Fall-Perfect Button-Downs for Less Than $40 at Amazon - InStyle",
-      description:
-        "Amazon’s fall fashion section includes button-down shirts that are perfect for in-between weather. Stock up on classic white button-downs, flannels, corduroy shirts, and chambray styles for less than $40.",
-      url: "https://www.instyle.com/amazon-fall-button-down-shirts-under-40-7972649",
-      urlToImage:
-        "https://www.instyle.com/thmb/dMaVmYd2LxdJfJhnlrwMk03DPL4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/092023-fall-button-downs-social-c6427515b06f412ca843a991a1d9cb86.jpg",
-      publishedAt: "2023-09-24T12:00:00Z",
-      content:
-        "On those confusing fall weather days when a sweater is too heavy but a T-shirt is too light, a button-down shirt may just be your best bet. Its the perfect in-between top that looks put together whil… [+3123 chars]",
-    },
-    {
-      source: {
-        id: "reuters",
-        name: "Reuters",
-      },
-      author: "Heekyong Yang",
-      title:
-        "LG Chem with China's Huayou to make battery materials in Indonesia, Morocco - Reuters",
-      description:
-        'South Korea\'s LG Chem Ltd <a href="https://www.reuters.com/markets/companies/051910.KS" target="_blank">(051910.KS)</a> has entered a partnership with China\'s Huayou Group\'s subsidiary Youshan, it said on Sunday, to build a joint electric vehicle (EV) battery…',
-      url: "https://www.reuters.com/technology/lg-chem-partners-with-huayou-group-build-joint-lfp-cathode-plant-morocco-2023-09-24/",
-      urlToImage:
-        "https://www.reuters.com/resizer/QsluYq--3s5IxPXfseCfkDbsTGA=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/TCFHBPKVCBONBHS77W5QSUYIB4.jpg",
-      publishedAt: "2023-09-24T11:39:00Z",
-      content:
-        "SEOUL, Sept 24 (Reuters) - South Korea's LG Chem Ltd (051910.KS) has entered a partnership with China's Huayou Group's subsidiary Youshan, it said on Sunday, to build a joint electric vehicle (EV) ba… [+2678 chars]",
-    },
-    {
-      source: {
-        id: "the-wall-street-journal",
-        name: "The Wall Street Journal",
-      },
-      author: "Jon Sindreu",
-      title:
-        "Twenty-Five Years After LTCM, Emerging Markets Keep Burning Investors - The Wall Street Journal",
-      description:
-        "Though developing economies have changed for the better, the benefits aren’t always convertible into dollars",
-      url: "https://www.wsj.com/finance/currencies/twenty-five-years-after-ltcm-emerging-markets-keep-burning-investors-89444ed1",
-      urlToImage: "https://images.wsj.net/im-856795/social",
-      publishedAt: "2023-09-24T11:00:00Z",
-      content: null,
-    },
-    {
-      source: {
-        id: "the-wall-street-journal",
-        name: "The Wall Street Journal",
-      },
-      author: "Corrie Driebusch",
-      title:
-        "The IPO Market Is Open Again! At Least for the Moment. - The Wall Street Journal",
-      description:
-        "Arm, Instacart and Klaviyo popped on their first trading day, but their performance since then has muted",
-      url: "https://www.wsj.com/finance/stocks/ipo-market-arm-instacart-klaviyo-stocks-ee65206",
-      urlToImage: "https://images.wsj.net/im-856499/social",
-      publishedAt: "2023-09-24T11:00:00Z",
-      content: null,
-    },
-    {
-      source: {
-        id: "the-wall-street-journal",
-        name: "The Wall Street Journal",
-      },
       author: null,
       title:
-        "What Nike Earnings Tell Us About the State of Retail - WSJ's Take On the Week - WSJ Podcasts - The Wall Street Journal",
+        "China is still on track to hit its growth target, Premier Li Qiang says",
       description:
-        "This week, we have our eye on the sneaker giant Nike. The company behind the Lebron 21, Air Force 1 and Air Jordans is expected to report its first quarter earnings, and it comes at a pivotal time. Nike stock is down around 20% year to date, as it faces a glu…",
-      url: "https://www.wsj.com/podcasts/take-on-the-week/what-nike-earnings-tell-us-about-the-state-of-retail/b6e1cc3a-31d1-4c47-a976-a56dfc27adbe",
-      urlToImage: "https://images.wsj.net/im-844745?width=1280",
-      publishedAt: "2023-09-24T10:00:00Z",
-      content:
-        "This transcript was prepared by a transcription service. This version may not be in its final form and may be updated.\r\nDion Rabouin: What's good everybody. It's Sunday, September 24th. I'm Dion Rabo… [+17760 chars]",
+        "Chinese Premier Li Qiang said Tuesday his country was still on track to reach its annual growth target of around 5%.",
+      url: "https://www.cnbc.com/2023/06/27/china-on-track-to-hit-its-growth-target-li-qiang-says-at-wef-tianjin.html",
+      source: "Cnbc | World Business News Leader",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T02:56:00+00:00",
     },
     {
-      source: {
-        id: "business-insider",
-        name: "Business Insider",
-      },
-      author: "Chris Johnston",
+      author: "Reuters",
+      title: "Thai May exports drop 4.6% y/y, beat forecast",
+      description: "Thai May exports drop 4.6% y/y, beat forecast",
+      url: "https://www.investing.com/news/economic-indicators/thai-may-exports-drop-46-yy-beat-forecast-3113746",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ5Q03P_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T03:56:01+00:00",
+    },
+    {
+      author: "Reuters",
       title:
-        "Citadel Securities in legal battle with 2 ex-staff who started crypto firm - Business Insider",
+        "China's growth to be higher in Q2, projected to hit annual 5% target - Premier Li",
       description:
-        "Citadel Securities has accused Alex Casimo and Leonard Lancia of plotting to launch their crypto market-making firm while still working for Ken Griffin's company.",
-      url: "https://www.businessinsider.com/citadel-securities-legal-battle-former-staff-started-crypto-firm-portofino-2023-9",
-      urlToImage:
-        "https://i.insider.com/650f269be4e6ee001901b633?width=1200&format=jpeg",
-      publishedAt: "2023-09-24T09:55:00Z",
-      content:
-        "Ken Griffin has made some scathing comments about cryptocurrencies in recent years.\r\nThe billionaire founder of the hedge fund Citadel and Citadel Securities, the market-making firm based in Miami, s… [+4433 chars]",
+        "China's growth to be higher in Q2, projected to hit annual 5% target - Premier Li",
+      url: "https://www.investing.com/news/economy/chinas-growth-to-be-higher-in-q2-projected-to-hit-annual-5-target--premier-li-3113744",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ5Q03N_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T03:55:41+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Euromaidanpress.com",
-      },
-      author: "https://euromaidanpress.com/author/irynavoichuk/",
+      author: "zee business",
       title:
-        "UK intel: Russian fuel shortages will affect countries dependent on Russian supplies - Euromaidan Press",
+        "FIRST TRADE: Sensex rises more than 200 pts, Nifty tops 18,750; Infosys, HDFC Bank top gainers",
       description:
-        "British intelligence attributes fuel shortages in Russia to rising seasonal demand rather than directly to Russia's war in Ukraine.",
-      url: "https://euromaidanpress.com/2023/09/24/uk-intel-russian-fuel-shortages-will-affect-countries-dependent-on-russian-supplies/",
-      urlToImage:
-        "https://euromaidanpress.com/wp-content/uploads/2023/09/5206.jpg",
-      publishedAt: "2023-09-24T09:16:34Z",
-      content:
-        "Russian consumers have recently faced localized gasoline and diesel shortages, British Intelligence reported on 24 September. But the issues are likely not a direct result of the war in Ukraine, inte… [+1639 chars]",
+        "Stock market today: At the time of writing this news, the S&P BSE Sensex was trading 222 points, or 0.35 per cent higher at 63,191.63 levels while the NSE's Nifty was ruling at 18,757.95, up 67 points, or 0.36 per cent.",
+      url: "https://www.zeebiz.com/market-news/news-first-trade-sensex-rises-more-than-200-pts-nifty-tops-18750-infosys-hdfc-bank-top-gainers-241872",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T03:52:57+00:00",
     },
     {
-      source: {
-        id: "usa-today",
-        name: "USA Today",
-      },
-      author: "Daniel de Visé",
+      author: "Vivek Punj",
+      title: "Cyient DLM IPO Subscription Status: Day 1 Live Updates",
+      description: "Cyient DLM IPO Subscription Status: Day 1 Live Updates",
+      url: "https://www.bqprime.com/markets/cyient-dlm-ipo-subscription-status-day-1-live-updates",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T04:52:16+00:00",
+    },
+    {
+      author: "zee business",
       title:
-        "A high-interest savings account is not out of reach: What to know - USA TODAY",
+        "PM Modi to flag off five new Vande Bharat Express trains today; check out schedule, time table, routes, other important details",
       description:
-        "Too many consumers settle for savings accounts that pay almost no interest. High-yield alternatives aren't hard to find.",
-      url: "https://www.usatoday.com/story/money/personalfinance/2023/09/24/savings-account-interest-rates-best-in-years/70922540007/",
-      urlToImage:
-        "https://www.usatoday.com/gcdn/presto/2023/07/11/USAT/90dc692f-3570-4626-8096-d6a568049d18-AP_Bank_of_America_Junk_Fees.jpg?crop=2999,1687,x1,y90&width=2999&height=1687&format=pjpg&auto=webp",
-      publishedAt: "2023-09-24T09:14:55Z",
-      content:
-        "Once upon a time, banks rewarded customers who opened savings accounts with stuffed lions, canvas totes and interest. Lots of it.\r\nThose days are gone. The average savings account now yields about 0.… [+5536 chars]",
+        "PM Narendra Modi to flag off Vande Bharat Express trains during MP visit: India is all set to witness the launch of new semi-high-speed trains in the country as Prime Minister Narendra Modi will flag off five new Vande Bharat trains from Bhopal in Madhya Pradesh during his one-da",
+      url: "https://www.zeebiz.com/indian-railways/news-pm-modi-5-vande-bharat-express-trains-flag-off-today-june-27-mp-visit-timings-routes-time-table-national-sickle-cell-anaemia-elimination-mission-launch-241894",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T05:29:44+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Gothamist",
-      },
-      author: "https://gothamist.com/staff/stephen-nessen",
+      author: "zee business",
       title:
-        "Every NYC borough gets a free MTA bus route starting Sunday - Gothamist",
+        "Gold and Silver price today (June 27, 2023): Precious metals trade in green; Gold above Rs 58,000, Silver near Rs 70,000",
       description:
-        "Riders on the B60, M116, Q4, S46/96 and BX18 are in for a treat.",
-      url: "https://gothamist.com/news/every-nyc-borough-gets-a-free-mta-bus-route-starting-sunday",
-      urlToImage:
-        "https://cms.prod.nypr.digital/images/340872/fill-1200x650|format-webp|webpquality-85/",
-      publishedAt: "2023-09-24T09:01:00Z",
-      content:
-        "One MTA bus route will be free in each New York City borough starting Sunday.\r\nRiders will notice digital displays on the front and sides of the buses indicating they are free.\r\nThe free buses are on… [+2226 chars]",
+        "Gold and Silver price today (June 27, 2023): MCX gold futures (Aug 4) were up Rs117 or 0.2 per cent at Rs 58,529 per 10 grams. Check out city wise prices of 24k gold.",
+      url: "https://www.zeebiz.com/markets/commodities/news-gold-silver-price-june-27-2023-check-24k-gold-price-mumbai-delhi-kolkata-chennai-and-other-cities-241896",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T05:28:48+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Barron's",
-      },
-      author: "Shaina Mishkin",
-      title: "Rising Mortgage Rates' Next Victim? New Home Sales. - Barron's",
-      description:
-        "Economists expect sales of new homes to have fallen in August. The government's monthly measure is due Tuesday.",
-      url: "https://www.barrons.com/articles/rising-mortgage-rates-new-home-sales-9686737e",
-      urlToImage: "https://images.barrons.com/im-58961514/social",
-      publishedAt: "2023-09-24T05:30:00Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Barron's",
-      },
-      author: "Teresa Rivas",
+      author: "Nick Toscano",
       title:
-        "A Government Shutdown After Labor Strikes Only Makes the Fed's Job Harder - Barron's",
+        "BHP chief warns race for green metals needs more than subsidy ‘sugar hit’",
       description:
-        "While a government shutdown has happened before, this year it would follow major labor strikes in the auto and entertainment industries.",
-      url: "https://www.barrons.com/articles/uaw-wga-labor-strikes-government-shutdown-economy-fed-169d4271",
-      urlToImage: "https://images.barrons.com/im-48377571/social",
-      publishedAt: "2023-09-24T05:00:00Z",
-      content:
-        "Saturday marked the autumnal equinox, and fall is in the air: The weather is cooling, pumpkin spice is everywhere, andas has happened every so often in recent yearsthe U.\r\nSENDAn error has occurred, … [+22 chars]",
+        "The world’s top miner says Australia doesn’t need to match the United States’ critical minerals subsidies, but has fired fresh warnings over regulatory changes.",
+      url: "https://www.smh.com.au/business/companies/bhp-chief-warns-race-for-green-metals-needs-more-than-subsidy-sugar-hit-20230627-p5djuc.html?ref=rss&utm_medium=rss&utm_source=rss_business",
+      source: "The Sydney Morning Herald",
+      image:
+        "https://static.ffx.io/images/$zoom_0.256%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_146%2C$y_0/t_crop_custom/q_86%2Cf_jpg/931f8843ba95f0ce0b15a69fc6ede98a0355674b",
+      category: "business",
+      language: "en",
+      country: "au",
+      published_at: "2023-06-27T05:51:17+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Forbes",
-      },
-      author: "Don Tse",
+      author: "BQ Contributor",
       title:
-        "Brewers Association Announces Great American Beer Festival Winners - The Best Beers In America - Forbes",
+        "ODI World Cup 2023 Schedule Announced: Full List Of Matches & Fixtures For ICC Cricket World Cup 2023",
       description:
-        "The Brewers Association, the trade association representing America’s small and independent brewers, has announced the winners of the largest beer competition in Ameri...",
-      url: "https://www.forbes.com/sites/dontse/2023/09/23/brewers-association-announces-great-american-beer-festival-winnersthe-best-beers-in-america/",
-      urlToImage:
-        "https://imageio.forbes.com/specials-images/imageserve/650e2649d307e7c2fcd3fced/0x0.jpg?format=jpg&width=1200",
-      publishedAt: "2023-09-23T22:41:36Z",
-      content:
-        "Great American Beer Festival awards are on display in a tap room. (Photo By Karl Gehring/The Denver ... [+] Post via Getty Images)\r\nDenver Post via Getty Images\r\nThe Brewers Association, the trade as… [+1914 chars]",
+        "ODI World Cup 2023 Schedule Announced: Full List Of Matches & Fixtures For ICC Cricket World Cup 2023",
+      url: "https://www.bqprime.com/sports/odi-world-cup-2023-schedule-announced-full-list-of-matches-fixtures-for-icc-cricket-world-cup-2023-bqc",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T06:37:37+00:00",
     },
     {
-      source: {
-        id: "bloomberg",
-        name: "Bloomberg",
-      },
-      author: "Michael Mackenzie, Ye Xie, Liz Capo McCormick",
+      author: "Investing.com",
       title:
-        "Bond Market Faces Quandary After Fed Signals It's Almost Done - Bloomberg",
+        "Deutsche Bank maintains Heineken at 'buy' with a price target of EUR145.00",
       description:
-        "Bond investors face the crucial decision of just how much risk to take in Treasuries with 10-year yields at the highest in more than a decade and the Federal Reserve signaling it’s almost done raising rates.",
-      url: "https://www.bloomberg.com/news/articles/2023-09-23/bond-market-faces-quandary-after-fed-signals-it-s-almost-done",
-      urlToImage:
-        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i41U7J0n_Q48/v0/1200x800.jpg",
-      publishedAt: "2023-09-23T20:00:00Z",
-      content:
-        "Bond investors face the crucial decision of just how much risk to take in Treasuries with 10-year yields at the highest in more than a decade and the Federal Reserve signaling its almost done raising… [+273 chars]",
+        "Deutsche Bank maintains Heineken at 'buy' with a price target of EUR145.00",
+      url: "https://www.investing.com/news/pro/heineken-receives-investment-bank-analyst-rating-update-3113865",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/news/World_News_8_M_1440052125.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T07:16:37+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Themessenger.com",
-      },
-      author: "William Gavin",
+      author: "Investing.com",
       title:
-        "Kaiser Permanente Workers Threaten What Would Be Largest Ever US Health Care Strike - The Messenger",
+        "Deutsche Bank maintains Eni SpA at 'buy' with a price target of EUR15.80",
       description:
-        "More than 75,000 healthcare workers could strike across five states and Washington, DC",
-      url: "https://themessenger.com/business/kaiser-permanente-workers-threaten-what-would-be-largest-ever-us-health-care-strike",
-      urlToImage:
-        "https://cms.themessenger.com/wp-content/uploads/2023/09/Kaiser_Permanente_Strike-1352497310.jpg",
-      publishedAt: "2023-09-23T18:46:00Z",
-      content:
-        "More than 75,000 healthcare workers employed by the nation's largest nonprofit healthcare provider could go on strike if a new labor contract isn't agreed to by the end of the month.\r\nA coalition of … [+2744 chars]",
+        "Deutsche Bank maintains Eni SpA at 'buy' with a price target of EUR15.80",
+      url: "https://www.investing.com/news/pro/eni-receives-investment-bank-analyst-rating-update-3113862",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/news/World_News_9_M_1440052127.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T07:16:36+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "New York Post",
-      },
-      author: "Jon Levine",
-      title:
-        "Automakers spend millions on Diversity Equity and Inclusion as workers strike for fair pay - New York Post ",
+      author: "Business Matters",
+      title: "Record numbers looking to kickstart new careers in cyber",
       description:
-        "America’s largest automakers have spent millions of dollars on Diversity, Equity and Inclusion programs, Ukraine and other extraneous initiatives even as they tell striking workers they don&#…",
-      url: "https://nypost.com/2023/09/23/automakers-spend-millions-on-diversity-equity-and-inclusion-amid-strike/",
-      urlToImage:
-        "https://nypost.com/wp-content/uploads/sites/2/2023/09/NYPICHPDPICT000043838660.jpg?quality=75&strip=all&w=1024",
-      publishedAt: "2023-09-23T18:29:00Z",
-      content:
-        "America’s largest automakers are doling out millions of dollars on diversity, equity inclusion, and other woke programs a slap in the face to striking workers who ripped the companies as hypocritical… [+3624 chars]",
+        "A record number of people are looking to embark on a new career in cyber this year through applications to the government’s Upskill in Cyber programme.Read more: Record numbers looking to kickstart new careers in cyber",
+      url: "https://bmmagazine.co.uk/news/record-numbers-looking-to-kickstart-new-careers-in-cyber/",
+      source: "Business Matters | The Uk's Leading Sme Business Magazine",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "gb",
+      published_at: "2023-06-27T07:13:02+00:00",
     },
     {
-      source: {
-        id: "the-wall-street-journal",
-        name: "The Wall Street Journal",
-      },
-      author: "Jinjoo Lee",
+      author: "Vikas Srivastava",
+      title: "India's Biogas Sector Poised For Growth",
+      description: "India's Biogas Sector Poised For Growth",
+      url: "https://www.bqprime.com/business/indias-biogas-sector-poised-for-growth",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T07:33:46+00:00",
+    },
+    {
+      author: "The Associated Press",
       title:
-        "Oil at $100 Is Too High, Even for Energy Companies - The Wall Street Journal",
+        "Corruption trial begins for former Indonesia IT minister over mobile phone tower project",
       description:
-        "As crude oil prices near triple digits, it isn’t just consumers feeling uneasy",
-      url: "https://www.wsj.com/business/energy-oil/oil-at-100-is-too-high-even-for-energy-companies-e1f8f8ca",
-      urlToImage: "https://images.wsj.net/im-856484/social",
-      publishedAt: "2023-09-23T14:00:00Z",
-      content: null,
+        "JAKARTA, Indonesia (AP) &#8212; Indonesia&#8217;s anti-graft court on Tuesday began a trial for a former communication and information technology minister who was charged with corruption over the construction of mobile phone transmission towers in remote parts of the country. Prosecutors allege that Johnny G. Plate changed the terms of the 8 trillion rupiah ($533 million) [&#8230;]",
+      url: "https://financialpost.com/pmn/business-pmn/corruption-trial-begins-for-former-indonesia-it-minister-over-mobile-phone-tower-project",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T07:36:53+00:00",
+    },
+    {
+      author: "Investing.com",
+      title:
+        "Berenberg initiates coverage of Informa at 'buy' with a price target of GBP8.20",
+      description:
+        "Berenberg initiates coverage of Informa at 'buy' with a price target of GBP8.20",
+      url: "https://www.investing.com/news/pro/informa-receives-investment-bank-analyst-rating-update-3113889",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/news/international_newspapers_108x81.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T07:46:35+00:00",
+    },
+    {
+      author: "ICICI Securities",
+      title:
+        "Indian Banks' Balance Sheet Strength Is Strong And Likely To Remain So: ICICI Securities' Thematic View",
+      description:
+        "Indian Banks' Balance Sheet Strength Is Strong And Likely To Remain So: ICICI Securities' Thematic View",
+      url: "https://www.bqprime.com/research-reports/indian-banks-balance-sheet-strength-is-strong-and-likely-to-remain-so-icici-securities-thematic-view",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T08:53:35+00:00",
+    },
+    {
+      author: "Business Matters",
+      title:
+        "Windfall tax revenue set to slump 40 per cent thanks to falling oil and gas prices",
+      description:
+        "The sharp fall in the price of oil and gas will lead to a huge drop in revenue from the government’s windfall tax. Read more: Windfall tax revenue set to slump 40 per cent thanks to falling oil and gas prices",
+      url: "https://bmmagazine.co.uk/news/windfall-tax-revenue-set-to-slump-40-per-cent-thanks-to-falling-oil-and-gas-prices/",
+      source: "Business Matters | The Uk's Leading Sme Business Magazine",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "gb",
+      published_at: "2023-06-27T09:44:57+00:00",
+    },
+    {
+      author: null,
+      title:
+        "ONDC aims for one lakh daily transactions, explores export enablement",
+      description:
+        "ONDC expects to demonstrate international transactions this year and anticipates significant growth in B2B transactions.",
+      url: "https://www.thehindubusinessline.com/news/national/ondc-aims-for-one-lakh-daily-transactions-explores-export-enablement/article67015011.ece",
+      source: "Business Line",
+      image:
+        "https://bl-i.thgim.com/public/incoming/lbt20l/article66934774.ece/alternates/LANDSCAPE_1200/IMG_BL0506_Corp_T_Koshy__2_1_UPBADUPT.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T10:02:19+00:00",
+    },
+    {
+      author: null,
+      title:
+        "No transactions and settlements in various markets regulated by RBI June 29",
+      description:
+        "The settlement of all outstanding transactions due on June 29, 2023 will accordingly get postponed to the next working day",
+      url: "https://www.thehindubusinessline.com/money-and-banking/no-transactions-and-settlements-in-various-markets-regulated-by-rbi-june-29/article67014944.ece",
+      source: "Business Line",
+      image:
+        "https://bl-i.thgim.com/public/todays-paper/tp-others/tp-variety/zcnzw2/article67006504.ece/alternates/LANDSCAPE_1200/The-ongoing-%E2%80%98re%2BGSKBDB03C.4.jpg.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T10:00:47+00:00",
+    },
+    {
+      author: "Jiya Saini",
+      title:
+        "An Expert Reveals How Heatstroke Can Be Mistaken for Heat Exhaustion – Signs and What You Can Do About It",
+      description:
+        "How To Tell If You Have a Heat Stroke or Just Heat Exhaustion &#8211; The key differentiators Heatstroke is a serious condition that commonly occurs due to exposure to hot weather or strenuous exercise. It occurs when the body is unable to cool itself effectively, leading to dangerously high body temperatures. While anyone can be [&#8230;]The post An Expert Reveals How Heatstroke Can Be Mistaken for Heat Exhaustion &#8211; Signs and What You Can Do About It appeared first on Revyuh.",
+      url: "https://www.revyuh.com/news/lifestyle/health-and-fitness/an-expert-reveals-how-heatstroke-can-be-mistaken-for-heat-exhaustion-signs-and-what-you-can-do-about-it/",
+      source: "Revyuh Media",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T10:36:45+00:00",
+    },
+    {
+      author: "Reuters",
+      title:
+        "Brookfield reinsurance arm offers to buy American Equity in $4.3 billion deal",
+      description:
+        "Brookfield reinsurance arm offers to buy American Equity in $4.3 billion deal",
+      url: "https://www.investing.com/news/stock-market-news/brookfield-reinsurance-arm-offers-to-buy-american-equity-in-43-billion-deal-3114191",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ5Q0DC_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T10:51:36+00:00",
+    },
+    {
+      author: "Sahyaja S",
+      title:
+        "SAT Reserves Order In Punit Goenka, Subhash Chandra's Appeal Against SEBI Ban",
+      description:
+        "SAT Reserves Order In Punit Goenka, Subhash Chandra's Appeal Against SEBI Ban",
+      url: "https://www.bqprime.com/business/sat-reserves-order-in-punit-goenka-subhash-chandras-appeal-against-sebi-ban",
+      source: "Bloomberg | Latest And Live Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T10:52:38+00:00",
+    },
+    {
+      author: null,
+      title: "CACI bags $5.7B worth service agreement for US Air Force",
+      description: "CACI bags $5.7B worth service agreement for US Air Force",
+      url: "https://seekingalpha.com/news/3983095-caci-bags-57b-worth-service-agreement-for-us-air-force?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T11:52:00+00:00",
+    },
+    {
+      author: null,
+      title: "Canada inflation drops to 3.4% in May",
+      description: "Canada inflation drops to 3.4% in May",
+      url: "https://seekingalpha.com/news/3983121-canada-inflation-drops-to-34-in-may?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T12:36:05+00:00",
+    },
+    {
+      author: "Reuters",
+      title: "BOJ may tweak yield control policy in Oct - ex-board member",
+      description:
+        "BOJ may tweak yield control policy in Oct - ex-board member",
+      url: "https://www.investing.com/news/economy/boj-may-tweak-yield-control-policy-in-oct--exboard-member-3114351",
+      source: "Investing.com | Stock Market Quotes &amp; Financial News",
+      image:
+        "https://i-invdn-com.investing.com/trkd-images/LYNXMPEJ5Q07R_L.jpg",
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T12:52:13+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Evolve state global real estate yield  fund declares CAD 0.15 dividend",
+      description:
+        "Evolve state global real estate yield  fund declares CAD 0.15 dividend",
+      url: "https://seekingalpha.com/news/3983145-evolve-state-global-real-estate-yield-fund-declares-cad-015-dividend?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T13:07:17+00:00",
+    },
+    {
+      author: null,
+      title: "Evolve US Banks Enhanced Yield Fund declares CAD 0.125 dividend",
+      description:
+        "Evolve US Banks Enhanced Yield Fund declares CAD 0.125 dividend",
+      url: "https://seekingalpha.com/news/3983140-evolve-us-banks-enhanced-yield-fund-declares-cad-0125-dividend?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T13:06:45+00:00",
+    },
+    {
+      author: "Chris Roush",
+      title: "China bans financial writer from Weibo",
+      description:
+        "China banned a prominent finance writer and two of his peers from social media platform Weibo for commenting about the country’s stock market and unemployment rate, according to a Bloomberg News story. Bloomberg News reports, &#8220;Wu Xiaobo and two other writers who weren’t fully named &#8216;attacked and undermined&#8217; Chinese policy and spread &#8216;negative and harmful [&#8230;]",
+      url: "https://talkingbiznews.com/media-news/china-bans-financial-writer-from-weibo/",
+      source: "Talking Biz News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T13:45:12+00:00",
+    },
+    {
+      author: "Manish Saini",
+      title:
+        "The Unexpected Symptoms That May Warn of Alzheimer’s Looming After Diminishing Sense of Smell",
+      description:
+        "Diminishing sense of smell influences many aspects of our health &#8211; and this may be the one that puts our life at greater danger of neurodegenerative diseases such as Alzheimer’s disease and Parkinson’s disease, as well as early death. Hyposmia refers to a reduction in the sense of smell or a diminished ability to detect [&#8230;]The post The Unexpected Symptoms That May Warn of Alzheimer&#8217;s Looming After Diminishing Sense of Smell appeared first on Revyuh.",
+      url: "https://www.revyuh.com/news/lifestyle/health-and-fitness/the-unexpected-symptoms-that-may-warn-of-alzheimers-looming-after-diminishing-sense-of-smell/",
+      source: "Revyuh Media",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T14:12:03+00:00",
+    },
+    {
+      author: "Mariam Ahmed",
+      title: "The Drum appoints McCarthy opinion editor",
+      description:
+        "The Drum has tapped John McCarthy to serve as opinion editor. Recently, he held the post of online senior reporter. McCarthy has been with the The Drum for nine years. During this time, he has held the posts of reporter, media editor and online senior reporter. He was an online senior reporter at The Drum [&#8230;]",
+      url: "https://talkingbiznews.com/media-moves/the-drum-appoints-mccarthy-opinion-editor/",
+      source: "Talking Biz News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:04:22+00:00",
+    },
+    {
+      author: "zee business",
+      title:
+        "Sebi prescribes methods to REITs, InvITs for compliance with 25% minimum public holding rules",
+      description:
+        "Markets regulator Sebi on Tuesday provided methods such as an offer for-sale mechanism, rights issue and issuance of bonuses to unitholders of REITs and InvITs to achieve compliance with the 25 per cent minimum public holding requirement.",
+      url: "https://www.zeebiz.com/market-news/news-indian-reits-invits-sebi-minimum-public-holdings-rules-compliance-of-25-real-estate-investment-trust-infrastructure-investment-trust-offer-for-sale-nse-bse-sebi-nifty-sensex-241982",
+      source: "Zee Business",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:23:01+00:00",
+    },
+    {
+      author: "Murray Stassen",
+      title:
+        "Joe Cocker estate strikes catalog deal with Irving Azoff’s Iconic Artists Group",
+      description:
+        "'We are honored to work with Joe’s family and be the custodians of his powerful body of work,' said Iconic President, Jimmy EdwardsSource",
+      url: "https://www.musicbusinessworldwide.com/joe-cocker-estate-strikes-deal-with-irving-azoffs-iconic-artists-group/",
+      source: "Music Business Worldwide",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:53:23+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Nasdaq, S&P, Dow boosted by consumer discretionary, tech stocks; economic data in focus",
+      description:
+        "Nasdaq, S&P, Dow boosted by consumer discretionary, tech stocks; economic data in focus",
+      url: "https://seekingalpha.com/news/3983262-stock-market-news-today-nasdaq-dow-jones-sp500-economic-data?utm_source=feed_news_all&utm_medium=referral",
+      source: "Seeking Alpha",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:50:44+00:00",
+    },
+    {
+      author: "GlobeNewswire",
+      title:
+        "TerrAscend Closes US$25 Million Commercial Loan with Stearns Bank",
+      description:
+        "Proceeds will be used to pay down higher-interest debt, reducing overall interest expense TORONTO, June 27, 2023 (GLOBE NEWSWIRE) &#8212; TerrAscend Corp. (&#8220;TerrAscend&#8221; or the &#8220;Company&#8221;) (CSE: TER) (OTCQX: TRSSF), a leading North American cannabis operator, today announced that it has closed on a US$25 million commercial loan with Stearns Bank (the “Loan”). The proceeds [&#8230;]",
+      url: "https://financialpost.com/globe-newswire/terrascend-closes-us25-million-commercial-loan-with-stearns-bank",
+      source: "Financial Post | Canada Business News",
+      image: null,
+      category: "business",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T16:00:48+00:00",
     },
   ],
 };

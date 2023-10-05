@@ -9,18 +9,14 @@ type Props = {
 
 const HighlightsBanner = ({ articles }: Props) => {
   const filtered = useMemo(() => {
-    return articles.filter((a) => Boolean(a.urlToImage));
+    return articles.filter((a) => Boolean(a.image));
   }, [articles]);
 
   return (
     <div className="container gap-2 grid grid-cols-12 grid-rows-2 px-3 md:px-8">
       <Link
         isExternal
-        href={
-          filtered[0].url && !filtered[0].url.startsWith("https://removed.com")
-            ? filtered[0].url
-            : undefined
-        }
+        href={filtered[0].url ? filtered[0].url : undefined}
         aria-label="Bannner News"
         className="col-span-12 sm:col-span-4 h-[300px] w-full"
       >

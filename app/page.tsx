@@ -15,7 +15,7 @@ export default async function Home() {
 
         <h1 className={title({ color: "violet" })}>{"News"}&nbsp;</h1>
         <br />
-        <h1 className={title()}>that Matters, Wherever You Are.</h1>
+        <h1 className={title()}>that matters, wherever you are.</h1>
 
         <h2 className={subtitle({ class: "mt-4" })}>
           {"Your Source for Today's Headlines and Tomorrow's Insights!"}
@@ -23,9 +23,9 @@ export default async function Home() {
       </div>
 
       <MainHeadlines
-        mainArticles={entertainmentNews.articles}
-        mediumArticles={generalNews.articles}
-        mediumImgArticles={technologyNews.articles}
+        mainArticles={entertainmentNews.data}
+        mediumArticles={generalNews.data}
+        mediumImgArticles={technologyNews.data}
       />
     </section>
   );

@@ -1,1132 +1,1377 @@
-export const data = {
-  status: "ok",
-  totalResults: 69,
-  articles: [
+import { Headline } from "@/types";
+
+export const data: Headline = {
+  pagination: {
+    limit: 100,
+    offset: 0,
+    count: 100,
+    total: 1287,
+  },
+  data: [
     {
-      source: {
-        id: null,
-        name: "The Indian Express",
-      },
-      author: "Tech Desk",
+      author: "Benj Edwards",
       title:
-        "ChatGPT users can now talk with the AI chatbot: Here’s how to enable voice chat - The Indian Express",
+        "Dreamy AI-generated geometric scenes mesmerize social media users",
       description:
-        "ChatGPT today added the ability to talk to the AI-powered chatbot using voice and another feature that lets users upload and get help with photos. Here's how you can enable these features.",
-      url: "https://indianexpress.com/article/technology/artificial-intelligence/chatgpt-users-can-now-talk-with-the-ai-chatbot-heres-how-to-enable-voice-chat-8955756/",
-      urlToImage:
-        "https://images.indianexpress.com/2023/09/ChatGPT-Express-Photo-Agencies.jpg",
-      publishedAt: "2023-09-25T14:26:28Z",
-      content:
-        "OpenAI has been constantly adding some quality-of-life features to its AI-powered chatbot – ChatGPT. Today, the company announced that it will soon be rolling out new voice and image capabilities to … [+1818 chars]",
+        '"This was the point where AI-generated art passed the Turing Test for me."',
+      url: "https://arstechnica.com/?p=1968790",
+      source: "arstechnica",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-15T21:13:13+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "HT Tech",
+      author: "Christine Hall",
       title:
-        "Amazon Great Indian Festival Sale 2023 coming soon; Get ready for big discounts - HT Tech",
+        "Real estate tech companies continue to get hammered by high mortgage rates",
       description:
-        "Prepare for a shopping extravaganza! The Amazon Great Indian Festival Sale 2023 is set to dazzle shoppers with unbeatable deals.",
-      url: "https://tech.hindustantimes.com/tech/news/amazon-great-indian-festival-sale-2023-coming-soon-get-ready-for-big-discounts-71695649545694.html",
-      urlToImage:
-        "https://images.hindustantimes.com/tech/img/2023/09/25/1600x900/Screenshot_2023-09-25_192151_1695649931544_1695649961613.png",
-      publishedAt: "2023-09-25T13:54:09Z",
-      content:
-        "Get ready for a shopping extravaganza as the much-anticipated Amazon Great Indian Festival Sale is slated to kick off on October 10, as revealed by sources. This annual shopping fiesta promises a tre… [+2314 chars]",
+        "Once valued at over $2 billion, rent-to-own startup Divvy Homes conducted its third round of layoffs in a year's time.",
+      url: "https://techcrunch.com/2023/09/17/real-estate-tech-companies-continue-to-get-hammered-by-high-mortgage-rates/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-17T14:15:44+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "YouTube",
-      },
+      author: "Sheena Vasani",
+      title: "Here are the best Kindle deals right now",
+      description:
+        "Amazon’s latest Paperwhite is on sale with a power adapter and a&nbsp;fabric cover for $174.97. | Photo by Chaim Gartenberg / The Verge When it comes to finding a device to use to read your ebooks, you have a few options to choose from. You can always buy a tablet or use your phone, but those devices are multipurpose and can be used for a ton of things, like surfing the web or doom-scrolling on Twitter. If you are looking for something to strictly read books, e-readers, while niche, are designed to store all of your books in a virtual library with limited functionality. Amazon, one of the...",
+      url: "https://www.theverge.com/21539047/best-amazon-kindle-deals",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T14:53:00+00:00",
+    },
+    {
+      author: "Ingrid Lunden",
+      title:
+        "Darrow gets served $35M for an AI that parses public documents for class action lawsuit potential",
+      description:
+        "The U.S. is famous (or infamous) for its litigiousness: the country may not have the highest per capita amount of lawsuits (that&#8217;s Germany), but it has the most of any country overall amid a very active legal industry whose caseload is growing in a market that is worth many tens of billions of dollars. Now, [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/darrow-legal-tech/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T11:00:08+00:00",
+    },
+    {
+      author: "Carrie Andrews",
+      title:
+        "How deep tech founders can secure early-stage fundraising in a downturn",
+      description:
+        "Deep tech companies, especially in the early stages in difficult funding environments, should focus first and foremost on closing the deal.",
+      url: "https://techcrunch.com/2023/09/19/tips-for-deep-tech-founders-fundraising-in-a-downturn/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T13:00:37+00:00",
+    },
+    {
+      author: "Catherine Shu",
+      title: "Reed Jobs on how his venture firm tackles cancer",
+      description:
+        "Reed Jobs’ new venture firm can change the lives of the estimated 18.1 million diagnosed cancer patents worldwide. Yosemite, Jobs’ fund for cancer-fighting biotech, launched in August with $200 million in funding from investors like MIT, Memorial Sloan Kettering Cancer Center and John Doerr. Jobs first became interested in oncology as a teen after his [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/reed-jobs-on-how-his-venture-firm-tackles-cancer/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T00:39:13+00:00",
+    },
+    {
+      author: "Brian Heater",
+      title: "California’s right to repair bill heads to Governor’s desk",
+      description:
+        "California state Assembly has voted in favor of a right to repair legislation that increases consumer ability to fix devices at home. After winding its way through state legislature, the bill is headed to Governor Gavin Newsom’s desk. Senate Bill 244 isn’t the first right to repair bill passed by a U.S. state – nor [&#8230;]",
+      url: "https://techcrunch.com/2023/09/14/californias-right-to-repair-bill-heads-to-governors-desk/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-15T02:23:26+00:00",
+    },
+    {
+      author: "Manish Singh",
+      title: "Meta says not planning ads on WhatsApp",
+      description:
+        "Meta on Friday disputed a media report that said the social giant was exploring bringing ads on the popular messaging app WhatsApp. This @FT story is false. We aren&#39;t doing this. Also it looks like you misspelled Brian&#39;s name&#8230; https://t.co/Z47z9FC5yu &#8212; Will Cathcart (@wcathcart) September 15, 2023",
+      url: "https://techcrunch.com/2023/09/14/meta-says-not-planning-ads-on-whatsapp/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-15T04:42:04+00:00",
+    },
+    {
+      author: "Manish Singh",
+      title: "Prosus, Naspers CEO Bob van Dijk abruptly steps down",
+      description:
+        "Bob van Dijk, the chief executive of Naspers and Prosus, has stepped down from his position effective immediately, the firms said. Ervin Tu, presently Prosus&#8217; Group Chief Investment Officer, has been promoted as interim chief executive of the firms. “The Boards of Prosus and Naspers want to thank Bob for his leadership over a full [&#8230;]",
+      url: "https://techcrunch.com/2023/09/17/prosus-naspers-ceo-bob-van-dijk-abruptly-steps-down/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T05:34:04+00:00",
+    },
+    {
+      author: "Tom Warren",
+      title: "Activision was briefed on Nintendo’s Switch 2 last year",
+      description:
+        "Photo by James Bareham / The Verge Rumors of a Nintendo Switch 2 announcement have grown recently after reports of developer demos at Gamescom last month. Now we know that Activision was briefed on a next-generation Nintendo Switch last year, thanks to internal emails from the FTC v. Microsoft case.Activision executives, including CEO Bobby Kotick, met with Nintendo executives in December 2022 to discuss a next-generation Switch. In an internal email chain, Chris Schnakenberg, head of Activision’s platform strategy and partner relations, prepared a summary of the “Switch NG” (Switch next-...",
+      url: "https://www.theverge.com/2023/9/18/23878412/nintendo-switch-2-activision-briefing-next-gen-switch",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T13:06:50+00:00",
+    },
+    {
+      author: "Jacob Kastrenakes",
+      title:
+        "Apple made it way cheaper to repair an iPhone 15 Pro’s broken back glass",
+      description:
+        "iPhone 15 Pro and Pro Max. | Photo: Dan Seifert / The Verge It’s significantly cheaper to repair the back glass on an iPhone 15 Pro than it was on the iPhone 14 Pro. Apple posted price estimates for its new phones over the weekend, listing a repair price of $169 for the 15 Pro and $199 for the Pro Max to replace either phone’s shattered back glass.That’s up to a $350 decrease from the repair price for last year’s models. For the iPhone 14 Pro and 14 Pro Max, Apple charged $499 and $549 for back glass replacement — frankly, outlandish prices that ran more expensive than the cost of an...",
+      url: "https://www.theverge.com/2023/9/18/23878447/iphone-15-back-glass-repair-price-apple",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T13:27:11+00:00",
+    },
+    {
+      author: "Antonio G. Di Benedetto",
+      title:
+        "Apple’s new AirPods Pro with USB-C charging case is already $50 off on a preorder",
+      description:
+        "While this is technically a photo of second-gen AirPods Pro with a Lightning case, the new USB-C model will look identical. | Photo by Chris Welch / The Verge Apple’s biggest announcement last week at its “Wonderlust” event was, without a doubt, the iPhone 15’s change to USB-C, which is already having a ripple effect, as the AirPods Pro are also ditching Lightning for the port upgrade. Now, surprisingly, you can preorder the new second-gen AirPods Pro with USB-C ahead of its September 22nd release date for $199.99 ($50 off) at Best Buy.The AirPods Pro are the first of Apple’s wireless...",
+      url: "https://www.theverge.com/2023/9/18/23878472/apple-airpods-pro-usbc-anker-magsafe-charger-cube-samsung-deal-sale",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T15:52:12+00:00",
+    },
+    {
+      author: "Sarah Perez",
+      title:
+        "News aggregator app SmartNews’ latest feature aims to tackle doomscrolling",
+      description:
+        "News aggregator SmartNews is today launching a new feature that it hopes will help to combat the anxiety associated with regularly consuming negative news &#8212; something often referred to as &#8220;doomscrolling.&#8221; Instead of encouraging impulsive scrolling through its headlines, the app&#8217;s new feature called SmartTake claims to offer a selection of uplifting stories, editor&#8217;s picks, [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/news-aggregator-app-smartnews-latest-feature-aims-to-tackle-doomscrolling/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T14:29:09+00:00",
+    },
+    {
+      author: "Catherine Shu",
+      title:
+        "Monoclonal antibody treatments have many challenges — Narval is fixing them",
+      description:
+        "Monoclonal antibodies are the building blocks of some of the most important medical treatments in the world. But they have limitations. For example, the large size of the molecules mean monoclonal antibody treatments usually need to be injected — even for eye conditions. Narval CEO Jose Luis Nuno describes the first time he saw a [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/narval-monoclonal-antibody-treatments/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T17:04:41+00:00",
+    },
+    {
+      author: "Frederic Lardinois",
+      title:
+        "The Unified Acceleration Foundation wants to create an open standard for accelerator programming",
+      description:
+        "At the Open Source Summit Europe in Bilbao, Spain, the Linux Foundation today announced the launch of the Unified Acceleration (UXL) Foundation. The group&#8217;s mission is to deliver &#8220;an open standard accelerator programming model that simplifies development of performant, cross-platform applications.&#8221; The foundation&#8217;s founding members include the likes of Arm, Fujitsu, Google Cloud, Imagination Technologies, [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/the-unified-acceleration-foundation-wants-to-create-an-open-standard-for-accelerator-programming/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T17:23:41+00:00",
+    },
+    {
+      author: "Sean Hollister",
+      title:
+        "Microsoft’s new Xbox controller borrows great ideas from Stadia, Steam, and Sony",
+      description:
+        "Microsoft’s new core gamepad, codenamed Sebile, may become the new default Xbox gamepad in May 2024. | Image via court documents, text removed by The Verge New Xbox for 2024! New hybrid Xbox for 2028! But can we just appreciate Microsoft’s leaked Sebile controller for a sec? The $70 pad could arrive in 2024 chock-full of the best parts of Sony’s DualSense, Valve’s Steam Controller, Google Stadia, and — here’s hoping — 8BitDo. Image: FTC v. Microsoft “Sebile — The New Xbox Controller.” Obviously, it’s taking the Sony DualSense’s “precision haptic feedback.”Right, here...",
+      url: "https://www.theverge.com/2023/9/19/23880809/microsoft-xbox-leak-gamepad-sebile-stadia-steam-sony",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T20:12:49+00:00",
+    },
+    {
+      author: "Emily Mullin",
+      title: "Everything We Know About Neuralink's Brain Implant Trial",
+      description:
+        "Elon Musk’s neurotech startup announced that it is now seeking patients with paralysis to test a brain-computer interface.",
+      url: "https://www.wired.com/story/everything-we-know-about-neuralinks-brain-implant-trial/",
+      source: "Wired",
+      image:
+        "https://media.wired.com/photos/650a02e0d7ea654c08913303/master/pass/musk-science-GettyImages-1258889338.jpg",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T20:41:57+00:00",
+    },
+    {
+      author: "Carrie Andrews",
+      title:
+        "Ask Sophie: Can you explain the H-1B visa, EB-2 green card transfer and Visa Bulletin?",
+      description:
+        "Here's another edition of “Ask Sophie,” the advice column that answers immigration-related questions about working at technology companies.",
+      url: "https://techcrunch.com/2023/09/20/ask-sophie-can-you-explain-the-h-1b-visa-eb-2-green-card-transfer-and-visa-bulletin/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T12:00:46+00:00",
+    },
+    {
+      author: null,
+      title: "UpCodes (YC S17) is hiring remote engineers across the Americas",
+      description: "Comments",
+      url: "https://up.codes/careers",
+      source: "Hacker News",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-15T12:00:44+00:00",
+    },
+    {
+      author: "Sarah Perez",
+      title: "Former WarnerMedia CEO Jason Kilar joins Roblox’s board",
+      description:
+        "Former WarnerMedia CEO Jason Kilar has joined the board of directors at the online gaming platform company Roblox. The appointment, which was effective as of September 13, will see Kilar joining board chairman and Roblox CEO David Baszucki, as well as lead independent director Anthony P. Lee, and board members Gregory Baszucki, Christopher Carvalho, Gina [&#8230;]",
+      url: "https://techcrunch.com/2023/09/15/former-warnermedia-ceo-jason-kilar-joins-robloxs-board/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-15T15:20:57+00:00",
+    },
+    {
+      author: "Andrew Webster",
+      title:
+        "The Elder Scrolls VI will skip PS5 and isn’t coming until at least 2026",
+      description:
+        "Image: Bethesda Softworks A document released as part of the FTC v. Microsoft case confirms what was long expected: The Elder Scrolls VI isn’t going to launch for a few years, and it isn’t coming to PlayStation. According to the new chart, which Microsoft produced for the FTC, the next Elder Scrolls game isn’t expected to launch until at least 2026 — something a Microsoft lawyer also mentioned in the court case. And much like Bethesda’s most recent games — Starfield and Redfall — it’ll be available on both PC and Xbox when it does launch.In a statement about exclusivity attached...",
+      url: "https://www.theverge.com/2023/9/18/23878504/the-elder-scrolls-6-2026-release-xbox-exclusive",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T13:40:45+00:00",
+    },
+    {
+      author: "Emma Roth",
+      title: "Windows leader Panos Panay is leaving Microsoft",
+      description:
+        "Panos Panay | Photo by Becca Farsace / The Verge Panos Panay, the chief product officer at Microsoft leading Windows development and the company’s Surface line, is leaving Microsoft. In an announcement on Monday, Microsoft told employees: “After nearly 20 years at the company, Panos Panay has decided to leave Microsoft.”Panay first joined Microsoft in 2004 as a group program manager. After overseeing the company’s Surface line, Panay became the company’s chief product officer in 2018, where he led the development of Windows 11.You can read the full email to employees below:Team, After...",
+      url: "https://www.theverge.com/2023/9/18/23878609/microsoft-windows-panos-panay-leaving",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T14:18:36+00:00",
+    },
+    {
+      author: "Jacquelyn Melinek",
+      title: "Blockchain Capital launches two new funds for a total of $580M",
+      description:
+        "The crypto bear market may be ongoing, but Blockchain Capital is still going big. It closed two new funds for a total of $580 million, the firm’s general partner Spencer Bogart told TechCrunch. The two venture funds, its sixth early-stage fund and its first “opportunity fund,” are allocated roughly two-thirds and one-third of the $580 [&#8230;]",
+      url: "https://techcrunch.com/2023/09/18/blockchain-capital-launches-two-new-funds-for-a-total-of-580m/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T15:00:57+00:00",
+    },
+    {
+      author: "Aria Alamalhodaei",
+      title:
+        "Stoke Space completes milestone test in quest to build a fully reusable rocket",
+      description:
+        "Stoke Space, a startup that’s taking an unconventional approach to rocket design, successfully completed a key test of its second stage prototype, bringing the company one step closer to flying a fully reusable launch vehicle. The prototype, called “Hopper2,” executed a 15-second test flight during which the vehicle flew to a height of around 30 [&#8230;]",
+      url: "https://techcrunch.com/2023/09/18/stoke-space-completes-milestone-test-in-quest-to-build-a-fully-reusable-rocket/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T17:20:15+00:00",
+    },
+    {
+      author: "Ash Parrish",
+      title: "Unity plans to change its disastrous new pricing program",
+      description:
+        "Image: Unity Unity plans to change its forthcoming pay-per-install program following widespread criticism from game developers.“We apologize for the confusion and angst the runtime fee policy we announced on Tuesday caused,” Unity posted on X (formerly Twitter). “We are listening, talking to our team members, community, customers, and partners, and will be making changes to the policy. We will share an update in a couple of days.”This new communication from Unity comes after nearly a week of clarifications, retractions, and a growing force of upset developers who threaten not only to...",
+      url: "https://www.theverge.com/2023/9/18/23879029/unity-pricing-model-change",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T18:57:19+00:00",
+    },
+    {
+      author: "Carly Page",
+      title: "UK police officers’ data stolen in cyberattack on ID supplier",
+      description:
+        "The personal details of thousands of U.K. police officers have been stolen after a suspected ransomware attack on a third-party supplier. Greater Manchester Police, one of the largest police departments in the U.K., confirmed last week that the supplier, since confirmed as Stockport based identity card maker Digital ID, holds “some information on those employed [&#8230;]",
+      url: "https://techcrunch.com/2023/09/18/uk-police-officers-data-stolen-cyberattack-digital-id/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T18:55:46+00:00",
+    },
+    {
+      author: "Wes Davis",
+      title:
+        "TMNT: Mutant Mayhem starts streaming on Paramount Plus on September 19th",
+      description:
+        "Mutant Mayhem comes to Paramount Plus on September 19th. | Image: Paramount Paramount announced that Teenage Mutant Ninja Turtles: Mutant Mayhem will hit Paramount Plus tomorrow in the US and Canada. The CG-animated movie is now the seventh Turtles movie in a line that started with the better-than-it-should’ve-been 1990 live-action film. Mutant Mayhem is already available to preorder on 4K UHD Blu-ray, standard Blu-ray, and DVD.The movie hits just a day before Paramount Plus ends its 50 percent discount for a year of its ad-supported tier ($29.99) or a year of its Paramount Plus with Showtime...",
+      url: "https://www.theverge.com/2023/9/18/23879336/teenage-mutant-ninja-turtles-mutant-mayhem-streaming-paramount-plus-release",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T20:36:38+00:00",
+    },
+    {
+      author: "Aria Alamalhodaei",
+      title: "Max Q: Firefly conquered the night",
+      description:
+        "In this issue: Firefly Aerospace conquered the night, news from Varda Space and more",
+      url: "https://techcrunch.com/2023/09/18/max-q-firefly-conquered-the-night/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T22:00:15+00:00",
+    },
+    {
+      author: "Jennifer Pattison Tuohy",
+      title: "The Fire TV should be at the heart of Amazon’s smart home",
+      description:
+        "Symbiosis between its Fire TVs and its Alexa smart home ambitions could help Amazon create a smart home that works for everyone. | Photo by Chris Welch / The Verge Amazon’s fall hardware event is taking place this week, and the company will undoubtedly be searching for its next big hardware hit. But how about making its existing hardware (and software) better? Continue reading&hellip;",
+      url: "https://www.theverge.com/2023/9/19/23880495/amazon-fire-tv-alexa-smart-home-hardware-event",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T17:30:00+00:00",
+    },
+    {
+      author: "Alex Wilhelm",
+      title:
+        "Instacart’s IPO storms out the gate, showing that unicorns can, in fact, go public and survive",
+      description:
+        "For startups dying of thirst in this desert devoid of capital, Instacart could not have offered up a more satisfying glass of cool water.",
+      url: "https://techcrunch.com/2023/09/19/instacarts-ipo-storms-out-the-gate-showing-that-unicorns-can-in-fact-go-public-and-survive/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T17:54:40+00:00",
+    },
+    {
+      author: "Taylor Hatmaker",
+      title:
+        "Nolej’s AI-generated classroom tools are a force multiplier for educators",
+      description:
+        "The idea of bringing AI into the classroom doesn’t sit well with everyone, but the team behind Nolej believes that generative AI can supercharge learning — all while keeping teachers front and center. Nolej AI is an AI-powered tool that lets educators quickly generate interactive learning modules like quizzes, flashcards, games and interactive videos. “We [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/nolejs-ai-generated-classroom-tools-are-a-force-multiplier-for-educators/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T20:52:16+00:00",
+    },
+    {
+      author: "Kevin Purdy",
+      title:
+        "Wizardry remaster keeps Apple II vibes but adds graphics and modern graces",
+      description:
+        "Digital Eclipse gives a new generation the best possible door to the dungeon.",
+      url: "https://arstechnica.com/?p=1968668",
+      source: "Ars Technica",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-15T17:40:39+00:00",
+    },
+    {
+      author: "Emma Roth",
+      title:
+        "The iPhone 15 Pro’s 5G modem reportedly boosts speeds by up to 24 percent",
+      description:
+        "Photo by Nilay Patel / The Verge The iPhone 15 Pro could come with better 5G connectivity. That’s according to data from SpeedSmart (via 9to5Mac), which indicates that the iPhone 15 Pro will offer up to 24 percent faster download 5G speeds when compared to its iPhone 14 Pro predecessor.As shown by the data from SpeedSmart, the biggest jump occurred on Verizon’s network, which showed an average download speed of 195.83Mbps on the iPhone 14 Pro, as opposed to 243.06Mbps on the iPhone 15 Pro. Meanwhile, the iPhone 15 Pro on T-Mobile had the fastest average 5G download speeds at 300.92Mbps, as...",
+      url: "https://www.theverge.com/2023/9/15/23875787/iphone-15-pro-better-5g-connectivity",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-15T22:30:31+00:00",
+    },
+    {
+      author: "Emma Roth",
+      title:
+        "Google’s Bard chatbot can now find answers in your Gmail, Docs, Drive",
+      description:
+        "Image: Google Google’s Bard AI chatbot is no longer limited to pulling answers from just the web — it can now scan your Gmail, Docs, and Drive to help you find the information you’re looking for. With the new integration, you can ask Bard to do things like find and summarize the contents of an email or even highlight the most important points of a document you have stored in Drive.There’s a whole range of use cases for these integrations, which Google calls extensions, but they should save you from having to sift through a mountain of emails or documents to find a particular piece of...",
+      url: "https://www.theverge.com/2023/9/19/23878999/google-bard-ai-chatbot-gmail-docs-drive-extensions",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T10:01:00+00:00",
+    },
+    {
+      author: "Aria Alamalhodaei",
+      title: "Rocket Lab’s Electron suffers first failure in over two years",
+      description:
+        "Rocket Lab’s 41st Electron mission on behalf of customer Capella Space ended in failure early Tuesday, with issues abruptly appearing after stage separation around 2-and-a-half minutes after launch. The live video feed of the rocket stopped working shortly after the second stage ignited its engine. Around 45 seconds after stage separation, the launch director declared, [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/rocket-labs-electron-suffers-first-failure-in-over-two-years/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T13:51:30+00:00",
+    },
+    {
+      author: "Sarah Fielding",
+      title: "Apple's 12.9-inch iPad Pro drops to $999",
+      description:
+        "The 12.9-inch Apple iPad Pro's cost has finally dropped into the triple digits. The 128GB sixth-generation model is at an all-time low price of $999 (hey, $1 under $1,000 still counts) from $1,099 — a nine percent discount. The deal is only available in Space Gray, with the Silver model coming in at $1,049.&nbsp;Apple's sixth-gen iPad Pro 12.9-inch came on the scene in 2022, and — though it wasn't a major upgrade — it garnered an 87 in our review. The biggest change was a swap from the M1 to the M2 chip, which increased its GPU performance by 52 percent to a score of 32,834. The M2 chip...",
+      url: "https://www.engadget.com/apples-129-inch-ipad-pro-drops-to-999-143633282.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2022-11/bf495040-59e1-11ed-a74d-0924f57e9b11",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T14:36:33+00:00",
+    },
+    {
+      author: "Steve Lohr",
+      title:
+        "A Key Question in Google’s Trial: How Formidable Is Its Data Advantage?",
+      description:
+        "The government states that data is “oxygen for a search engine” and that Google’s anticompetitive behavior has given it a data fortress. Google says innovation explains its success.",
+      url: "https://www.nytimes.com/2023/09/18/business/google-antitrust-trial-data.html",
+      source: "The New York Times",
+      image:
+        "https://static01.nyt.com/images/2023/09/19/multimedia/00JPgoogle-antitrust-data-print-zqmf/00google-antitrust-data-dintzer-zqmf-moth-v3.jpg",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T15:21:11+00:00",
+    },
+    {
+      author: "Romain Dillet",
+      title: "BioticsAI wants to improve prenatal ultrasound scans with AI",
+      description:
+        "Meet BioticsAI, a startup that has built an AI-based platform that plugs into an ultrasound machine to prevent fetal malformation misdiagnosis. BioticsAI has been quietly working on its solution for the past two years and is now unveiling its product onstage at TechCrunch Disrupt as part of the Startup Battlefield. “BioticsAI processes all of the [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/bioticsai-wants-to-improve-prenatal-ultrasound-scans-with-ai/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T17:31:27+00:00",
+    },
+    {
+      author: "Kyle Wiggers",
+      title:
+        "OpenAI launches a red teaming network to make its models more robust",
+      description:
+        "In its ongoing effort to make its AI systems more robust, OpenAI today launched the OpenAI Red Teaming Network, a contracted group of experts to help inform the company&#8217;s AI model risk assessment and mitigation strategies. Red teaming is becoming an increasingly key step in the AI model development process as AI technologies, particularly generative [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/openai-launches-a-red-teaming-network-to-make-its-models-more-robust/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T17:38:38+00:00",
+    },
+    {
+      author: "Benj Edwards",
+      title:
+        "Google’s AI assistant can now read your emails, plan trips, “double-check” answers",
+      description:
+        "Google admits that Bard isn't always accurate; ropes in Gmail through new Extensions.",
+      url: "https://arstechnica.com/?p=1969226",
+      source: "Ars Technica",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T17:35:30+00:00",
+    },
+    {
+      author: "Antonio G. Di Benedetto",
+      title:
+        "Nikon’s new ZF is a retro-styled full-frame camera aimed right at our nostalgic hearts",
+      description:
+        "The Nikon ZF is the company’s latest camera. | Photo by Becca Farsace / The Verge After nine years of occasionally chasing the retro-camera-with-modern-features unicorn, Nikon may have finally gotten the formula right. The Japanese camera maker is announcing the Nikon ZF, a modern mirrorless camera packed with fairly high specs — like a 24.5-megapixel full-frame sensor, 299-point tracking autofocus with subject detection, in-body image stabilization, and dual card slots (of a sort) — in a body that looks just like one of the camera’s analog forebears. Nikon may have done this dance...",
+      url: "https://www.theverge.com/2023/9/20/23878641/nikon-zf-full-frame-mirrorless-classic-camera-fm2-film-specs-price",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T04:00:00+00:00",
+    },
+    {
       author: null,
       title:
-        "Cyberpunk 2077: Phantom Liberty — Official Launch Trailer - GameSpot",
-      description: null,
-      url: "https://www.youtube.com/watch?v=jCo-Fc3PGGo",
-      urlToImage: null,
-      publishedAt: "2023-09-25T13:53:28Z",
-      content:
-        "Your browser isnt supported anymore. Update it to get the best YouTube experience and our latest features. Learn more\r\nRemind me later",
+        "Lantern (YC W24) – Hiring Engineers to Build PostgreSQL Vector Database for AI",
+      description: "Comments",
+      url: "https://lantern-db.notion.site/lantern-db/Lantern-is-hiring-Core-Database-Engineers-396a612dcfdb4c9eb274670680c8d8b5",
+      source: "Hacker News",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-16T21:00:56+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Sportskeeda",
-      },
-      author: "Vaidehi Shrestha",
+      author: "David Pierce",
       title:
-        "10 best Minecraft mods to enhance the vanilla experience - Sportskeeda",
+        "We tried to make a hit song with only AI tools — and it got messy",
       description:
-        "Minecraft has been enchanting the gaming community for over a decade with its gameplay physics, mechanics, concepts, and much more.",
-      url: "https://www.sportskeeda.com/minecraft/10-best-minecraft-mods-enhance-vanilla-experience",
-      urlToImage:
-        "https://staticg.sportskeeda.com/editor/2023/09/95d46-16955827446754-1920.jpg",
-      publishedAt: "2023-09-25T13:22:00Z",
-      content:
-        "Minecraft has been enchanting the gaming community for over a decade with its gameplay physics, mechanics, concepts, and much more. However, playing the game in a similar way over extended periods of… [+5170 chars]",
+        "Illustration by Samar Haddad / The Verge With only a couple of minutes and access to YouTube, you can now make SpongeBob SquarePants sing your favorite Taylor Swift song. Or make Taylor Swift sing your favorite Drake song. Or make Drake sing your song. AI covers and AI-generated originals are suddenly everywhere on the internet, to the point where even diehard fans don’t know what’s a real leak and what’s a generated one. It’s a complicated ethical and legal mess and makes being a music fan weirder than ever.That’s only the very beginning of the ways AI is coming into the music-making...",
+      url: "https://www.theverge.com/23878445/ai-music-tools-magenta-suno-chatgpt-vergecast",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T13:47:06+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Cined.com",
-      },
-      author: "Nino Leitner",
+      author: "Morgan Sung",
       title:
-        "DJI Mini 4 Pro Drone Announced - Omnidirectional Obstacle Sensing, ActiveTrack 360°, 4K 100fps Slow-Mo - CineD",
+        "Vivek Ramaswamy is in his TikTok era, with Jake Paul’s endorsement",
       description:
-        "The DJI Mini 4 Pro was just announced, and it will finally have omnidirectional obstacle sensing as well as 4K 100 fps slow-motion.",
-      url: "https://www.cined.com/dji-mini-4-pro-drone-announced-omnidirectional-obstacle-sensing-activetrack-360-4k-100fps-slow-mo/",
-      urlToImage:
-        "https://www.cined.com/content/uploads/2023/09/DJI-Mini-4-Pro-3.jpg",
-      publishedAt: "2023-09-25T13:04:57Z",
-      content:
-        "DJI just announced the DJI Mini 4 Pro, the new “Pro” version of its entry-level drone. And finally, it has omnidirectional obstacle sensing, which is a particularly important feature for beginners an… [+6349 chars]",
+        "Vivek Ramaswamy is on TikTok now, thanks to Jake Paul. In the week since he joined the platform, Ramaswamy has amassed about 33,000 followers, secured an endorsement from one of the most polarizing creators in YouTube history and attempted to establish himself as the millennial politician who&#8217;s cool enough to use TikTok but anti-woke enough [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/vivek-ramaswamy-attempts-tiktok-fame-jake-paul/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T23:45:25+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Gadgets360.com",
-      },
-      author: "David Delima, Ketan Pratap",
+      author: "Ingrid Lunden",
       title:
-        "iOS 17 Modifies Privacy Settings on iPhones After Update? Apple Reportedly Investigating User Claims - Gadgets 360",
+        "After relaunching as a studio for creators, LimeWire acquires BlueWillow, a Midjourney competitor",
       description:
-        "iOS 17 update enabled two settings that were previously disabled on some iPhone models, according to security researchers. Apple is reportedly investigating these claims after a post on X by the researchers received responses from users that the setting was e…",
-      url: "https://www.gadgets360.com/mobiles/news/ios-17-update-privacy-settings-reset-apple-investigating-claims-4421842",
-      urlToImage:
-        "https://i.gadgets360cdn.com/large/apple_iOS17_wonderlust_event_main_1694538422418.jpg",
-      publishedAt: "2023-09-25T12:08:36Z",
-      content:
-        "iOS 17 was rolled out to users globally last week, bringing noteworthy changes to Apple's operating system for recent iPhone models. However, the Cupertino company is reportedly investigating claims … [+2031 chars]",
+        "In the Wild West of generative AI, a new, unlikely cowboy is riding into town. LimeWire &#8212; once infamous for music piracy and incurring the wrath of the music industry before shutting down &#8212; last year pivoted under new owners into the world of content creation. Now, to build that out further, today it&#8217;s announcing [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/limewire-bluewillow/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T06:43:14+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "SamMobile",
-      },
-      author: "SamMobile, Abid Iqbal Shaik",
+      author: "Tage Kene-Okafor",
       title:
-        "Samsung Galaxy Tab S9 FE+ launching in India next month, price revealed - SamMobile - Samsung news",
+        "Ghana’s Complete Farmer, which connects farmers to global food buyers, raises $10.4M",
       description:
-        "Flipkart, an Indian e-commerce website, has posted a teaser for the unannounced Galaxy Tab S9 FE+ on its platform. It ...",
-      url: "https://www.sammobile.com/news/galaxy-tab-s9-fe-launch-confirmed-india-price/",
-      urlToImage:
-        "https://www.sammobile.com/wp-content/uploads/2023/08/Samsung-Galaxy-Tab-S9-FE-Camera-S-Pen-Press-Render-720x405.jpg",
-      publishedAt: "2023-09-25T12:07:00Z",
-      content:
-        "Flipkart, an Indian e-commerce website, has posted a teaser for the unannounced Galaxy Tab S9 FE+ on its platform. It confirmed that Samsung will launch the tablet in India soon. The banner for the u… [+2279 chars]",
+        "Africa’s agricultural sector has a significant social and economic impact, per McKinsey. The percentage of smallholder farmers in sub-Saharan Africa exceeds 60%, while agriculture accounts for approximately 23% of the region’s gross domestic product. But despite the apparent opportunity in the agricultural sector, it is difficult for Africa to successfully participate in global supply chains [&#8230;]",
+      url: "https://techcrunch.com/2023/09/20/ghanas-complete-farmer-which-connects-farmers-to-global-food-buyers-raises-10-4m/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T08:12:05+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Moneycontrol",
-      },
-      author: "Moneycontrol News",
+      author: "Aria Alamalhodaei",
       title:
-        "Man jumps in sewer to get back his Apple AirPods. Viral video - Moneycontrol",
+        "Joby Aviation selects Dayton, Ohio for first scaled electric air taxi factory",
       description:
-        "In a video shared on Instagram that has gone viral, the man could be seen climbing down into the sewer to look for his Apple AirPods",
-      url: "https://www.moneycontrol.com/news/trends/apple-airpods-man-jumps-sewer-get-back-viral-video-11424591.html",
-      urlToImage:
-        "https://images.moneycontrol.com/static-mcnews/2023/09/Collage-Maker-25-Sep-2023-04-43-PM-9910-770x433.jpg",
-      publishedAt: "2023-09-25T11:40:43Z",
-      content:
-        "Any technology gadget aficionado would confess that among all the gadgets a person dreams of buying, Apple products remain the hardest to buy, primarily because of their high prices.\r\nHence, when a p… [+1021 chars]",
+        "Joby Aviation has selected Dayton, Ohio, as the new site for its first scaled electric aircraft factory, with the company preparing to invest up to $500 million in the new site as it looks to start selling air taxi rides as soon as 2025. Today’s announcement puts to rest months of speculation on the location [&#8230;]",
+      url: "https://techcrunch.com/2023/09/18/joby-aviation-selects-dayton-ohio-for-first-scaled-electric-air-taxi-factory/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T14:35:49+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Business Standard",
-      },
-      author: "Business Standard",
+      author: "Lorenzo Franceschi-Bicchierai",
       title:
-        "IIT Madras ties up with Ericsson for joint research in Responsible AI - Business Standard",
-      description: null,
-      url: "https://www.business-standard.com/technology/tech-news/iit-madras-ties-up-with-ericsson-for-joint-research-in-responsible-ai-123092500729_1.html",
-      urlToImage: null,
-      publishedAt: "2023-09-25T11:17:36Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Theregister.com",
-      },
-      author: "Katyanna Quach",
-      title:
-        "OpenAI's DALL·E 3 teams up with ChatGPT to turn brainfarts into art - The Register",
+        "One of the FBI’s most wanted hackers is trolling the U.S. government",
       description:
-        "Plus: Microsoft GitHub release Copilot Chat to all developers on VS Code, and more",
-      url: "https://www.theregister.com/2023/09/25/ai_in_brief/",
-      urlToImage: "https://regmedia.co.uk/2021/04/08/ai.jpg",
-      publishedAt: "2023-09-25T11:00:00Z",
-      content:
-        "AI in brief OpenAI will release the latest version of its text-to-image tool DALL·E in October.\r\nUnlike previous generations, DALL·E 3 has been integrated with OpenAI's text-only generation tool Chat… [+3867 chars]",
+        "Earlier this year, the U.S. government indicted Russian hacker Mikhail Matveev, also known by his online monikers “Wazawaka” and “Boriselcin,” accusing him of being “a prolific ransomware affiliate” who carried out “significant attacks” against companies and critical infrastructure in the U.S. and elsewhere. The feds also accused him of being a “central figure” in the [&#8230;]",
+      url: "https://techcrunch.com/2023/09/18/fbi-most-wanted-hacker-trolling-the-u-s-government/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-18T19:06:17+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Gadgets360.com",
-      },
-      author: "Sucharita Ganguly, Ketan Pratap",
+      author: "Devin Coldewey",
       title:
-        "Google Pixel 8, Pixel 8 Pro Complete Specifications, Price Tipped Ahead of October 4 Launch - Gadgets 360",
+        "Project Gutenberg puts 5,000 audiobooks online for free using synthetic speech",
       description:
-        "The Pixel 8 series will be unveiled on October 4. The company will most likely launch the Pixel 8 and Pixel 8 Pro under the new series. Now, a few days before the official launch, a tipster has listed all the likely specifications of the smartphones.",
-      url: "https://www.gadgets360.com/mobiles/news/google-pixel-8-pro-price-specifications-leaked-launch-october-4-4421605",
-      urlToImage:
-        "https://i.gadgets360cdn.com/large/pixel_series_8_google_x_1694590448777.jpg",
-      publishedAt: "2023-09-25T10:59:33Z",
-      content:
-        "The Google Pixel 8 series will be unveiled on October 4. The company has seemingly confirmed the lineup, which is said to feature the Pixel 8, as the base model and Pixel 8 Pro as the all-new Pro mod… [+2845 chars]",
+        "Open book repository Project Gutenberg has turned thousands of its titles into audiobooks practically overnight using synthetic speech, available now for download or streaming on multiple services. The selection is a bit idiosyncratic (as indeed the archive&#8217;s is generally) but it is nevertheless a powerful demonstration of accessibility in literature. Making an audiobook via traditional [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/project-gutenberg-puts-5000-audiobooks-online-for-free-using-synthetic-speech/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T16:36:51+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Contentmediasolution.com",
-      },
+      author: "Kyle Wiggers",
+      title: "Allie wants to layer intelligence on top of factory floors",
+      description:
+        "Factory downtime is an expensive problem. According to one estimate, it costs enterprise companies 11% of their yearly turnover, amounting to almost $1.5 trillion each year. That works out to about $129 million per facility among Fortune 500 companies, over double what Fortune 500 companies reported paying in downtime in 2020. Part of the reason [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/allie-wants-to-layer-intelligence-on-top-of-factory-floors/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T19:48:33+00:00",
+    },
+    {
+      author: "Rita Liao",
+      title:
+        "US finds no evidence Huawei can mass produce advanced phone chips",
+      description:
+        "The ability of Huawei &#8212; and China at large &#8212; to manufacture advanced chips amid U.S. sanctions has again come into question as conflicting claims arise. The U.S. finds no evidence that the Chinese smartphone and telecom giant Huawei can produce smartphones with advanced semiconductors at scale, U.S. Commerce Secretary Gina Raimondo said on Tuesday. [&#8230;]",
+      url: "https://techcrunch.com/2023/09/19/us-finds-no-evidence-huawei-can-mass-produce-advanced-phone-chips/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-19T23:15:49+00:00",
+    },
+    {
+      author: "Sarah Perez",
+      title:
+        "Orion, from makers of Halide, lets you use an iPad as an external HDMI display",
+      description:
+        "Lux, the makers of popular iPhone photography apps like Halide, Spectre and Skylight, is out today with its latest app: Orion, an app that turns an iPad into an external HDMI display for any camera, video game console, or even VHS. The new app is a bit of an offshoot for Lux, which primarily focuses [&#8230;]",
+      url: "https://techcrunch.com/2023/09/20/orion-from-makers-of-halide-lets-you-use-an-ipad-as-an-external-hdmi-display/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T17:23:48+00:00",
+    },
+    {
+      author: "Will Shanklin",
+      title:
+        "Everything Amazon announced at its 2023 Devices and Services event",
+      description:
+        "Amazon’s fall hardware event was chock full of updates. Perhaps unsurprisingly, given the generative AI boom from the last year, the company began transforming Alexa into a much more versatile and conversational personal chatbot. But it also had plenty of new hardware to introduce, with new models of the Echo Show, security cameras, Echo Frames, a 10-gigabit router and more. Here’s everything Amazon unveiled on Wednesday.Alexa with generative AIAmazonAs generative AI has exploded in popularity during the last year, task-focused personal assistants like Siri, Google Assistant and Alexa now...",
+      url: "https://www.engadget.com/everything-amazon-announced-at-its-2023-devices-and-services-event-194621706.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2023-09/2c959ea0-57ee-11ee-af7f-c6b135463147",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T19:46:21+00:00",
+    },
+    {
+      author: "Lawrence Bonk",
+      title: "Microsoft’s latest Windows 11 update drops on September 26",
+      description:
+        "Microsoft is releasing a big Windows 11 update next week, on September 26. The catchily-named 23H2 is packed with some real game changing features, along with a whole bunch of quality of life improvements. The update arrives just in time for the launch of the just-announced Surface Laptop Go 3 and the Surface Laptop Studio 2.The big news here is the inclusion of the new AI-powered Windows Copilot feature. This toolset already exists as part of the Edge browser, but now it’ll be natively implemented in Windows, which allows for some nifty use cases. This native implementation means that...",
+      url: "https://www.engadget.com/microsofts-latest-windows-11-update-drops-on-september-26-163553126.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2023-09/b66fd640-5898-11ee-8fa0-10f99205aafe",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T16:35:53+00:00",
+    },
+    {
+      author: "Jay Peters",
+      title: "Threads might be getting an edit button soon",
+      description:
+        "Illustration: The Verge Meta’s in-development edit button for Threads might let you edit posts within five minutes of publishing them, as reported by developer Alessandro Paluzzi on X (formerly Twitter). Instagram chief Adam Mosseri confirmed shortly after the app’s July launch that an edit button was on the list of potential features, and now that Paluzzi has discovered some details about it, perhaps the feature will be available more widely sometime soon. #Threads is working on the ability to edit posts within 5 minutes pic.twitter.com/TlyoieQNcM— Alessandro Paluzzi (@alex193a...",
+      url: "https://www.theverge.com/2023/9/21/23884466/threads-edit-button-development-instagram-meta",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T20:15:35+00:00",
+    },
+    {
+      author: "Kate Park",
+      title:
+        "HME Square aims to measure glucose painlessly with photoacoustics",
+      description:
+        "People with diabetes have to monitor their blood sugar levels regularly by pricking their skin. Many glucose-monitoring device makers worldwide are pursuing needle-free approaches to make this painful process more manageable. Among them is a South Korean company called HME Square, which uses photoacoustics to test glucose levels noninvasively. HME Square was founded in 2020 [&#8230;]",
+      url: "https://techcrunch.com/2023/09/21/hme-square-aims-to-measure-glucose-painlessly-with-photoacoustics/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-22T01:24:33+00:00",
+    },
+    {
+      author: "Paul Sawers",
+      title:
+        "Google expands its subsea cable infrastructure with Nuvem, connecting the U.S., Bermuda, and Portuga",
+      description:
+        "Google has announced another subsea cable system, as the internet giant strives to bolster its internet infrastructure and get more people using its array of cloud-based services. Dubbed &#8220;Nuvem,&#8221; the new cable represents one of more than a dozen cables that Google has invested in through the years, starting with Unity which went into operation [&#8230;]",
+      url: "https://techcrunch.com/2023/09/25/google-nuvem-subsea-cable/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-25T11:26:32+00:00",
+    },
+    {
+      author: "Cade Metz",
+      title: "The Secret Ingredient of ChatGPT Is Human Advice",
+      description:
+        "Companies like OpenAI hone their bots using hand-tailored examples from well-educated workers. But is this always for the best?",
+      url: "https://www.nytimes.com/2023/09/25/technology/chatgpt-rlhf-human-tutors.html",
+      source: "The New York Times",
+      image:
+        "https://static01.nyt.com/images/2023/09/14/multimedia/chatbot-secret-sauce-01-bcfl/chatbot-secret-sauce-01-bcfl-moth.jpg",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-25T12:00:16+00:00",
+    },
+    {
+      author: "Jay Peters",
+      title:
+        "Ring’s new Stick Up Cam Pro includes radar sensors to help with motion detection",
+      description:
+        "Image: Amazon Amazon just announced the Ring Stick Up Cam Pro at its September 2023 event, and the big new feature is the addition of radar sensors that will help with detecting motion. Amazon says in a press release that the radar sensors will help the camera “measure the distance of an object in its field of view.” With that improved sensing, you’ll be able to set more specific areas for the Stick Up Cam Pro to watch for motion, which could be useful if you want your security camera to keep an eye on a specific spot in your yard.The Stick Up Cam Pro also includes Ring’s “Audio Plus...",
+      url: "https://www.theverge.com/2023/9/20/23882430/ring-stick-up-cam-pro-radar-sensors-motion-detection",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T16:24:51+00:00",
+    },
+    {
+      author: "Allison Johnson",
+      title: "The new FineWoven iPhone cases are very bad",
+      description:
+        "This is not good. | Photo by Allison Johnson / The Verge Folks, what you’ve heard so far is true. Apple’s new FineWoven iPhone cases and accessories are bad. Like, really bad. I’ve been puzzling over them for the past week, looking at them from different angles. Picking them up, setting them down, petting them. Seven days later, I still can’t make sense of them and have no other choice but to say it out loud: FineWoven is very bad.FineWoven is a new fabric option you’ll find on iPhone 15 cases, AirTag holders, and MagSafe wallets. Apple calls it a “luxurious and durable microtwill...",
+      url: "https://www.theverge.com/2023/9/20/23882255/apple-iphone-15-finewoven-case-wallet-bad",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T17:50:41+00:00",
+    },
+    {
+      author: "Romain Dillet",
+      title:
+        "Front goes beyond the unified inbox with a Zendesk-style knowledge base",
+      description:
+        "Customer operations platform Front is better known for its omnichannel inbox that lets you aggregate all customer conversations in a single view — emails, chat conversations, SMS, social media messages. Today, the company unveiled a handful of new features that turns Front into a more complete customer support platform. By bringing all these features under [&#8230;]",
+      url: "https://techcrunch.com/2023/09/20/front-goes-beyond-the-unified-inbox-with-a-zendesk-style-knowledge-base/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T18:43:49+00:00",
+    },
+    {
+      author: "Lauren Forristal",
+      title:
+        "Former Meta AI VP debuts Sizzle, an AI-powered learning app and chatbot",
+      description:
+        "Founded by the former vice president of AI at Meta, Jerome Pesenti, Sizzle is a free AI-powered learning app that generates step-by-step answers to math equations and word problems. The company recently launched four new features, including a grading capability, a feature that regenerates steps, an option to see multiple answers to one problem and [&#8230;]",
+      url: "https://techcrunch.com/2023/09/20/former-meta-ai-vp-debuts-sizzle-an-ai-powered-learning-app-and-chatbot/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T20:22:42+00:00",
+    },
+    {
+      author: "Paul Sawers",
+      title:
+        "AppFactor drags legacy enterprise apps to the cloud through automation",
+      description:
+        "Technical debt is often the unsung villain of the enterprise, crippling companies seeking to modernize as they realize just how much &#8220;legacy&#8221; lives in their stack. And as with most kinds of debt, there is usually interest to pay, too. This is something that fledgling U.K. startup AppFactor is setting out to solve, with a [&#8230;]",
+      url: "https://techcrunch.com/2023/09/20/appfactor-drags-legacy-enterprise-apps-to-the-cloud-through-automation/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T20:47:51+00:00",
+    },
+    {
+      author: "Jennifer Pattison Tuohy",
+      title: "You can finally ask Siri to play Spotify on a HomePod",
+      description:
+        "Siri can now play your Spotify playlists on your HomePod. | Photo by Chris Welch / The Verge A new feature in iOS 17 finally sets Spotify free — allowing you to use the voice assistant to start your Spotify session directly on your HomePod, hands-free. The capability (spotted by 9to5Mac) allows you to start an AirPlay session from your phone using a Siri command. So now you can say, “Hey Siri, play The National on Spotify” to your HomePod, and Siri will route the command through your phone and start streaming Spotify on the smart speaker.It’s a workaround, but it works. When The Verge...",
+      url: "https://www.theverge.com/2023/9/21/23883860/siri-can-now-play-spotify-on-apple-homepod-smart-speaker",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T15:36:27+00:00",
+    },
+    {
+      author: "Brian Heater",
+      title: "Diligent raises $25 million to triple its nursing robot’s reach",
+      description:
+        "The pandemic had a profound impact on countless careers, but few jobs were hit quite like nursing. As hospitals overflowed, staff was forced to take on impossible long shifts, risking their own health in the process. In many ways, it was the perfect environment to introduce a robot like Diligent’s Moxi, a system designed to [&#8230;]",
+      url: "https://techcrunch.com/2023/09/21/diligent-raises-25-million-to-triple-its-nursing-robots-reach/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T18:00:50+00:00",
+    },
+    {
+      author: "Kyle Wiggers",
+      title: "Secoda secures $16M to expand its data cataloging platform",
+      description:
+        "Secoda, a startup developing what it describes as an AI-powered data search and cataloging platform, today announced that it raised $16 million in a funding round led by Craft Ventures with participation from Abstract Ventures and several angel investors. Bringing Secoda&#8217;s total raised to $18.3 million, Secoda co-founder and CEO Etai Mizrahi said that the [&#8230;]",
+      url: "https://techcrunch.com/2023/09/21/secoda-secures-16m-to-expand-its-data-cataloging-platform/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T18:00:40+00:00",
+    },
+    {
+      author: "Brian Heater",
+      title:
+        "Firebot is designed to scout burning builders before sending in firefighters",
+      description:
+        "Stanley Wilson died a decade ago, battling a six-alarm fire at a Dallas, Texas, condominium complex. Two additional firefighters were taken to a hospital and two residents were treated on site for smoke inhalation, but all survived. A pair of reports were made public the following year, citing issues with training and risk assessment, among [&#8230;]",
+      url: "https://techcrunch.com/2023/09/21/firebot-is-designed-to-scout-burning-builders-before-sending-in-firefighters/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T18:27:40+00:00",
+    },
+    {
+      author: "Umar Shakir",
+      title: "Samsung leaks its new Fan Edition phone, tablet, and earbuds",
+      description:
+        "Well, that certainly looks like a new set of Fan Edition hardware. | Image: Samsung Samsung has leaked its own latest “Fan Edition” product lineup that includes the new Galaxy Buds FE earbuds, Galaxy S23 FE smartphone, and Galaxy Tab S9 FE tablet. The new products have come to light via the company’s Argentinian website, where a product page for the new earbuds has seemingly launched prematurely — and includes photos of the rest of the lineup (via SamMobile).Another image references an October 4th date (with the clock at 12:45), which might indicate the release or announcement date for...",
+      url: "https://www.theverge.com/2023/9/22/23885350/samsung-leaks-fan-edition-galaxy-buds-s23-tab-fe",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-22T15:07:11+00:00",
+    },
+    {
+      author: "Ash Parrish",
+      title: "Unity announces its revamped pricing model",
+      description:
+        "Illustration by Cath Virginia / The Verge A little more than a week after announcing a disastrous new pricing model that infuriated developers, Unity has introduced its revamped version. The new plan is a drastic departure from what was initially announced. Now, users on the Unity Personal subscription plan will not be charged the new fee, and Unity will increase the revenue cap on games made with that plan to $200,000.Furthermore, any game made with Unity that makes less than $1 million in 12 months will not be subject to the fee.The company is also changing what games can be assessed with the...",
+      url: "https://www.theverge.com/2023/9/22/23882768/unity-new-pricing-model-update",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-22T17:51:08+00:00",
+    },
+    {
+      author: "Malak Saleh",
+      title:
+        "NASA's OSIRIS-REx successfully delivers asteroid samples back to Earth",
+      description:
+        "NASA’s OSIRIS-REx seven-year mission to collect rocks and dust from a near-Earth asteroid is complete. The capsule containing the final samples returned to Earth on the morning of September 24th, touching down in the desert at the Department of Defense’s Utah Test and Training Range at 10:52 am ET.The device collected around 250 grams of material from a carbon-rich asteroid dubbed “Bennu,” which NASA says hosts some of the oldest rocks in our solar system. The sample gives scientists more information about the building blocks of what planetary makeup looked like 4.5 billion years ago.&...",
+      url: "https://www.engadget.com/nasas-osiris-rex-successfully-delivers-asteroid-samples-back-to-earth-091107901.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2023-09/bf2e6ba0-5af2-11ee-bfbe-fa87dadf0c1b",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-25T09:11:07+00:00",
+    },
+    {
+      author: "Jon Porter",
+      title:
+        "Pixel 8 series rumored to include seven years of software support",
+      description:
+        "A teaser image of the Pixel 8 and 8 Pro released by Google. | Image: Google Google’s upcoming Pixel 8 and Pixel 8 Pro could come with seven years of software support, according to a leaked list of specs published by 91Mobiles. Kamila Wojciechowska, the original source of the leak, has also published US pricing for the two unannounced phones ahead of their October 4th launch. The Pixel 8 Pro is reportedly due to start at $899, the same as the 7 Pro, while the Pixel 8 could start at $699, a $100 increase over the $599 starting price for the Pixel 7.Wojciechowska notes that it’s unclear...",
+      url: "https://www.theverge.com/2023/9/25/23888831/pixel-8-pro-seven-years-software-support-price-rumors-leak",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-25T09:10:49+00:00",
+    },
+    {
+      author: "Emma Roth",
+      title: "All the news from Amazon’s September 2023 product launch event",
+      description:
+        "Illustration by Alex Castro / The Verge Amazon’s big fall product event comes from a smaller company and with big AI expectations. Continue reading&hellip;",
+      url: "https://www.theverge.com/2023/9/20/23881164/amazon-event-hardware-devices-alexa-echo-ring",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T16:06:20+00:00",
+    },
+    {
+      author: "Alex Wilhelm",
+      title:
+        "Klaviyo’s strong IPO pricing should give unicorns an idea of what they are worth",
+      description:
+        "Defending — or nearly defending — a 2021-era valuation in a 2023 IPO is impressive, given how much the value of tech companies has changed in the past year and a half.",
+      url: "https://techcrunch.com/2023/09/20/klaviyos-ipo-pricing-analysis/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T17:03:17+00:00",
+    },
+    {
+      author: "Alex Cranz",
+      title: "Amazon Fire TV Soundbar hands-on: it’s loud and inexpensive",
+      description:
+        "Yup, that’s a soundbar. | Photo by Alex Cranz / The Verge Soundbars are tricky. They need to be big enough that they sound better than the dinky speakers on your TV, but they need to be cheap enough that you don’t balk at upgrading your sound after just spending a lot of money on a TV. I didn’t get to spend enough time with Amazon’s $119.99 Fire TV Soundbar, but I can confirm it sounds bigger than it looks.What I didn’t hear was a lot of detail. Voices rumble with appropriate amounts of bass — but in the very audio-unfriendly environment we listened to the soundbar in, dialogue was...",
+      url: "https://www.theverge.com/23882491/amazon-fire-tv-soundbar-hands-on-price",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T17:30:53+00:00",
+    },
+    {
+      author: "Mary Ann Azevedo",
+      title: "Why is Y Combinator so defensive lately?",
+      description:
+        "Y Combinator has been on the defense as of late. This past weekend, leaders from the popular accelerator were vocal on X (formerly known as Twitter) in their reaction to a comment made by the CEO of another accelerator at an event. Ali Partovi, who founded Neo in 2017, was the keynote speaker at HackMIT [&#8230;]",
+      url: "https://techcrunch.com/2023/09/20/why-is-y-combinator-so-defensive-lately/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T20:58:32+00:00",
+    },
+    {
+      author: "Sarah Perez",
+      title:
+        "YouTube to add AI creator tools to find music for videos, add dubs",
+      description:
+        "YouTube is expanding its Creator Music Studio, announced last year, with new AI features in addition to the launch of an AI-dubbing tool. Currently, creators can use the Creator Music Studio to search for songs, a specific artist, or a music genre they want to use in a video. Now, they&#8217;ll be able to leverage [&#8230;]",
+      url: "https://techcrunch.com/2023/09/21/youtube-to-add-ai-creator-tools-to-find-music-for-videos-add-dubs/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T14:39:25+00:00",
+    },
+    {
+      author: "Emilia David",
+      title: "Microsoft to add DALL-E 3 to Bing Chat",
+      description:
+        "Image: Microsoft Microsoft announced it will soon add access to OpenAI’s DALL-E 3 image generator for users to create images right in a chat.DALL-E 3, which will be released for ChatGPT’s enterprise users in October, will allow people to type a couple of sentences to create a photo. Microsoft did not specify when DALL-E 3 on Bing will come out. The company also added new shopping features to Bing. Bing can ask users specific questions on how a product will be used or other more personalized questions so people can pinpoint the right product that suits their needs. Bing also lets people find...",
+      url: "https://www.theverge.com/2023/9/21/23873690/microsoft-new-ai-features-bing-search-shopping-dall-e-3",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T14:52:05+00:00",
+    },
+    {
+      author: "Kris Holt",
+      title: "The Surface Laptop Go 3 starts at $799 and arrives on October 3",
+      description:
+        "Microsoft unveiled the Surface Laptop Go 3 during its Surface event on Thursday. The company says the latest model will run for up to to 15 hours on a single charge and that it will be ultra thin and ultra light (at under 2.5 pounds).&nbsp;It has a 12.4-inch touchscreen and a fingerprint power button. At first glance, the bezel doesn&#39;t seem to have changed much from previous iterations. Performance-wise, Microsoft claims the Surface Laptop Go 3 is 88 percent faster than the original model, which arrived three years ago.Unsurprisingly, given Microsoft&#39;s focus on AI over the last year...",
+      url: "https://www.engadget.com/the-surface-laptop-go-3-starts-at-799-and-arrives-on-october-3-150707089.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2023-09/460ee420-5890-11ee-8faf-06c12988ad10",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T15:07:07+00:00",
+    },
+    {
+      author: "Natasha Lomas",
+      title: "UK bolts US ‘data bridge’ deal onto EU-US Data Privacy Framework",
+      description:
+        "The UK government has officially confirmed it will piggyback on a transatlantic data transfer deal between the European Union and the US by bolting on an extension which it&#8217;s dubbed the &#8220;UK-US data bridge&#8221;. Back in June the UK and US reached an agreement in principle over this arrangement. Today the UK government confirmed that [&#8230;]",
+      url: "https://techcrunch.com/2023/09/21/uk-us-data-bridge/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T16:43:04+00:00",
+    },
+    {
+      author: "Walter Thompson",
+      title:
+        "TechCrunch+ Roundup: Prompt engineering, web3 gaming survey, how to spend $10K on paid ads",
+      description:
+        "TechCrunch Disrupt 2023 ended yesterday, and out of all the events I've attended since working here, this one was my favorite.",
+      url: "https://techcrunch.com/2023/09/22/techcrunch-roundup-prompt-engineering-web3-gaming-survey-how-to-spend-10k-on-paid-ads/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-22T17:55:07+00:00",
+    },
+    {
+      author: "Tim De Chant",
+      title:
+        "LimeLoop’s sleek reusable mailers seek to replace cardboard boxes",
+      description:
+        "The startup’s smart mailers are reusable dozens of times, reducing the carbon footprint by 90% compared with cardboard boxes.",
+      url: "https://techcrunch.com/2023/09/22/lime-loop-reusable-packaging/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-22T21:33:08+00:00",
+    },
+    {
+      author: "Rebecca Szkutak",
+      title:
+        "Building an equitable cap table puts more tools in a startup’s toolbox",
+      description:
+        "Building an equitable cap table allows startups to bring on experts they wouldn't be able to hire while making VC more diverse.",
+      url: "https://techcrunch.com/2023/09/24/equitable-cap-table-tools/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-24T15:00:23+00:00",
+    },
+    {
+      author: "Sheena Vasani",
+      title: "LG’s monstrous Gram 17 is nearly half off just for today",
+      description:
+        "LG’s last-gen Gram 17 offers a spacious screen without sacrificing portability. | Photo by Amelia Holowaty Krales / The Verge Laptops are useful for many things, but your typical 13-inch screen just isn’t spacious enough for hardcore multitaskers. If you want more screen real estate at a reasonable price, Apple’s 15-inch MacBook Air is an obvious choice, as is LG’s Gram 17 when you can find it at a steep discount. Thankfully, last year’s version of the latter is currently on sale at Best Buy with 16GB of RAM, 1TB of storage, and a 12th Gen Core i7-1260P processor for $999.99 ($800 off...",
+      url: "https://www.theverge.com/2023/9/20/23880389/lg-gram-17-disney-plus-apple-ipad-pro-homepod-deal-sale",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T12:52:59+00:00",
+    },
+    {
+      author: "Daniel Cooper",
+      title:
+        "Blink's new Outdoor 4 camera accessories include battery and range extenders",
+      description:
+        "It’s been less than a month since Blink, Amazon’s other security camera company, released the Outdoor 4. Now, as part of Amazon’s big September product showcase, we’re getting a trio of accessories to help the camera travel further and do more when it gets there.First on the list is the Sync Module Pro, which lets you place your Outdoor 4 further from your home’s wireless network. The company says you can install a camera in “the furthest corner of your property” without worrying about range, but hasn’t yet shared real-world measurements. Maybe those figures haven’t been...",
+      url: "https://www.engadget.com/blinks-new-outdoor-4-camera-accessories-include-battery-and-range-extenders-160101967.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2023-09/f3d5dd80-579f-11ee-b3fd-1d7aa3f58b9e",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T16:01:01+00:00",
+    },
+    {
+      author: "Haje Jan Kamps",
+      title: "Don’t use builds, reveals or animations in your pitch deck",
+      description:
+        "In a world of ever-advancing technologies, it can be tempting to embed your pitch deck with all the latest bells and whistles. But do they even work?",
+      url: "https://techcrunch.com/2023/09/20/dont-use-builds-reveals-or-animations-in-your-pitch-deck/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T16:00:40+00:00",
+    },
+    {
       author: null,
       title:
-        "Immersive Experience: Continental Delivers V-Shaped Display to Hyundai Kona - Content Media Solution",
-      description:
-        "Babenhausen, Germany, September 25, 2023. Continental delivers V-shaped displays to equip vehicle manufacturer Hyundai. The",
-      url: "https://contentmediasolution.com/business/immersive-experience-continental-delivers-v-shaped-display-to-hyundai-kona/",
-      urlToImage:
-        "https://contentmediasolution.com/wp-content/uploads/2021/05/cropped-website_logo_transparent_background.png",
-      publishedAt: "2023-09-25T10:40:57Z",
-      content:
-        "Babenhausen, Germany, September 25, 2023. Continental delivers V-shaped displays to equip vehicle manufacturer Hyundai. The technology companys state-of-the-art display solution will now be part of t… [+2261 chars]",
+        "BuildZoom (better way to build custom homes) Is hiring a Growth Associate",
+      description: "Comments",
+      url: "https://jobs.lever.co/buildzoom",
+      source: "Hacker News",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T21:02:37+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Moneycontrol",
-      },
-      author: "S.N.Thyagarajan",
+      author: "Tom Warren",
+      title: "Microsoft’s Surface and AI event: all the news and announcements",
+      description:
+        "Photo by Amelia Holowaty Krales / The Verge Microsoft’s big Windows and Surface event will focus on its AI vision of the future. Continue reading&hellip;",
+      url: "https://www.theverge.com/2023/9/21/23882273/microsoft-event-surface-windows-office-ai",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T13:15:52+00:00",
+    },
+    {
+      author: "Jay Peters",
+      title: "YouTube made a video editing app — just like TikTok",
+      description:
+        "Illustration by Alex Castro / The Verge YouTube is releasing a new app called YouTube Create that lets you edit video right on your phone, the company announced on Thursday. The new app could encourage more people to make Shorts, YouTube’s take on TikTok-style videos; it’s generally easier to make a TikTok video than it is to make a full-fledged YouTube video, which is a key reason why TikTok has exploded in popularity.Making a separate app also mimics TikTok’s strategy of releasing the separate (and popular) CapCut app, which helps you make videos you can share on TikTok and other...",
+      url: "https://www.theverge.com/2023/9/21/23883755/youtube-create-mobile-video-editing-app-tiktok-capcut",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T14:30:00+00:00",
+    },
+    {
+      author: "Mia Sato",
+      title: "YouTube is going all in on AI",
+      description:
+        "Image: YouTube More content on YouTube is going to be created at least in part using generative AI.The video platform announced several new AI-powered tools for creators at its annual Made on YouTube event on Thursday. Among the features coming later this year or next are AI-generated photo and video backgrounds, AI video topic suggestions, and music search.A new feature called Dream Screen will create AI-generated videos and photos that creators can place in the background of their YouTube Shorts. Initially, creators will be able to type in prompts to generate backgrounds; eventually, YouTube...",
+      url: "https://www.theverge.com/2023/9/21/23883749/youtube-generative-ai-dream-screen-creators",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T14:30:00+00:00",
+    },
+    {
+      author: "Christine Hall",
       title:
-        "NCLAT to hear Google's appeal against CCI's Rs 936 crore penalty from November 28 - Moneycontrol",
+        "eStreamly blends physical, digital shopping with the video as the star",
       description:
-        "On  January 11, the tribunal refused to grant immediate relief to Google against CCI’s order and posted the case for the final hearing in April 2023. While Google filed an appeal at the Supreme Court against the NCLAT order, it ultimately withdrew the case.",
-      url: "https://www.moneycontrol.com/news/trends/legal/nclat-to-hear-googles-appeal-against-ccis-rs-936-crore-penalty-from-november-28-11423861.html",
-      urlToImage:
-        "https://images.moneycontrol.com/static-mcnews/2023/08/Collage-Maker-30-Aug-2023-10-48-AM-3714-770x433.jpg",
-      publishedAt: "2023-09-25T10:18:25Z",
-      content:
-        "The National Company Law Appellate Tribunal (NCLAT) on September 25 said that it will start hearing from November 28 tech giant Google's appeal against the order by Competition Commission of India (C… [+1645 chars]",
+        "eStreamly offers business-to-business video commerce software to enable livestreams and videos to be shoppable across platforms.",
+      url: "https://techcrunch.com/2023/09/21/estreamly-livestream-shopping-battlefield/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T21:53:50+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Zoom",
-      },
-      author: "TN City Desk",
-      title:
-        "Pune Self-Help Groups Get A Boost As PMC To Lease Out 500 Commercial Shops - Times Now",
-      description:
-        "Pune Municipal Corporation (PMC) will lease 500 of its unused commercial shops to self-help groups (SHGs). These shops have been lying unused since 2008. The SHGs will use these shops for various commercial activities, which will help them to generate income …",
-      url: "https://www.timesnownews.com/pune/pune-self-help-groups-get-a-boost-as-pmc-leases-out-500-commercial-shops-article-103929964",
-      urlToImage:
-        "https://static.tnn.in/thumb/msid-103929964,updatedat-1695636738979,width-1280,height-720,resizemode-75/103929964.jpg",
-      publishedAt: "2023-09-25T10:12:19Z",
-      content:
-        "03:17\r\nBB17 OTT 2 ex-contestants Pooja Bhatt, Falaq Naaz, Avinash Sachdev, &amp; Bebika Dhurve reunite for an trip",
-    },
-    {
-      source: {
-        id: null,
-        name: "Mediabrief.com",
-      },
-      author: "NewsDesk",
-      title:
-        "Digital travel agency StampThePassport raises 4 crore from angel investors - Mediabrief",
-      description:
-        "StampThePassport is delighted to announce its launch, revolutionizing the way Indian travelers access visa information and apply for visas.",
-      url: "https://mediabrief.com/stampthepassport-raises-4cr-from-angel-investors/",
-      urlToImage:
-        "https://mediabrief.com/wp-content/uploads/2023/09/IMAGE-stampthepassport-raises-4cr-from-angel-investors-MEDIABRIEF.jpg",
-      publishedAt: "2023-09-25T09:57:05Z",
-      content:
-        "With a pre-seed funding of 4 crore, StampThePassport.com, a disruptive new venture by travel industry expert Vijay Kesavan – Founder and CEO, is delighted to announce its official launch, revolutioni… [+3150 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "GSMArena.com",
-      },
-      author: "Michail",
-      title:
-        "Samsung Galaxy A05 and A05s go official in Malaysia - GSMArena.com news - GSMArena.com",
-      description:
-        "The A05s gets a Snapdrgona 680 while the A05 is equipped with a Helio G85. Samsung silently launched its latest Galaxy A-series members with the Galaxy A05...",
-      url: "https://www.gsmarena.com/samsung_galaxy_a05_and_a05s_go_official_in_malaysia_-news-60012.php",
-      urlToImage:
-        "https://fdn.gsmarena.com/imgroot/news/23/09/samsung-galaxy-a05-a05s-ofic/-952x498w6/gsmarena_000.jpg",
-      publishedAt: "2023-09-25T09:53:01Z",
-      content:
-        "Samsung silently launched its latest Galaxy A-series members with the Galaxy A05 and Galaxy A05s. Both new phones feature 6.7-inch LCDs with HD+ resolution on the A05 and FHD+ resolution on the A05s.… [+890 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "Singh Rahul Sunilkumar",
-      title:
-        "Why did Pragyan Rover not leave clear imprints of Indian emblem on Moon? - Hindustan Times",
-      description:
-        "Chandrayaan 3 accomplished most tasks on lunar exploration but could not imprint Indian emblem, ISRO's logo clearly on lunar surface by Pragyan Rover's wheel.",
-      url: "https://www.hindustantimes.com/technology/chandrayaan-3-live-news-why-did-pragyan-rover-not-leave-a-clear-imprint-of-indian-emblem-on-moon-isro-chief-somanath-101695628032681.html",
-      urlToImage:
-        "https://www.hindustantimes.com/ht-img/img/2023/09/25/1600x900/chandrayaan_3_rover_isro_news_1689403228045_1695633919460.png",
-      publishedAt: "2023-09-25T09:51:45Z",
-      content:
-        "Chandrayaan 3 has accomplished nearly all of its planned tasks during the 10-day lunar exploration it conducted before entering sleep mode. However, a clear image of the Indian national emblem and th… [+1815 chars]",
-    },
-    {
-      source: {
-        id: "reuters",
-        name: "Reuters",
-      },
-      author: "Ben Blanchard, Praveen Paramasivam",
-      title:
-        "Apple's Indian contract facility temporarily halts iPhone assembly after fire - Reuters India",
-      description:
-        "Apple supplier Pegatron temporarily halted iPhone assembly at its facility in south India on Monday after a fire incident on Sunday night, three sources told Reuters.",
-      url: "https://www.reuters.com/world/india/fire-apple-supplier-pegatrons-india-factory-disrupts-production-sources-2023-09-25/",
-      urlToImage:
-        "https://www.reuters.com/resizer/9Dm_yO_NGqFQ_hOFiRhMfAyTscI=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/6S55XFUNFFPRHKCC5ICZNP4T3Y.jpg",
-      publishedAt: "2023-09-25T09:31:00Z",
-      content:
-        "CHENNAI, Sept 25 (Reuters) - Apple supplier Pegatron temporarily halted iPhone assembly at its facility in south India on Monday after a fire incident on Sunday night, three sources told Reuters.\r\nTh… [+1526 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Storyboard18.com",
-      },
-      author: "Aashrey Baliga",
-      title:
-        "Asaya launched; new skin-care brand on the market for Indian skin tones - Storyboard18",
-      description:
-        "Asaya has raised about $0.5 Million from angel investors and the founders themselves, but in the next 4-6 months, Asaya aims to raise $1.2 Million in commitment to catering for the melanin-rich women across the country.",
-      url: "https://www.storyboard18.com/quantum-brief/asaya-launched-new-skin-care-brand-on-the-market-for-indian-skin-tones-14699.htm",
-      urlToImage:
-        "https://images.storyboard18.com/storyboard18/2023/09/bfdsd-768x432.png",
-      publishedAt: "2023-09-25T09:23:18Z",
-      content:
-        "Asaya, a skincare brand designed exclusively for melanin-rich skin, is unveiled under the leadership of entrepreneurs Neeraj Biyani, Vikash Singhal, Mandeep Bhatia, and Eeti Sharma. Conceptualized an… [+3832 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "India Today",
-      },
-      author: "Ankita Garg",
-      title:
-        "iPhone 15 Plus gets longest iPhone battery life badge, beating all previous variants - India Today",
-      description:
-        "Apple's latest release, the iPhone 15 series, is making waves in the tech world, particularly the iPhone 15 Plus. After rigorous testing, the Plus model has been given the badge of iPhone with the longest battery life to date, surpassing all previous models. …",
-      url: "https://www.indiatoday.in/technology/news/story/iphone-15-plus-gets-longest-iphone-battery-life-badge-beating-all-previous-variants-2440222-2023-09-25",
-      urlToImage:
-        "https://akm-img-a-in.tosshub.com/indiatoday/images/story/media_bank/202309/iphone-15-124136255-16x9.jpeg?VersionId=lde6Qj2w3grvDv.AN10pn0h2EVyBAwht",
-      publishedAt: "2023-09-25T09:13:42Z",
-      content:
-        "Apple's latest release, the iPhone 15 series, is making waves in the tech world, particularly the iPhone 15 Plus. After rigorous testing, the Plus model has been given the badge of iPhone with the lo… [+2117 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "India Today",
-      },
-      author: "INDIATODAY",
-      title: "iPhone 14 available at Rs 63,000, details here - India Today",
-      description:
-        "Amazon is showing a massive price drop for iPhone 14 ahead of Great Indian Festival Sale 2023.",
-      url: "https://www.indiatoday.in/visualstories/technology/iphone-14-available-at-rs-63000-details-here-65373-25-09-2023",
-      urlToImage:
-        "https://akm-img-a-in.tosshub.com/sites/visualstory/wp/2023/09/cropped-iPhone_14.jpg",
-      publishedAt: "2023-09-25T09:11:57Z",
-      content:
-        "Amazon is offering exchange deals for the iPhone 14, with potential savings of up to Rs. 37,500, depending on the condition, brand, and price of your old phone.",
-    },
-    {
-      source: {
-        id: null,
-        name: "Beebom",
-      },
-      author: "Vanshika Malhotra",
-      title: "boAt Ultima Vogue with an AMOLED Display Launched - Beebom",
-      description:
-        "boAt has launched the new Ultima Vogue smartwatch with an AMOLED display and an affordable price in India. Check out the details.",
-      url: "http://beebom.com/boat-ultima-vogue-launched-india/",
-      urlToImage:
-        "https://beebom.com/wp-content/uploads/2023/09/boAt-Ultima-Vogue-launched.jpg",
-      publishedAt: "2023-09-25T09:08:53Z",
-      content:
-        "boAt has launched a new smartwatch, the Ultima Vogue in India. This is yet another affordable offering from the brand and comes with highlighting features like an AMOLED display, an IP rating, and mu… [+1713 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Cxotoday.com",
-      },
-      author: "CXOtoday News Desk, CXOtoday News Desk",
-      title:
-        "Minosha India Ltd. unveils a smart range of Laser Printers for hybrid workplaces in India - CXOToday.com",
-      description:
-        "~The product lineup comprises of segments – Mono and Colour – each focusing on enhancing productivity and printing capabilities in offices In a move poised to redefine the landscape of office printing technology in India, Minosha India Limited, a distinguishe…",
-      url: "https://www.cxotoday.com/press-release/minosha-india-ltd-unveils-a-smart-range-of-laser-printers-for-hybrid-workplaces-in-india/",
-      urlToImage:
-        "https://www.cxotoday.com/ashojoac/2023/09/Minosha_Printers-.jpg",
-      publishedAt: "2023-09-25T08:45:22Z",
-      content:
-        "~The product lineup comprises of segments Mono and Colour each focusing on enhancing productivity and printing capabilities in offices\r\nIn a move poised to redefine the landscape of office printing t… [+6210 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Editorji.com",
-      },
-      author: "Editorji News Desk",
-      title:
-        "iPhone 15 Pro and iPhone 15 Pro Max face high demand and excessive overpricing in India's grey market - Editorji",
-      description:
-        "Explore the unprecedented demand for the iPhone 15 Pro Max and iPhone 15 Pro in India, leading to a significant price surge in the grey market. Discover insights into the grey market price in India, and the premium Natural Tita...",
-      url: "https://www.editorji.com/tech-news/mobiles/iphone-15-pro-and-iphone-15-pro-max-face-high-demand-and-excessive-overpricing-in-india-s-grey-market-1695631491916",
-      urlToImage: "https://cdn.editorji.com/Wm4FwndbSl.jpg",
-      publishedAt: "2023-09-25T08:44:51Z",
-      content:
-        "The iPhone 15 Pro Max and iPhone 15 Pro are experiencing an unprecedented demand in India, leading to a surge in prices above the Maximum Retail Price (MRP) in the grey market. \r\nLet's delve into the… [+2292 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Thehansindia.com",
-      },
-      author: "Kahekashan",
-      title:
-        "Top 32-inch smart TVs under Rs 15000 on Amazon from LG, Samsung, OnePlus and more - The Hans India",
-      description:
-        "Top Rated Smart TVs on Amazon Under Rs 15,000: Redmi Android 11 Series, Toshiba V Series, Samsung Wondertainment Series, OnePlus Y Series, LG HD Ready Smart LED TV.",
-      url: "https://www.thehansindia.com/technology/tech-news/top-32-inch-smart-tvs-under-rs-15000-on-amazon-from-lg-samsung-oneplus-and-more-825251",
-      urlToImage:
-        "https://assets.thehansindia.com/h-upload/2023/09/25/1383640-tvs.jpg",
-      publishedAt: "2023-09-25T08:34:57Z",
-      content:
-        "In today's tech-savvy world, we are presented with many notable devices; among them, smart TVs stand out. These cutting-edge devices now have HD resolution, video streaming capabilities, and artifici… [+1708 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Telecompaper",
-      },
       author: null,
-      title:
-        "Elliptic Labs delivers AI virtual proximity sensor on Xiaomi's Redmi Note 13 - Telecompaper EN",
-      description: "Telecompaper - Telecom news and research",
-      url: "https://www.telecompaper.com/news/elliptic-labs-delivers-ai-virtual-proximity-sensor-on-xiaomis-redmi-note-13--1477009",
-      urlToImage: null,
-      publishedAt: "2023-09-25T08:33:00Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Moneycontrol",
-      },
-      author: "Moneycontrol News",
-      title:
-        "DCX Systems stock gains after subsidiary gets approval to make printed circuit board assemblies - Moneycontrol",
+      title: "Microsoft's new Call of Duty deal set for approval",
       description:
-        "The stock has a P/E of 38.27x making it the second cheapest in absolute terms among its peers.",
-      url: "https://www.moneycontrol.com/news/business/stocks/dcx-systems-stock-gains-after-subsidiary-gets-approval-to-make-printed-circuit-board-assemblies-11423101.html",
-      urlToImage:
-        "https://images.moneycontrol.com/static-mcnews/2023/05/dcx.jpg",
-      publishedAt: "2023-09-25T08:16:28Z",
-      content:
-        "DCX Systems shares were trading 2 percent higher on September 25 after the company announced that its subsidiary Raneal Advanced Systems had received all necessary approvals for the production of pri… [+1443 chars]",
+        'The revised offer "opens the door" to the deal being cleared, the UK competition watchdog says.',
+      url: "https://www.bbc.co.uk/news/business-66875075?at_medium=RSS&at_campaign=KARANGA",
+      source: "BBC News - Technology",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "gb",
+      published_at: "2023-09-22T07:43:22+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Editorji.com",
-      },
-      author: "Ishan Fazili",
-      title:
-        "OnePlus Bullets Wireless Z2 ANC Review: Less noise, more groove! Know price, specs, pros & cons - Editorji",
+      author: "Carrie Andrews",
+      title: "How CFOs can reduce SaaS spend by 30% in these tough times",
       description:
-        "The new OnePlus Bullets Wireless Z2 ANC  are priced at ₹2,299 in India. These earbuds are equipped with 12.4mm drivers and offer a bass-rich audio output. They come with an IP55 rating for durability, and are quite well-built.",
-      url: "https://www.editorji.com/tech-news/gadget-review/oneplus-bullets-wireless-z2-anc-review-less-noise-more-groove-know-price-specs-pros-cons-1695629151024",
-      urlToImage: "https://cdn.editorji.com/4GjBXLXKPR.jpg",
-      publishedAt: "2023-09-25T08:05:51Z",
-      content:
-        "These are the OnePlus Bullets Wireless Z2 ANC. They're the noise-cancelling siblings of the OnePlus Bullets Wireless Z2 from last year, and they're also pretty wallet-friendly at just 2, 299 Rupees.\r… [+3998 chars]",
+        "Software spending is now the third-biggest expense for organizations, right after employee and office costs.",
+      url: "https://techcrunch.com/2023/09/22/how-cfos-can-reduce-saas-spend-by-30-in-these-tough-times/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-22T22:51:23+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "gizmochina",
-      },
-      author: "gizmochina",
+      author: "Cherlynn Low",
       title:
-        "Vivo V29 series live images leak revealing color changing back ahead of October 4 Indian launch - gizmochina",
-      description: null,
-      url: "https://www.gizmochina.com/2023/09/25/vivo-v29-live-images-leak/",
-      urlToImage: null,
-      publishedAt: "2023-09-25T08:03:48Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Gadgets360.com",
-      },
-      author: "Himani Jha, Ketan Pratap",
-      title:
-        "Realme Teases Upcoming Smartphone With a Periscope Camera - Gadgets 360",
+        "Amazon debuts Eye Gaze accessibility features on the Fire Max 11 tablet",
       description:
-        "Realme has teased the launch of a new smartphone with a periscope camera via X (formerly Twitter). The teaser poster shows the handset sporting a sizeable circular island housing a triple rear camera setup. However, the company has yet to reveal the name or o…",
-      url: "https://www.gadgets360.com/mobiles/news/realme-gt-5-pro-periscope-camera-teased-4421325",
-      urlToImage:
-        "https://i.gadgets360cdn.com/large/realme_gt_5_realme_1693218177362.jpg",
-      publishedAt: "2023-09-25T08:00:50Z",
-      content:
-        "Realme is gearing up to launch a new smartphone with a periscope camera soon in the global market. The company has announced X (formerly known as Twitter. It has also teased the possible rear design … [+2247 chars]",
+        "After spending a chunk of its event today talking about Alexa upgrades, Amazon announced two new accessibility features coming to its devices later this year. First is Eye Gaze on Alexa, which will let those with mobility or speech disabilities use their gaze to perform a set of preset actions on the Fire Max 11 tablet.This is a developing story. Please check back for updates.Follow all of the news live from Amazon’s 2023 Devices event right here.This article originally appeared on Engadget at https://www.engadget.com/amazon-debuts-eye-gaze-accessibility-features-on-the-fire-max-11-tablet-...",
+      url: "https://www.engadget.com/amazon-debuts-eye-gaze-accessibility-features-on-the-fire-max-11-tablet-154042714.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2023-09/d6fa4e90-57cb-11ee-bfcf-dae5c9cdc738",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T15:40:42+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "HT Tech",
+      author: "Aria Alamalhodaei",
       title:
-        "Dell Inspiron 24 to HP Pavilion Aio Desktops available at heavy discount on Amazon - HT Tech",
+        "Navigating public-private partnerships with Uber, Cruise, and the Mayor of Atlanta",
       description:
-        "Want to buy a good computer, but don't want to pay full amount? Check out these top brands of desktops available at a hefty discount on Amazon.",
-      url: "https://tech.hindustantimes.com/laptops-pc/news/dell-inspiron-24-to-hp-pavilion-aio-desktops-available-at-heavy-discount-on-amazon-71695627664444.html",
-      urlToImage:
-        "https://images.hindustantimes.com/tech/img/2023/09/25/1600x900/91k1BzO9FiL_SX679__1695628210824_1695628211154.jpg",
-      publishedAt: "2023-09-25T07:54:44Z",
-      content: null,
+        "Tech companies say they will help cities reach their ambitious decarbonization goals, but increasing public trust and working closely with government partners is key, panelists said during a roundtable on sustainability in cities at TechCrunch Disrupt 2023. These issues were thrown into sharp relief for the city of Atlanta a few years ago, when electric [&#8230;]",
+      url: "https://techcrunch.com/2023/09/20/navigating-public-private-partnerships-with-uber-cruise-and-the-mayor-of-atlanta/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T19:50:29+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "SamMobile",
-      },
-      author: "SamMobile, Asif Iqbal Shaik",
+      author: "Brian Heater",
       title:
-        "Galaxy S22 gets One UI 6.0 (Android 14) beta update in India - SamMobile - Samsung news",
+        "Reekon hopes high-tech home improvement tools can drag contractors into the 21st century",
       description:
-        "Samsung has finally released the One UI 6.0 beta update to the Galaxy S22 series in India. This update comes ...",
-      url: "https://www.sammobile.com/news/galaxy-s22-one-ui-6-0-android-14-beta-update-released-india/",
-      urlToImage:
-        "https://www.sammobile.com/wp-content/uploads/2023/08/Samsung-Galaxy-S23-Ultra-One-UI-6.0-Beta-1-Android-14-vs-One-UI-5.1.1-720x405.jpeg",
-      publishedAt: "2023-09-25T07:53:00Z",
-      content:
-        "Samsung has finally released the One UI 6.0 beta update to the Galaxy S22 series in India. This update comes one week after the company released the One UI 6.0 beta update to the Galaxy S22 series in… [+1546 chars]",
+        "TechCrunch Disrupt Battlefield company Reekon is building the next generation of smart tools for home contractors.",
+      url: "https://techcrunch.com/2023/09/20/reekon-hopes-high-tech-home-improvement-tools-can-drag-contractors-into-the-21st-century/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T20:34:50+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "gizmochina",
-      },
-      author: "gizmochina",
+      author: "Emma Roth",
       title:
-        "Vivo Y56 5G’s new variant debuts for Rs 16,999 (~$204), read configurations, offers - gizmochina",
-      description: null,
-      url: "https://www.gizmochina.com/2023/09/25/vivo-y56-5gs-new-variant-debuts-for-rs-16999-204-read-configurations-offers/",
-      urlToImage: null,
-      publishedAt: "2023-09-25T07:47:02Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "The Quint",
-      },
-      author: "Raajwrita Dutta",
-      title:
-        "Huawei MatePad Pro 13.2 Launch in China Today, 25 September: Design & Specs Here - The Quint",
+        "Here are the details on the grisly deaths of Elon Musk’s Neuralink monkeys",
       description:
-        "The Huawei MatePad Pro 13.2 is confirmed to launch in China today, Monday, 25 September. Read the specifications and confirmed design of the tablet here and stay informed.",
-      url: "https://www.thequint.com/tech-and-auto/gadgets/huawei-matepad-pro-132-launch-in-china-today-know-the-design-specifications-and-latest-details-here",
-      urlToImage:
-        "https://images.thequint.com/thequint%2F2023-09%2Ff3b6235c-de1e-4132-986a-3ad10307f671%2Fphone_28_1.png",
-      publishedAt: "2023-09-25T07:43:30Z",
-      content:
-        "Huawei MatePad Pro 13.2 is scheduled to launch today, Monday, 25 September 2023, during the company's Autumn 2023 event. It is important to note that the launch date of the table was confirmed earlie… [+611 chars]",
+        "Illustration by Lille Allen / The Verge Elon Musk said earlier this month that “no monkey has died as a result of a Neuralink implant,” but an alarming new report from Wired seems to contradict Musk’s statement. Public documents obtained by the Physicians Committee for Responsible Medicine (PCRM) and seen by Wired indicate that Neuralink’s macaque subjects were euthanized after suffering various complications, including “bloody diarrhea, partial paralysis, and cerebral edema.”Wired writes that the documents show a male monkey was euthanized in March 2020 “after his cranial implant...",
+      url: "https://www.theverge.com/2023/9/20/23882888/elon-musk-brain-implant-startup-neuralink-monkeys-euthanized",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-20T22:56:31+00:00",
     },
     {
-      source: {
-        id: "the-times-of-india",
-        name: "The Times of India",
-      },
-      author: "Bharat Sharma",
-      title:
-        "Scratches, Fingerprints, Overheating: iPhone 15 Pro Users Have A Lot Of Complaints - Indiatimes.com",
+      author: "Natasha Lomas",
+      title: "Poland opens privacy probe of ChatGPT following GDPR complaint",
       description:
-        "Apple recently released its iPhone 15 series including the iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max models. The iPhone 15 Pro and iPhone 15 Pro Max are built with titanium this time, a material that's supposed to be stronger and lighter…",
-      url: "https://www.indiatimes.com/technology/news/scratches-fingerprints-overheating-iphone-15-pro-615931.html",
-      urlToImage:
-        "https://im.indiatimes.in/content/2023/Sep/FBImage4-2_65113b6811885.jpg",
-      publishedAt: "2023-09-25T07:36:15Z",
-      content:
-        "Apple recently released its iPhone 15 series including the iPhone 15, iPhone 15 Plus, iPhone 15 Pro, and iPhone 15 Pro Max models. The iPhone 15 Pro and iPhone 15 Pro Max are built with titanium this… [+3540 chars]",
+        "OpenAI is facing another investigation into whether its generative AI chatbot, ChatGPT, complies with European Union privacy laws. Last month a complaint was filed against ChatGPT and OpenAI in Poland, accusing the company of a string of breaches of the EU&#8217;s General Data Protection Regulation (GDPR). Yesterday the Polish authority took the unusual step of [&#8230;]",
+      url: "https://techcrunch.com/2023/09/21/poland-chatgpt-gdpr-complaint-probe/",
+      source: "TechCrunch",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T11:26:57+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Zoom",
-      },
-      author: "TN Viral Desk",
-      title:
-        'This iPhone 15 Feature Leaves Elon Musk "Impressed"; Netizens React - Times Now',
+      author: "Emma Roth",
+      title: "Microsoft Surface event: the 6 biggest announcements",
       description:
-        "iPhone 15: Elon Musk, took to social media to share his reasons for purchasing this luxurious phone.",
-      url: "https://www.timesnownews.com/viral/this-iphone-15-feature-leaves-elon-musk-impressed-internet-reacts-article-103925156",
-      urlToImage:
-        "https://static.tnn.in/thumb/msid-103925156,updatedat-1695626817009,width-1280,height-720,resizemode-75/103925156.jpg",
-      publishedAt: "2023-09-25T07:27:00Z",
-      content:
-        "03:17\r\nBB17 OTT 2 ex-contestants Pooja Bhatt, Falaq Naaz, Avinash Sachdev, &amp; Bebika Dhurve reunite for an trip",
+        "Photo by Chris Welch / The Verge Microsoft has just wrapped up its September event, where it made several major announcements. Not only did we see some new Surface devices, but Microsoft also shared some updates about the new AI features coming to its products.You can check out all the news from Microsoft’s event below.A more powerful Surface Laptop Studio 2 Image: Microsoft Microsoft has finally revealed its new Surface Laptop Studio 2. The company calls it the “most powerful” Surface it has built to date, as it comes with Intel’s 13th Gen i7 H class processor, Nvidia’s RTX 4050 or...",
+      url: "https://www.theverge.com/2023/9/21/23882074/microsoft-surface-copilot-event-2023-biggest-announcements",
+      source: "The Verge",
+      image: null,
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T15:24:23+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Deccan Herald",
-      },
-      author: "DH Web Desk",
-      title:
-        "AI-powered multi-media editing tool YouTube Create announced - Deccan Herald",
-      description: null,
-      url: "https://www.deccanherald.com/technology/gadgets/ai-powered-multi-media-editing-tool-youtube-create-announced-2699666",
-      urlToImage:
-        "https://images.deccanherald.com/deccanherald%2F2023-09%2F3f0b0018-3c44-49e2-86cc-1c3ba0444f68%2FMade_on_YouTube.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop",
-      publishedAt: "2023-09-25T07:22:58Z",
-      content:
-        "YouTube is a massive repository of multi-media content and is second only to the Google Search platform, where people come to look for genuine information.\r\nThe recent trend among youth is the short … [+1240 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Business Standard",
-      },
-      author: "BS Web Team",
-      title:
-        "Apple users at risk; CERT-IN issues warning citing security vulnerabilities - Business Standard",
+      author: "Engadget",
+      title: "The best Xbox games for 2023",
       description:
-        "Attackers could exploit the vulnerability by sending specially crafted messages such as tricking users into visiting a malicious website or opening a malicious attachment",
-      url: "https://www.business-standard.com/technology/tech-news/cert-in-issues-warning-to-apple-users-citing-vulnerabilities-details-here-123092500342_1.html",
-      urlToImage:
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2023-09/12/full/1694504105-5977.jpg",
-      publishedAt: "2023-09-25T07:19:43Z",
-      content:
-        "Attackers could exploit the vulnerability by sending specially crafted messages such as tricking users into visiting a malicious website or opening a malicious attachment\r\nApple ecosystem products (P… [+1827 chars]",
+        "A series of missteps put Microsoft in second place before the Xbox One even came out. With the launch of the Xbox Series X and S, though, Microsoft is in a great position to compete. Both are well-priced, well-specced consoles with a huge library of games spanning two decades.Microsoft’s console strategy is unique. Someone with a 7-year old Xbox One has access to an almost-identical library of games as the owner of a brand-new Xbox Series X. That makes it difficult to maintain meaningfully different lists for its various consoles — at least for now. But while next-gen exclusives may be few...",
+      url: "https://www.engadget.com/best-xbox-games-140022399.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2020-11/1a78db70-1d1c-11eb-8f7e-21a8e3cff5ce",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T16:30:55+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Business Standard",
-      },
-      author: "BS Web Team",
+      author: "Sarah Fielding",
       title:
-        "Soon, Instagram's Threads to let users edit published posts: Details here - Business Standard",
+        "Hyundai is offering a free EV charger and $600 off installation for a limited time",
       description:
-        "Unlike X, which offers this feature only to premium subscribers, the edit feature will be open to everybody on Instagram's Threads",
-      url: "https://www.business-standard.com/technology/tech-news/soon-instagram-s-threads-to-let-users-edit-published-posts-details-here-123092500317_1.html",
-      urlToImage:
-        "https://bsmedia.business-standard.com/_media/bs/img/article/2023-07/28/full/1690511187-336.jpg",
-      publishedAt: "2023-09-25T06:46:25Z",
-      content:
-        "Unlike X, which offers this feature only to premium subscribers, the edit feature will be open to everybody on Instagram's Threads\r\nPhoto: Bloomberg\r\nBS Web TeamNew Delhi\r\nMetas social media platform… [+1556 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "India Today",
-      },
-      author: "Divyanshi Sharma",
-      title:
-        "Google employee loses job after 6 years of service, says she went for a walk with her son after reading layoff mail - India Today",
-      description:
-        "A Google employee talked about losing her job after six years of service. She said that after she got to know about her layoff, she went for a walk with her son.",
-      url: "https://www.indiatoday.in/technology/news/story/google-employee-loses-job-after-6-years-of-service-says-she-went-for-a-walk-with-her-son-after-reading-layoff-mail-2440128-2023-09-25",
-      urlToImage:
-        "https://akm-img-a-in.tosshub.com/indiatoday/images/story/media_bank/202309/google-251119917-16x9.jpg?VersionId=ucP.64eGlwE_3ebOtdpnqUFatdLx3e5f",
-      publishedAt: "2023-09-25T06:22:41Z",
-      content:
-        "Major tech giants like Meta, Google, Twitter (now called X), Microsoft and Amazon laid off thousands of employees at the beginning of this year, leading to the tech job market getting more competitiv… [+2495 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "gizmochina",
-      },
-      author: "gizmochina",
-      title:
-        "Top Tech News From Last Week: Redmi Note 13 series, Phantom V Flip, Honor V Purse & More - gizmochina",
-      description: null,
-      url: "https://www.gizmochina.com/2023/09/25/top-tech-news-last-week-redmi-note-13-series-phantom-v-flip-honor-v-purse-more/",
-      urlToImage: null,
-      publishedAt: "2023-09-25T06:21:16Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Analytics India Magazine",
-      },
-      author: "Siddharth Jindal",
-      title:
-        "Apple Should be Scared of Windows Copilot - Analytics India Magazine",
-      description:
-        "Microsoft is trying to define the next era of personal computing leveraging generative AI in the form of personal assistant—copilot",
-      url: "https://analyticsindiamag.com/apple-should-be-scared-of-windows-copilot/",
-      urlToImage:
-        "https://149695847.v2.pressablecdn.com/wp-content/uploads/2023/09/Why-Apple-Needs-to-Watch-Out-for-Copilot.jpg",
-      publishedAt: "2023-09-25T06:18:13Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Entrackr",
-      },
-      author: "Shashank Pathak",
-      title: "StampThePassport raises Rs 4 Cr from angel investors - Entrackr",
-      description:
-        "Online visa application platform StampThePassport has raised Rs 4 crore in a pre-seed round from angel investors and private families.",
-      url: "https://entrackr.com/2023/09/stampthepassport-raises-rs-4-cr-from-angel-investors/",
-      urlToImage: "https://entrackr.com/storage/2023/09/StampThePassport.png",
-      publishedAt: "2023-09-25T06:17:35Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Gadgets360.com",
-      },
-      author: "Sucharita Ganguly",
-      title:
-        "Samsung Galaxy S23 FE, Tab S9 FE, and Buds FE Launch Details Accidentally Leaked - Gadgets 360",
-      description:
-        "Samsung Galaxy S23 FE is expected to launch soon. The South Korean tech giant recently officially teased the handset without confirming the moniker. Leaks and reports surrounding the phones have been doing rounds of the rumour mill for the past few weeks, inc…",
-      url: "https://www.gadgets360.com/mobiles/news/samsung-galaxy-s23-fe-tab-s9-buds-launch-design-specifications-expected-report-4420930",
-      urlToImage:
-        "https://i.gadgets360cdn.com/large/galaxy_s23_tab_s9_buds_fe_sammobile_1695619724475.jpg",
-      publishedAt: "2023-09-25T05:56:07Z",
-      content:
-        "Samsung Galaxy S23 FE is expected to launch soon. The South Korean tech giant recently officially teased the handset without confirming the moniker. Leaks and reports surrounding the phones have been… [+1889 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Editorji.com",
-      },
-      author: "Editorji News Desk",
-      title:
-        "Quordle 609 hints and answer Today 25 September 2023: Get help with today's answers and clues - Editorji",
-      description:
-        "Dive into Quordle 609! Discover an array of words, utilize hints and clues to unravel the answers, and challenge your linguistic skills in today's Quordle puzzle!",
-      url: "https://www.editorji.com/tech-news/quordle-609-hints-and-answer-today-25-september-2023-get-help-with-today-s-answers-and-clues-1695620809656",
-      urlToImage: "https://cdn.editorji.com/g7qawcEHPB.jpg",
-      publishedAt: "2023-09-25T05:46:49Z",
-      content:
-        "Quordle has carved a niche for itself in the vast universe of word games, distinguishing itself from numerous Wordle replicas. Its allure remains unbroken.\r\nNow operating under the reputable online d… [+1735 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Opp.today",
-      },
-      author: "Brandon Vincent",
-      title:
-        "With iOS 17, iPhone users can now choose a search engine for private browsing on Safari - OPP.Today",
-      description:
-        "With iOS 17, iPhone users can now choose a search engine for private browsing on Safari - OPP.Today",
-      url: "https://www.opp.today/apple/under-oath-apple-exec-reveals-secret-second-search-engine-setting-for-safari/85639/",
-      urlToImage:
-        "https://www.opp.today/wp-content/uploads/2023/08/mfrack_realistic_photo_of_women_using_smartphone_or_computer_on_6a701326-d9f1-4a29-93a6-6affbfcc64d1.png",
-      publishedAt: "2023-09-25T05:16:49Z",
-      content:
-        "According to a testimonyApple’s senior vice president of Machine Learning and AI, John Giannandrea, during the DOJ via Google antitrust trial, iOS 17 introduced a new feature that allows iPhone users… [+1857 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Livemint",
-      },
-      author: "Livemint",
-      title:
-        "Garena Free Fire Max redeem codes for Sept 25, 2023: Grab exciting free rewards | Mint - Mint",
-      description:
-        "Garena Free Fire Max redeem codes can win players in-game items like weapons, diamonds, and skins. Codes are available for a limited time.",
-      url: "https://www.livemint.com/technology/tech-news/garena-free-fire-max-redeem-codes-for-sept-25-2023-grab-exciting-free-rewards-11695618259460.html",
-      urlToImage:
-        "https://www.livemint.com/lm-img/img/2023/09/25/600x338/garena_free_fire_max_1688877791610_1695618472252.jpg",
-      publishedAt: "2023-09-25T05:08:07Z",
-      content:
-        "Garena Free Fire Max redeem codes can be used to win in-game items like weapons, diamonds, skins and more. These 12 digit alphanumeric codes consist of capital letters and numbers. For those unaware,… [+2208 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "YouTube",
-      },
-      author: null,
-      title:
-        "Gadgets 360 With Technical Guruji: iPhone 15 Series, iOS 17, Jio AirFiber and More - Gadgets 360",
-      description:
-        "In the latest episode of Gadgets 360 With Technical Guruji, we'll show you the brand new iPhone 15 series smartphones, and tell you everything you need to kn...",
-      url: "https://www.youtube.com/watch?v=nn63bS1YAUk",
-      urlToImage: "https://i.ytimg.com/vi/nn63bS1YAUk/maxresdefault.jpg",
-      publishedAt: "2023-09-25T05:04:31Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Zee Business",
-      },
-      author: "IANS",
-      title:
-        "Apple Watch Series 9 packs next-gen capabilities for your health, connectivity - Zee Business",
-      description:
-        "The gesture can be used to answer and end a phone call, and even to take a photo with the Camera Remote on the Apple Watch.",
-      url: "https://www.zeebiz.com/technology/news-apple-watch-series-9-packs-next-gen-capabilities-for-your-health-connectivity-255906",
-      urlToImage:
-        "https://cdn.zeebiz.com/sites/default/files/2023/09/25/262052-screenshot-2023-09-25-102211.png",
-      publishedAt: "2023-09-25T05:04:16Z",
-      content:
-        "The COVID-19 pandemic taught millions of us the importance of remaining healthy in our busy lives and the Apple Watch, which offers myriad of health benefits, has become an integral part of those who… [+4789 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Business Wire",
-      },
-      author: null,
-      title:
-        "Elliptic Labs Launching on Transsion's Tecno Phantom V Flip Smartphone - Business Wire",
-      description:
-        "Elliptic Labs is announcing the launch of its AI Virtual Proximity Sensor™ INNER BEAUTY® with Transsion’s Tecno Phantom V Flip smartphone.",
-      url: "https://www.businesswire.com/news/home/20230924075261/en/Elliptic-Labs-Launching-on-Transsion%E2%80%99s-Tecno-Phantom-V-Flip-Smartphone",
-      urlToImage:
-        "https://mms.businesswire.com/media/20230924075261/en/1157002/23/ellipticlabs-logo-blue_-_640x360.jpg",
-      publishedAt: "2023-09-25T05:00:00Z",
-      content:
-        "OSLO, Norway--(BUSINESS WIRE)--Elliptic Labs (OSE: ELABS), a global AI software platform company and the world leader in AI Virtual Smart Sensors currently deployed in over 500 million devices, is an… [+3029 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "India Today",
-      },
-      author: "Divya Bhati",
-      title:
-        "WhatsApp to stop working on older Android phones: check if your phone on the list - India Today",
-      description:
-        "WhatsApp will stop supporting older Android smartphones with Android OS version 4.1 or older. After support ends, users will not receive future app updates and will soon be unable to use the instant messaging app on their smartphones.",
-      url: "https://www.indiatoday.in/technology/news/story/whatsapp-to-stop-working-on-older-android-phones-check-if-your-phone-on-the-list-2440079-2023-09-25",
-      urlToImage:
-        "https://akm-img-a-in.tosshub.com/indiatoday/images/story/media_bank/202309/whatsapp-045113-16x9.jpg?VersionId=PSvDxdE29mZa3SiDQP9Db.Urs0IS8naF",
-      publishedAt: "2023-09-25T04:56:02Z",
-      content:
-        "WhatsApp regularly updates its platforms with new features and security fixes to improve the user experience, privacy, and security. All WhatsApp versions, including Android, iOS, and the web, receiv… [+2909 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Zoom",
-      },
-      author: "TN Tech Desk",
-      title: "Best Smartphones Under 15000 With 50MP Camera - Times Now",
-      description:
-        "If you are looking for a smartphone for photography and day-to-day usage, but worrying about your budget, then know there are a number of options to choose from under Rs. 15000. From Redmi 12 5G, iQOO Z6 Lite to Samsung Galaxy M14 5G - check out best smartpho…",
-      url: "https://www.timesnownews.com/technology-science/best-smartphones-under-15000-with-50mp-camera-article-103920151",
-      urlToImage:
-        "https://static.tnn.in/thumb/msid-103920151,updatedat-1695616758051,width-1280,height-720,resizemode-75/103920151.jpg",
-      publishedAt: "2023-09-25T04:39:18Z",
-      content:
-        "03:17\r\nBB17 OTT 2 ex-contestants Pooja Bhatt, Falaq Naaz, Avinash Sachdev, &amp; Bebika Dhurve reunite for an trip",
-    },
-    {
-      source: {
-        id: null,
-        name: "[Removed]",
-      },
-      author: null,
-      title: "[Removed]",
-      description: "[Removed]",
-      url: "https://removed.com",
-      urlToImage: null,
-      publishedAt: "1970-01-01T00:00:00Z",
-      content: "[Removed]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "HT Tech",
-      title:
-        "Top 5 gaming smartphones under Rs.30000: Infinix Zero 30, Realme 11 Pro Plus, Realme GT 2, more - HT Tech",
-      description:
-        "Are you looking for top deals on gaming smartphones? Check out Infinix Zero 30, Realme 11 Pro Plus, Realme GT 2, and more as these smartphones are packed with powerful processors and amazing features to keep the action going at full throttle.",
-      url: "https://tech.hindustantimes.com/photos/top-5-gaming-smartphones-under-rs-30000-infinix-zero-30-realme-11-pro-plus-realme-gt-2-more-71695613374633.html",
-      urlToImage:
-        "https://images.hindustantimes.com/tech/img/2023/09/25/1600x900/Zero_30_1694063165396_1695613466865.png",
-      publishedAt: "2023-09-25T03:58:14Z",
-      content:
-        "Top SectionsExplore Tech Copyright © HT Media Limited All rights reserved.",
-    },
-    {
-      source: {
-        id: null,
-        name: "Jagran.com",
-      },
-      author: "Sneha Singh",
-      title:
-        "Amazon Sale 2023 On Best Microsoft Surface Laptops At Up To 50 Off - Jagran English",
-      description:
-        "Amazon Sale 2023 On Best Microsoft Surface Laptops: Today the use of laptops is increasing daily. From offices, colleges, and even for personal use you require a laptop. The Amazon Sale 2023 is here with a great discount on the best Microsoft Surface laptops.…",
-      url: "https://english.jagran.com/top-deals/today-deals/amazon-deals/amazon-sale-2023-on-best-microsoft-surface-laptops-at-up-to-50-off-10102772",
-      urlToImage:
-        "https://imgeng.jagran.com/images/2023/sep/amazon sale 2023 on best Microsoft Surface Laptops1695607927432.jpg",
-      publishedAt: "2023-09-25T03:43:59Z",
-      content:
-        "Amazon Sale 2023 On Best Microsoft Surface Laptops: Planning to upgrade your laptop with the latest design, processor, and features? Looking for some great discounts and offers? Your wait is over as … [+4206 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "YouTube",
-      },
-      author: null,
-      title:
-        "South Carolina Investment Is Part Of Our Capex Plan Of ₹350 Crore In FY23: STL | CNBC TV18 - CNBC-TV18",
-      description: null,
-      url: "https://www.youtube.com/watch?v=5Pc980bjEUI",
-      urlToImage: null,
-      publishedAt: "2023-09-25T03:34:38Z",
-      content:
-        "Your browser isnt supported anymore. Update it to get the best YouTube experience and our latest features. Learn more\r\nRemind me later",
-    },
-    {
-      source: {
-        id: null,
-        name: "The Japan Times",
-      },
-      author: "Takashi Mochizuki",
-      title:
-        "Capcom sets sights on India's growing game market - The Japan Times",
-      description:
-        "Capcom targets selling more than 100 million copies of games a year.",
-      url: "https://www.japantimes.co.jp/business/2023/09/25/companies/capcom-game-sales-india/",
-      urlToImage:
-        "https://www.japantimes.co.jp/japantimes/uploads/images/2023/09/25/253696.jpg",
-      publishedAt: "2023-09-25T00:15:00Z",
-      content:
-        "Videogame studio Capcom may sell more copies of games in India than in China within a decade as the publisher behind the Resident Evil franchise looks to new markets for long-term growth, according t… [+611 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "gizmochina",
-      },
-      author: "gizmochina",
-      title:
-        "Alleged Poco X6 5G to launch as offshoot of Redmi Note 13 - gizmochina",
-      description: null,
-      url: "https://www.gizmochina.com/2023/09/24/alleged-poco-x6-5g-to-launch-as-offshoot-of-redmi-note-13/",
-      urlToImage: null,
-      publishedAt: "2023-09-24T21:13:25Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Sportskeeda",
-      },
-      author: "Zeeshan Khan",
-      title:
-        "Battlegrounds Mobile India (BGMI) Solo guide for September 2023 - Sportskeeda",
-      description:
-        "Getting good at BGMI's Solo mode requires both skill and strategy. Moreover, you need to have immense dedication and persistence to gain a competitive edge over your opponent and dominate this mode.",
-      url: "https://www.sportskeeda.com/bgmi/battlegrounds-mobile-india-bgmi-solo-guide-september-2023",
-      urlToImage:
-        "https://staticg.sportskeeda.com/editor/2023/09/01c6c-16955683737882-1920.jpg",
-      publishedAt: "2023-09-24T17:04:18Z",
-      content:
-        "Getting good at BGMI's Solo mode requires both skill and strategy. Moreover, you need to have immense dedication and persistence to gain a competitive edge over your opponent and dominate this mode. … [+3408 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "HT News Desk",
-      title:
-        "How to follow Hindustan Times' WhatsApp Channel? Check out these steps - Hindustan Times",
-      description:
-        "Hindustan Times is now on WhatsApp! Check out these steps to follow our channel now. | Latest News India",
-      url: "https://www.hindustantimes.com/india-news/how-to-follow-hindustan-times-whatsapp-channel-check-out-these-steps-101695565820082.html",
-      urlToImage:
-        "https://www.hindustantimes.com/ht-img/img/2023/09/24/1600x900/whatsapp_HT_1695568317667_1695568349221.jpeg",
-      publishedAt: "2023-09-24T15:30:15Z",
-      content:
-        "As WhatsApp introduced channel feature for reaching out to larger audience, Hindustan Times also made its entry on the messaging app for its readers. Now, it has become more feasible for you to stay … [+1835 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "India TV News",
-      },
-      author: "Edited by Saumya Nigam",
-      title:
-        "Gmail on Android introduces 'Select All' feature for managing emails - India TV News",
-      description:
-        "Gmail for Android will display a 'Select all' button when users begin selecting multiple emails simultaneously. While this feature has long been available on Gmail's web application, it was previously unavailable on mobile devices.",
-      url: "https://www.indiatvnews.com/technology/news/gmail-on-android-introduces-select-all-feature-for-managing-emails-2023-09-24-894490",
-      urlToImage:
-        "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/09/gmail-1695568038.jpg",
-      publishedAt: "2023-09-24T15:08:53Z",
-      content:
-        'Google is enhancing the Gmail experience for Android users by introducing a "Select all" button. This feature will make inbox management more efficient, allowing users to quickly clean up their email… [+1610 chars]',
-    },
-    {
-      source: {
-        id: null,
-        name: "Mymobileindia.com",
-      },
-      author: "Team My Mobile",
-      title:
-        "Motorola Edge 40 Neo Review - A Good Looking 5G Phone for Under 25K Segment - My Mobile",
-      description:
-        "Motorola Edge 40 Neo with its curved display, IP68 Underwater Protection, World’s 1st MTK Dimensity 7030 chipset.",
-      url: "https://www.mymobileindia.com/motorola-edge-40-neo-review-a-good-looking-5g-phone-for-under-25k-segment/",
-      urlToImage:
-        "https://mymobile.b-cdn.net/wp-content/uploads/2023/09/moto1.jpg",
-      publishedAt: "2023-09-24T12:30:58Z",
-      content:
-        "Highlights\r\n<ul><li>Motorola has unveiled the Motorola Edge 40 Neo at a special festive launch price starting at Rs 20,999 for the 8GB + 128GB variant.</li><li>Touted by Motorola as the Worlds Lighte… [+12929 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "HT Tech",
-      title:
-        "Enhance your productivity with Focus To-Do app; Check out Pomodoro and Tasks features - HT Tech",
-      description:
-        "The Focus To-Do app offers flexibility with customizable Pomodoro and break lengths, notifications, and more.",
-      url: "https://tech.hindustantimes.com/tech/news/enhance-your-productivity-with-focus-to-do-app-check-out-pomodoro-and-tasks-features-71695551526776.html",
-      urlToImage:
-        "https://images.hindustantimes.com/tech/img/2023/09/24/1600x900/nbvert_1695551847879_1695551862265.jpg",
-      publishedAt: "2023-09-24T10:41:20Z",
-      content:
-        "In today's fast-paced world, staying focused and managing tasks efficiently can be a challenge. Simply because there are so many of them, especially if you are a multi-tasker. While there are traditi… [+2328 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "WION",
-      },
-      author: "Sidharth MP",
-      title:
-        "As India awaits message from Moon, memories arrive from Mars - WION",
-      description:
-        "As India awaits message from Moon, memories arrive from Mars",
-      url: "https://www.wionews.com/india-news/as-india-awaits-message-from-moon-memories-arrive-from-mars-9yrs-of-mangalyaan-639134",
-      urlToImage:
-        "https://cdn.wionews.com/sites/default/files/2023/09/24/381673-untitled-design-2023-09-24t145711694.png",
-      publishedAt: "2023-09-24T09:20:18Z",
-      content:
-        "It's been three days since the Indian space agency ISRO kept their metaphorical eyes and ears wide open, awaiting a signal from the re-awakened Chandrayaan-3. However, there has been no telemetry dat… [+2008 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Financial Express",
-      },
-      author: "The Financial Express",
-      title:
-        "iPhone 15 series buyer’s guide? Know how Apple Trade In works to get iPhone 15, 15 Plus, iPhone 15 Pro, 15 Pro Max for less - The Financial Express",
-      description: null,
-      url: "https://www.financialexpress.com/life/technology-iphone-15-series-buyers-guide-know-how-apple-trade-in-works-to-get-iphone-15-15-plus-iphone-15-pro-15-pro-max-for-less-3253192/",
-      urlToImage: null,
-      publishedAt: "2023-09-24T08:09:20Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "HT Tech",
-      title:
-        "Voltas, Carrier to Daikin, check out these 5 incredible Amazon deals on split ACs; up to 56% discount available - HT Tech",
-      description:
-        "Want to buy a split AC with amazing features at an affordable price? Check out these top 5 deals on Voltas, Carrier, Daikin and other split ACs on Amazon.",
-      url: "https://tech.hindustantimes.com/photos/voltas-carrier-to-daikin-check-out-these-5-incredible-amazon-deals-on-split-acs-up-to-56-discount-available-71695536160519.html",
-      urlToImage:
-        "https://images.hindustantimes.com/tech/img/2023/09/24/1600x900/AC3_1695539125246_1695539563404.png",
-      publishedAt: "2023-09-24T07:13:09Z",
-      content:
-        "Top SectionsExplore Tech Copyright © HT Media Limited All rights reserved.",
-    },
-    {
-      source: {
-        id: null,
-        name: "News18",
-      },
-      author: "Shaurya Sharma",
-      title:
-        "Vivo T2 Pro Launched In India With 64MP Camera, Dimensity 7200 Chipset: Check Price, Specs Here - News18",
-      description:
-        "Vivo has refreshed its mid-range lineup in India with the launch of the Vivo T2 Pro 5G, which features a dual-camera setup and the MediaTek Dimensity 7200 SoC. Here are the details.",
-      url: "https://www.news18.com/tech/vivo-t2-pro-launched-in-india-with-64mp-camera-dimensity-7200-chipset-check-price-specs-here-8589173.html",
-      urlToImage:
-        "https://images.news18.com/ibnlive/uploads/2023/09/vivo-t2-pro-169469237216x9.jpg",
-      publishedAt: "2023-09-24T05:01:14Z",
-      content:
-        "Vivo has launched a new mid-range device named the Vivo T2 Pro in the Indian market. Powered by the MediaTek Dimensity 7200 chipset and 8GB of RAM, this new smartphone offers two variants and two col… [+1405 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "HT Tech",
-      title:
-        "Master Positioning in BGMI: 5 Key tips and tricks you need to know - HT Tech",
-      description:
-        "Mastering positioning is crucial for success in BGMI game. Check out these five tips to improve your gameplay and secure more victories.",
-      url: "https://tech.hindustantimes.com/how-to/master-positioning-in-bgmi-5-key-tips-and-tricks-you-need-to-know-71695517333245.html",
-      urlToImage:
-        "https://images.hindustantimes.com/tech/img/2023/09/24/1600x900/bgmi_1688952381443_1695517477648.png",
-      publishedAt: "2023-09-24T01:06:52Z",
-      content:
-        "Positioning is a super important thing in Battlegrounds Mobile India (BGMI). Whether you're fighting in big battles or trying to stay alive till the very end, bitter or otherwise, knowing where exact… [+1639 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "gizmochina",
-      },
-      author: "gizmochina",
-      title:
-        'Tecno Megabook T1 2023 14" laptop launched with 13th Gen Intel Core i7-13700H CPU - gizmochina',
-      description: null,
-      url: "https://www.gizmochina.com/2023/09/24/tecno-megabook-t1-2023-launched/",
-      urlToImage: null,
-      publishedAt: "2023-09-24T00:01:20Z",
-      content: null,
+        "While the better environmental impact and lack of gas payments make EVs an enticing option, other costs and steps still stand as a hindrance. Hyundai is the latest car manufacturer attempting to minimize these negatives with a new incentive offering complimentary chargers and up to $600 off their installation fee. Hyundai&#39;s ChargePoint Home Flex Level 2 EV Charger is typically $549, providing a $1,100 total savings.The offer is available for anyone leasing or purchasing a brand new 2023 or 2024 Ioniq 5 or Ioniq 6 and a 2023 Kona Electric. However, it has to be through Hyundai Motor Finance...",
+      url: "https://www.engadget.com/hyundai-is-offering-a-free-ev-charger-and-600-off-installation-for-a-limited-time-170057694.html?src=rss",
+      source: "Engadget",
+      image:
+        "https://s.yimg.com/os/creatr-uploaded-images/2023-09/c1537d40-587b-11ee-9fef-3020b0839b68",
+      category: "technology",
+      language: "en",
+      country: "us",
+      published_at: "2023-09-21T17:00:57+00:00",
     },
   ],
 };

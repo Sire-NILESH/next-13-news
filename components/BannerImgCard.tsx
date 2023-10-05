@@ -12,7 +12,7 @@ const BannerImgCard = ({ article }: Props) => {
     <Card className="w-full h-full">
       <CardHeader className="absolute z-10 top-0 pb-10 flex-col items-start bg-gradient-to-b from-black/80 to-transparent">
         <p className="text-tiny text-gray-200 uppercase font-bold">
-          {article.source.name}
+          {article.source}
         </p>
         <h4 className="text-white/90 font-medium text-large text-left">
           {article.title}
@@ -23,11 +23,7 @@ const BannerImgCard = ({ article }: Props) => {
         isZoomed
         removeWrapper
         className="z-0 w-full h-full object-cover"
-        src={
-          article.urlToImage
-            ? article.urlToImage
-            : "/images/photo-placeholder.jpg"
-        }
+        src={article.image ? article.image : "/images/photo-placeholder.jpg"}
         fallbackSrc={"/images/photo-placeholder.jpg"}
       />
     </Card>

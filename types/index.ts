@@ -13,26 +13,26 @@ export type Category =
   | "sports"
   | "technology";
 
-export type KeywordNews = "game";
+export type KeywordNews =
+  | "crypto cryptocurrency"
+  | "cricket football soccer golf baseball olympics sports racing worldcup";
 
 export interface Article {
-  source: {
-    id: string | null;
-    name: string | null;
-  };
   author: string | null;
   title: string | null;
   description: string | null;
   url: string | null;
-  urlToImage: string | null;
-  publishedAt: string | null;
-  content: string | null;
+  source: string | null;
+  image: string | null;
+  category: string | null;
+  language: string | null;
+  country: string | null;
+  published_at: string | null;
 }
 
 export interface Headline {
-  status: "ok" | "error";
-  totalResults: number;
-  articles: Article[];
+  pagination: { limit: number; offset: number; count: number; total: number };
+  data: Article[];
 }
 
 export type Country =

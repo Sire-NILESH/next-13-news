@@ -1,756 +1,1449 @@
-export const data = {
-  status: "ok",
-  totalResults: 45,
-  articles: [
+import { Headline } from "@/types";
+
+export const data: Headline = {
+  pagination: {
+    limit: 100,
+    offset: 0,
+    count: 100,
+    total: 8442,
+  },
+  data: [
     {
-      source: {
-        id: null,
-        name: "ZME Science",
-      },
-      author: "Fermin Koop",
-      title:
-        "Archaeologists discover half a million-year-old wooden structure -- and it's not built by Homo sapiens - ZME Science",
+      author: "Jyoti Madhusoodanan",
+      title: "Why Cancer Treatments Might Not Work Very Well for Older Adults",
       description:
-        "It predates rise of modern humans and could have formed a platform",
-      url: "https://www.zmescience.com/science/archaeology/archaeologists-discover-half-a-million-year-old-wooden-structure-and-its-not-built-by-homo-sapiens/",
-      urlToImage:
-        "https://cdn.zmescience.com/wp-content/uploads/2023/09/3-uncovering-the-wood.jpg",
-      publishedAt: "2023-09-25T12:20:55Z",
-      content:
-        "Half a million years ago, much earlier than it was previously believed possible, a human species was using wood to build structures, according to a new study. The research reports on the dig of well-… [+3086 chars]",
+        "Because older adults are under-represented in clinical trials, doctors can&#8217;t be certain that approved cancer drugs will work as intended in this age group. In the absence of high-quality evidence, researchers are looking for ways to improve medical decision-making and better predict outcomes based on age.",
+      url: "https://undark.org/2023/06/26/why-cancer-treatments-might-not-work-very-well-for-older-adults/",
+      source: "Truth Beauty Science. - Undark",
+      image:
+        "https://undark.org/wp-content/uploads/2023/06/GettyImages-1263248921_crop.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T07:31:11+00:00",
     },
     {
-      source: {
-        id: "cnn",
-        name: "CNN",
-      },
-      author: "Hafsa Khalil",
+      author: "chainwire",
       title:
-        "Queen’s Brian May helped NASA return its first asteroid sample - CNN",
+        "MetaBlaze Announces $4M Crypto Presale Sellout, Gaming Partnerships, and AI MetaChip NFT Drop",
       description:
-        "Brian May has once again proven why he is rock royalty. Not only is he the Queen guitarist, but he is also an astrophysicist who recently helped NASA return its first ever asteroid sample to Earth.",
-      url: "https://www.cnn.com/2023/09/25/world/brian-may-osiris-rex-asteroid-sample-bennu-scn-intl-scli/index.html",
-      urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230925094147-brian-may-063023.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-09-25T10:03:00Z",
-      content:
-        "Editors Note: Sign up for CNNs Wonder Theory science newsletter. Explore the universe with news on fascinating discoveries, scientific advancements and more.\r\nBrian May has once again proven why he i… [+1531 chars]",
+        "Dover, USA, June 26th, 2023, Chainwire MetaBlaze, a pioneering Web 3 Gaming, and AI Company, is building momentum as they approach its upcoming Q3 launch. Between strategic partnerships with household Crypto Gaming brands, a sold-out presale, and a never-before-seen AI-Integrated NFT collection, the MetaBlaze ecosystem is primed for its next evolution stage. MetaBlaze Reaches $4M ... Read more",
+      url: "https://www.nextbigfuture.com/2023/06/metablaze-announces-4m-crypto-presale-sellout-gaming-partnerships-and-ai-metachip-nft-drop.html",
+      source: "Next Big Future",
+      image: null,
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T13:05:53+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Space.com",
-      },
-      author: "Mike Wall",
-      title:
-        "SpaceX launches 21 Starlink satellites from California on Sept. 25 - Space.com",
-      description: "Liftoff occurred at 4:48 a.m. ET on Monday (Sept. 25).",
-      url: "https://www.space.com/spacex-starlink-launch-group-7-3",
-      urlToImage:
-        "https://cdn.mos.cms.futurecdn.net/apfWge5TZXWzDvfMmxTsCG-1200-80.jpg",
-      publishedAt: "2023-09-25T09:05:25Z",
-      content:
-        "A SpaceX Falcon 9 rocket launched from California early Monday morning (Sept. 25), carrying 21 Starlink satellites to orbit.\r\nThe Falcon 9 is lifted off from Vandenberg Space Force Base in Florida Mo… [+1220 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "ScienceAlert",
-      },
-      author: "The Conversation",
-      title:
-        "Chandrayaan-3 Detects 'Unexpected' Levels of Sulfur on The Moon - ScienceAlert",
-      description:
-        "In an exciting milestone for lunar scientists around the globe, India's Chandrayaan-3 lander touched down 375 miles (600 km) from the south pole of the Moon on August 23, 2023.",
-      url: "https://www.sciencealert.com/chandrayaan-3-detects-unexpected-levels-of-sulfur-on-the-moon",
-      urlToImage:
-        "https://www.sciencealert.com/images/2023/09/chandrayaan-3-vikram-viewed-by-pragyan-ISRO-1200x757-1.jpg",
-      publishedAt: "2023-09-25T08:09:38Z",
-      content:
-        "In an exciting milestone for lunar scientists around the globe, India's Chandrayaan-3 lander touched down 375 miles (600 km) from the south pole of the Moon on August 23, 2023.\r\nIn just under 14 Eart… [+6263 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Phys.Org",
-      },
-      author: "LAURA UNGAR, MADDIE BURAKOFF",
-      title:
-        "We carry DNA from extinct cousins like Neanderthals. Science is now revealing their genetic legacy - Phys.org",
-      description: "Neanderthals live on within us.",
-      url: "https://phys.org/news/2023-09-dna-extinct-cousins-neanderthals-science.html",
-      urlToImage: "https://scx2.b-cdn.net/gfx/news/hires/2016/neanderthal.png",
-      publishedAt: "2023-09-25T07:57:54Z",
-      content:
-        "Neanderthals live on within us.\r\nThese ancient human cousins, and others called Denisovans, once lived alongside our early Homo sapiens ancestors. They mingled and had children. So some of who they w… [+8815 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Big Think",
-      },
-      author: "Ethan Siegel",
-      title: "JWST discovers the farthest gravitational lens ever - Big Think",
-      description:
-        "A more distant galaxy liked the lens so much that it went and put a ring on it. Here's the science behind this remarkable cosmic object.",
-      url: "https://bigthink.com/starts-with-a-bang/jwst-farthest-gravitational-lens/",
-      urlToImage:
-        "https://bigthink.com/wp-content/uploads/2023/09/fullring-cover.jpg?w=953&h=536&crop=1",
-      publishedAt: "2023-09-25T06:00:00Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "ScienceAlert",
-      },
-      author: "AFP",
-      title:
-        "There's a Mystery Source of Carbon on The Surface of Jupiter's Moon Europa - ScienceAlert",
-      description:
-        "Carbon dioxide detected on Jupiter's moon Europa comes from the vast ocean beneath its icy shell, research using James Webb Space Telescope data indicated on Thursday, potentially bolstering hopes the hidden water could harbour life.",
-      url: "https://www.sciencealert.com/theres-a-mystery-source-of-carbon-on-the-surface-of-jupiters-moon-europa",
-      urlToImage:
-        "https://www.sciencealert.com/images/2023/09/jupiter_moon_europa_carbon.jpg",
-      publishedAt: "2023-09-25T00:37:45Z",
-      content:
-        "Carbon dioxide detected on Jupiter's moon Europa comes from the vast ocean beneath its icy shell, research using James Webb Space Telescope data indicated on Thursday, potentially bolstering hopes th… [+3256 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "ScienceAlert",
-      },
-      author: "Michelle Starr",
-      title:
-        "Fossil of a 'Giant' Trapdoor Spider Found in Australia, And Just Look at It! - ScienceAlert",
-      description:
-        "Even millions of years ago, Australia was a paradise for spiders.",
-      url: "https://www.sciencealert.com/fossil-of-a-giant-trapdoor-spider-found-in-australia-and-just-look-at-it",
-      urlToImage:
-        "https://www.sciencealert.com/images/2022-01/processed/mcgraths-flat-spider_1024.jpg",
-      publishedAt: "2023-09-24T21:09:23Z",
-      content:
-        "Even millions of years ago, Australia was a paradise for spiders.\r\nIn the arid heart of the continent, scientists have found an exquisitely preserved fossil of a fascinatingly large spider that roame… [+4023 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Futurism",
-      },
-      author: "Maggie Harrison",
-      title:
-        "Experts Say NASA's Mars Sample Return Plan Is Deeply Flawed - Futurism",
-      description:
-        "An independent review board found several serious issues regarding NASA's Mars Sample Return mission's timetable, cost, and technical plans.",
-      url: "https://futurism.com/the-byte/nasas-mars-sample-return-flawed",
-      urlToImage:
-        "https://wp-assets.futurism.com/2023/09/nasas-mars-sample-return-flawed.jpg",
-      publishedAt: "2023-09-24T20:23:01Z",
-      content:
-        "Talk about a bad review.\r\nTotal Mess\r\nHouston, we have... so many problems.\r\nAs SpaceNews reports, NASA has delayed its Mars Sample Return (MSR) effort after an independent review board found several… [+2864 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "AutoNav's Triumph on Mars: Perseverance Rover's Record Speed on the Martian Terrain - SciTechDaily",
+        "Making pride more inclusive means creating space for 2SLGBTQ+ people with disabilities, say researchers",
       description:
-        "A computer pilot helps NASA’s six-wheeled geologist as it searches for rock samples that could be brought to Earth for deeper investigation. In about a third of the time it would have taken other NASA Mars rovers, Perseverance recently navigated its way throu…",
-      url: "https://scitechdaily.com/autonavs-triumph-on-mars-perseverance-rovers-record-speed-on-the-martian-terrain/",
-      urlToImage:
-        "https://scitechdaily.com/images/Perseverance-AutoNav-Leads-Way.jpg",
-      publishedAt: "2023-09-24T18:52:42Z",
-      content:
-        "ByJet Propulsion LaboratorySeptember 24, 2023\r\nPerseverance Makes Tracks in Boulder Field: This mosaic shows part of the path NASAs Perseverance Mars rover took through a portion of a boulder field d… [+9082 chars]",
+        "Pride month is a celebratory time for many queer people. It is an opportunity for greater visibility in the public sphere. Although 2SLGBTQ+ people are becoming more accepted, those living with disabilities still struggle to be seen and heard.",
+      url: "https://phys.org/news/2023-06-pride-inclusive-space-2slgbtq-people.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/making-pride-more-incl.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T16:37:03+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Hindustan Times",
-      },
-      author: "Singh Rahul Sunilkumar",
-      title:
-        "Witness Earth's equal day and night: European Space Agency shares equinox photo - Hindustan Times",
-      description:
-        "European Space Agency shares a satellite image showcasing the Autumn equinox, marking the division of day and night on Earth's surface.",
-      url: "https://www.hindustantimes.com/technology/witness-earths-equal-day-and-night-european-space-agency-shares-equinoxs-satellite-image-101695573944940.html",
-      urlToImage:
-        "https://www.hindustantimes.com/ht-img/img/2023/09/24/1600x900/F6sviebWsAALGV1_1695576127386_1695576141347.jpeg",
-      publishedAt: "2023-09-24T17:30:29Z",
-      content:
-        "The European Space Agency (ESA) shared a satellite image on Saturday, showcasing a clear division of day and night on Earth's surface, representing the autumn equinox.\r\nDuring an equinox, day and nig… [+2241 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "LADbible",
-      },
-      author: "Britt Jones",
-      title:
-        "Terrifying audio resurfaces from inside the space capsule during the Apollo 1 disaster - LADbible",
-      description:
-        "After the Apollo 1 disaster prompted NASA changes, the audio circulating has terrified listeners all over again",
-      url: "https://www.ladbible.com/news/technology/apollo-1-audio-resurfaces-terrifying-listeners-972449-20230924",
-      urlToImage:
-        "https://images.ladbible.com/resize?type=jpeg&quality=70&width=1200&fit=contain&gravity=auto&url=https://images.ladbiblegroup.com/v3/assets/bltcd74acc1d0a99f3a/blt8543c574b39cc56d/65106616085cfed8100fabbd/Apollo-1-space-disaster.png",
-      publishedAt: "2023-09-24T16:50:42Z",
-      content:
-        "There are few disasters that have audio recordings still available to this day that are able to terrify listeners around the world. \r\nBut what happened during the Apollo 1 mission will forever be eng… [+2099 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Hot Hardware",
-      },
-      author: "Tim Sweezy",
-      title:
-        "India’s Chandrayaan-3 Lunar Lander Fails To Respond To ISRO Wake-Up Call - Hot Hardware",
-      description:
-        "The ISRO says that the failure to respond is 'not the end of the story for Chandrayaan-3 mission.'",
-      url: "https://hothardware.com/news/indias-chandrayaan-3-lunar-fails-to-respond",
-      urlToImage:
-        "https://images.hothardware.com/contentimages/newsitem/62626/content/hero-chandrayaan-3-spacecraft.jpg",
-      publishedAt: "2023-09-24T16:25:00Z",
-      content:
-        "India's Chandrayaan-3 Moon lander has yet to respond to its wake-up call from its location in the lunar south pole. However, the Indian Space Research Organisation (ISRO) says the failure to answer i… [+1977 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Big Think",
-      },
-      author: "Don Lincoln",
-      title:
-        "How the Moon is helping us confirm Einstein's relativity - Big Think",
-      description:
-        "This measurement is crucial to confirm that one of the assumptions of Einstein’s theory of gravity is valid.",
-      url: "https://bigthink.com/hard-science/moon-confirm-einstein-relativity/",
-      urlToImage:
-        "https://bigthink.com/wp-content/uploads/2023/09/moon.jpg?resize=1200,630",
-      publishedAt: "2023-09-24T15:00:00Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "Neutrinos & Dark Matter: How Ultra-Pure Cables Can Unlock Secrets of Physics - SciTechDaily",
+        "Seismological analysis of the two earthquakes that devastated southern Turkey",
       description:
-        "Ultra-low radiation cables reduce background noise for neutrino and dark matter detectors. Imagine trying to tune a radio to a single station but instead encountering static noise and interfering signals from your own equipment. That is the challenge facing r…",
-      url: "https://scitechdaily.com/neutrinos-dark-matter-how-ultra-pure-cables-can-unlock-secrets-of-physics/",
-      urlToImage:
-        "https://scitechdaily.com/images/Ultra-Low-Radiation-Cables-for-Rare-Physics-Events.jpg",
-      publishedAt: "2023-09-24T13:16:06Z",
-      content:
-        "PNNL chemist Isaac Arnquist examines ultra-low radiation copper cables specially created for sensitive physics detection experiments. Credit: Andrea Starr, Pacific Northwest National Laboratory\r\nUltr… [+7270 chars]",
+        "On February 6, 2023, two major earthquakes with moment magnitudes of 7.9 and 7.6 occurred in southeastern Türkiye, near the Syria-Türkiye border. The two major earthquakes were close in time and space and can be considered twins. The shaking from the earthquakes caused significant damage to buildings, roads, and people.",
+      url: "https://phys.org/news/2023-06-seismological-analysis-earthquakes-devastated-southern.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/seismological-analysis.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T19:18:02+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "ScienceAlert",
-      },
-      author: "Clare Watson",
-      title:
-        "Tasmanian Tiger Becomes First Extinct Animal To Have Its RNA Extracted - ScienceAlert",
-      description:
-        "The Tasmanian tiger has a long, checkered history that now includes being the first extinct animal family from which scientists have recovered RNA, the molecule that brings a species' genome to life.",
-      url: "https://www.sciencealert.com/tasmanian-tiger-becomes-first-extinct-animal-to-have-its-rna-extracted",
-      urlToImage:
-        "https://www.sciencealert.com/images/articles/processed/tasmanian-tiger-thylacine_1024.jpg",
-      publishedAt: "2023-09-24T12:33:23Z",
-      content:
-        "The Tasmanian tiger has a long, checkered history that now includes being the first extinct animal family from which scientists have recovered RNA, the molecule that brings a species' genome to life.… [+3755 chars]",
-    },
-    {
-      source: {
-        id: "axios",
-        name: "Axios",
-      },
-      author: "Axios",
-      title:
-        "Rare pink diamonds were pushed to Earth's surface when an ancient supercontinent broke up - Axios",
-      description: null,
-      url: "https://www.axios.com/2023/09/24/pink-diamond-supercontinent",
-      urlToImage: null,
-      publishedAt: "2023-09-24T12:27:29Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "New Study: Older Adults Who Participate in This Leisure Activity Have the Memory of a 20-Year-Old - SciTechDaily",
+        "Governments and industry should work with industrial ecologists to build the circular economy, say scientists",
       description:
-        "A recent study from the University of York has revealed that elderly individuals engaging in digital puzzle games exhibit memory capacities comparable to those in their 20s. Furthermore, the research demonstrated that adults 60 years and older who indulge in …",
-      url: "https://scitechdaily.com/new-study-older-adults-who-participate-in-this-leisure-activity-have-the-memory-of-a-20-year-old/",
-      urlToImage:
-        "https://scitechdaily.com/images/Colorful-Human-Brain-Illustration.jpg",
-      publishedAt: "2023-09-24T12:25:35Z",
-      content:
-        "ByUniversity of YorkSeptember 24, 2023\r\nNew research found that older adults playing digital puzzle games maintain memory abilities comparable to those in their 20s and have enhanced abilities to ign… [+4070 chars]",
+        "Governments and companies planning to pursue the circular economy need to involve scientists more directly, states a new report published by the International Society for Industrial Ecology, and led by UCL's Dr. Stijn van Ewijk.",
+      url: "https://phys.org/news/2023-06-industry-industrial-ecologists-circular-economy.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2023/circular-economy.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T17:04:02+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Salt Lake Tribune",
-      },
       author: null,
       title:
-        "An eclipse is coming to southern Utah — and so are tourists - Salt Lake Tribune",
+        "Novel algorithm improves understanding of plasma shock waves in space",
       description:
-        "Southern Utah communities are getting ready for an influx of tourists on Oct. 14, when an annular eclipse — when the moon moves in front of the sun, but not completely blocking the sun — is scheduled to happen, with the path of totality crossing over three of…",
-      url: "https://www.sltrib.com/artsliving/2023/09/24/an-eclipse-is-coming-southern-utah/",
-      urlToImage:
-        "https://www.sltrib.com/resizer/_AkgpeF-n0ui-1XeE_JmxZgbnbc=/1200x630/cloudfront-us-east-1.images.arcpublishing.com/sltrib/3CC5XN6RMNHCZJRXRYSEVCINTE.jpg",
-      publishedAt: "2023-09-24T12:01:44Z",
-      content:
-        "People from all over are making plans to descend on southern Utah next month, for an astronomical event that will last just a few minutes: An annular solar eclipse.\r\n[Its] a quick thing that you neve… [+8348 chars]",
+        "Imagine the explosive disturbance caused by a jet going supersonic. A similar shock wave occurs when subatomic particles known as \"solar wind\" flow from the sun and strike the Earth's magnetic field. Now, scientists have used a recently developed technique to improve predictions of the timing and intensity of the solar wind's strikes, which sometimes disrupt telecommunications satellites and damage electrical grids.",
+      url: "https://phys.org/news/2023-06-algorithm-plasma-space.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/novel-algorithm-improv.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T19:38:27+00:00",
     },
     {
-      source: {
-        id: "wired",
-        name: "Wired",
-      },
-      author: "Saugat Bolakhe",
-      title: "The Secret of How Cells Make 'Dark Oxygen' Without Light - WIRED",
+      author: null,
+      title: "An anthropological glimpse into entrepreneurial behavior",
       description:
-        "In some subterranean aquifers, cells have a chemical trick for making oxygen. It offers new insight into how life survives deep underground on Earth—and where it might lurk in space.",
-      url: "https://www.wired.com/story/the-secret-of-how-cells-make-dark-oxygen-without-light/",
-      urlToImage:
-        "https://media.wired.com/photos/650df45093a7cbc4f205a228/191:100/w_1280,c_limit/Dark-Oxygen-Lede-Quanta-Science.jpg",
-      publishedAt: "2023-09-24T12:00:00Z",
-      content:
-        "The original version ofthis storyappeared inQuanta Magazine.\r\nScientists have come to realize that in the soil and rocks beneath our feet there lies a vast biosphere with a global volume nearly twice… [+3861 chars]",
+        'Anthropologist Joost Beuving provides new insights into entrepreneurial behavior in his recently published book, "Theorizing Entrepreneurship for The Future." This behavior shows striking similarities around the world, according to Beuving\'s long-term studies and fieldwork in Greece, West Africa and the United States, among other countries. "In reality, entrepreneurial success often has more to do with a variety of circumstances over which entrepreneurs have very little control, than with rational anticipation and well-thought-out planning," he states.',
+      url: "https://phys.org/news/2023-06-anthropological-glimpse-entrepreneurial-behavior.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/an-anthropological-gli.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T21:10:52+00:00",
     },
     {
-      source: {
-        id: "wired",
-        name: "Wired",
-      },
-      author: "Kamala Thiagarajan, WIRED.com",
-      title:
-        "Inside the race to stop a deadly viral outbreak in India - Ars Technica",
-      description:
-        "With viral spillovers happening more frequently, containment is a fragile shield.",
-      url: "https://www.wired.com/story/kerala-nipah-outbreak/",
-      urlToImage:
-        "https://cdn.arstechnica.net/wp-content/uploads/2023/09/GettyImages-1339065898-760x380.jpg",
-      publishedAt: "2023-09-24T11:08:09Z",
-      content:
-        "Enlarge/ Road blockade due to Nipah affected areas at Chathamangalam panjayat on September 8, 2021, in Kozhikode, India.\r\n49 with \r\nOn the morning of September 11, critical care specialist Anoop Kuma… [+5956 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Ideal Home",
-      },
-      author: "Sara Hesikova",
-      title:
-        "How to take a fuchsia cutting to grow this vibrant-flowered plant for free - Ideal Home",
-      description:
-        "Gardening experts advise what’s the best method to take a fuchsia cutting and how to plant it",
-      url: "https://www.idealhome.co.uk/garden/garden-advice/how-to-take-a-fuchsia-cutting",
-      urlToImage:
-        "https://cdn.mos.cms.futurecdn.net/SgxzwqqtwhTrKCcocAB5qC-1200-80.jpg",
-      publishedAt: "2023-09-24T11:00:00Z",
-      content:
-        "Sign up to our newsletter for style and decor inspiration, house makeovers, project advice and more.\r\nThank you for signing up to Ideal Home. You will receive a verification email shortly.\r\nThere was… [+4435 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Hackaday",
-      },
-      author: "Kristina Panos",
-      title: "Powder Your Prints For Baby-Smoothness - Hackaday",
-      description:
-        "Layer lines are a dead giveaway to non-normies that a thing was 3D printed. There are things you can do to smooth them — sanding, chemical smoothing, and fillers come to mind. Although this t…",
-      url: "https://hackaday.com/2023/09/24/powder-your-prints-for-baby-smoothness/",
-      urlToImage:
-        "https://hackaday.com/wp-content/uploads/2023/09/baby-powder-800.png",
-      publishedAt: "2023-09-24T11:00:00Z",
-      content:
-        "Layer lines are a dead giveaway to non-normies that a thing was 3D printed. There are things you can do to smooth them — sanding, chemical smoothing, and fillers come to mind. Although this technique… [+897 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "Brainless Brilliance: Jellyfish Stun Scientists With Learning Skills - SciTechDaily",
+        "The Titan disaster could suggest deep sea diving is risky—history shows that's far from the truth",
       description:
-        "Jellyfish Learning Abilities: Challenging Neuroscientific Notions Even without a central brain, jellyfish can learn from past experiences like humans, mice, and flies, scientists report for the first time on September 22 in the journal Current Biology. They t…",
-      url: "https://scitechdaily.com/brainless-brilliance-jellyfish-stun-scientists-with-learning-skills/",
-      urlToImage:
-        "https://scitechdaily.com/images/Jellyfish-Brain-Art-Concept.jpg",
-      publishedAt: "2023-09-24T10:45:00Z",
-      content:
-        "ByCell PressSeptember 24, 2023\r\nJellyfish, despite lacking centralized brains, exhibit advanced learning abilities similar to humans and other complex organisms, challenging traditional beliefs about… [+5358 chars]",
+        "The tragic death of five people when the Titan submersible imploded during its descent to the wreck of the Titanic has led some to describe deep-diving submersibles as inherently risky. But their history shows that this is far from the case.",
+      url: "https://phys.org/news/2023-06-titan-disaster-deep-sea-riskyhistory.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/the-titan-disaster-cou.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T14:30:01+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Live Science",
-      },
-      author: "Briley Lewis",
-      title:
-        "Mathematicians find 12000 new solutions to 'unsolvable' 3-body problem - Space.com",
+      author: null,
+      title: "Building robust optical structures made of darkness",
       description:
-        "Calculating the way three things orbit each other is notoriously tricky — but a new study may reveal 12,000 new ways to make it work.",
-      url: "https://www.livescience.com/physics-mathematics/mathematicians-find-12000-new-solutions-to-unsolvable-3-body-problem",
-      urlToImage:
-        "https://cdn.mos.cms.futurecdn.net/NuDfKpux9MUrZgFAHm97ZS-1200-80.jpg",
-      publishedAt: "2023-09-24T10:00:39Z",
-      content:
-        "The three-body problem\r\n is a notoriously tricky puzzle in physics and mathematics, and an example of just how complex the natural world is. Two objects orbiting each other, like a lone planet around… [+3064 chars]",
+        "Optical devices and materials allow scientists and engineers to harness light for research and real-world applications, like sensing and microscopy. Federico Capasso's group at the Harvard John A. Paulson School of Engineering Applied Sciences (SEAS) has dedicated years to inventing more powerful and sophisticated optical methods and tools. Now, his team has developed new techniques to exert control over points of darkness, rather than light, using metasurfaces.",
+      url: "https://phys.org/news/2023-06-robust-optical-darkness.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/building-robust-optica.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T14:29:04+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Phys.Org",
-      },
-      author: "Hannah Bird",
-      title:
-        "Ediacaran fossils reveal origins of biomineralization that led to expansion of life on Earth - Phys.org",
-      description:
-        "Life on Earth began from a single-celled microbe, while the rise to the multicellular world in which we live arose due a vital chemical process known as biomineralization, during which living organisms produce hardened mineralized tissue, such as skeletons. N…",
-      url: "https://phys.org/news/2023-09-ediacaran-fossils-reveal-biomineralization-expansion.html",
-      urlToImage:
-        "https://scx2.b-cdn.net/gfx/news/2023/ediacaran-fossils-reve.jpg",
-      publishedAt: "2023-09-24T10:00:01Z",
-      content:
-        "Life on Earth began from a single-celled microbe, while the rise to the multicellular world in which we live arose due a vital chemical process known as biomineralization, during which living organis… [+5429 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Live Science",
-      },
-      author: "Laura Geggel",
-      title:
-        "See the 'amazing' facial reconstruction of a Bronze Age woman discovered crouching in a 4200-year-old grave - Livescience.com",
-      description:
-        "The skeletal remains of the 'Upper Largie Woman' were found in a quarry in Scotland. Now, scientists have reconstructed the Bronze Age woman's face.",
-      url: "https://www.livescience.com/archaeology/see-the-amazing-facial-reconstruction-of-a-bronze-age-woman-discovered-crouching-in-a-4200-year-old-grave",
-      urlToImage:
-        "https://cdn.mos.cms.futurecdn.net/maZXKMKhvicVE6iteTUwQU-1200-80.gif",
-      publishedAt: "2023-09-24T10:00:00Z",
-      content:
-        "More than 4,000 years ago, a young woman who died in what is now Scotland was buried in a crouched position within a stone-lined grave. She remained buried for millennia, until excavators at a stone … [+4363 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Travel Off Path",
-      },
-      author: "Marci Rivera",
-      title:
-        "These Are The 8 Best Places To See The Northern Lights In The U.S. This Winter - Travel Off Path",
-      description:
-        "These are 8 of the best places across the U.S. to see the Northern Lights this winter, from Montana to Maine.",
-      url: "https://www.traveloffpath.com/these-are-the-8-best-places-to-see-the-northern-lights-in-the-u-s-this-winter/",
-      urlToImage:
-        "https://www.traveloffpath.com/wp-content/uploads/2023/09/woman-with-northen-lights-in-the-background-1-copy.jpg",
-      publishedAt: "2023-09-24T09:41:25Z",
-      content:
-        "Share The Article\r\nLast Updated 57 seconds ago\r\nWhen you think of bucket lists, one of the top travel experiences that comes to mind is witnessing the northern lights (or Aurora Borealis) drape acros… [+6884 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "Scientists Successfully Genetically Modify Individual Cells in Living Animals - SciTechDaily",
+        "Rainfall's impact on pollutants: Unraveling the Tibetan Plateau's enigmatic dance",
       description:
-        "One proven method for tracking down the genetic origins of diseases is to knock out a single gene in animals and study the consequences this has for the organism. The problem is that for many diseases, the pathology is determined by multiple genes, complicati…",
-      url: "https://scitechdaily.com/scientists-successfully-genetically-modify-individual-cells-in-living-animals/",
-      urlToImage: "https://scitechdaily.com/images/Mosaic-Mouse.jpg",
-      publishedAt: "2023-09-24T09:34:16Z",
-      content:
-        "ByETH ZurichSeptember 24, 2023\r\nResearchers have developed a technique using CRISPR-Cas to simultaneously modify multiple genes in the cells of adult animals, creating a mosaic-like pattern that simp… [+8613 chars]",
+        "A research team led by Prof. Zhao Chun from the University of Science and Technology of China (USTC) of the Chinese Academy of Sciences (CAS) revealed the influence of rainfall on the inter-annual variation of pollutants over the Tibetan Plateau. The study was published in npj Climate and Atmospheric Science.",
+      url: "https://phys.org/news/2023-06-rainfall-impact-pollutants-unraveling-tibetan.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/rainfalls-impact-on-po.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T16:57:58+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Tech Xplore",
-      },
-      author: "Science X",
-      title: "Nanofluidic device generates power with saltwater - Tech Xplore",
+      author: "Joseph Goldstein",
+      title: "How Bad Will the Ticks Be This Summer?",
       description:
-        "There is a largely untapped energy source along the world's coastlines: the difference in salinity between seawater and freshwater. A new nanodevice can harness this difference to generate power.",
-      url: "https://techxplore.com/news/2023-09-nanofluidic-device-generates-power-saltwater.html",
-      urlToImage:
-        "https://scx2.b-cdn.net/gfx/news/2023/nanofluidic-device-gen.jpg",
-      publishedAt: "2023-09-24T09:15:12Z",
-      content:
-        "There is a largely untapped energy source along the world's coastlines: the difference in salinity between seawater and freshwater. A new nanodevice can harness this difference to generate power.\r\nA … [+3536 chars]",
+        "Thanks to migrating birds and deer vasectomies, new tick species are settling in New York City, as some experts prepare for the worst.",
+      url: "https://www.nytimes.com/2023/06/29/nyregion/nyc-tick-diseases-species.html",
+      source: "The New York Times",
+      image:
+        "https://static01.nyt.com/images/2023/07/02/nyregion/02ticks/24ticks-moth.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T07:00:09+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Digital Camera World",
-      },
-      author: "Hannah Rooke",
-      title:
-        "Out-of-this-world discovery lands scientist trio Astronomy Photographer of the Year 2023 - Digital Camera World",
+      author: "Caryl-Sue Micalizio",
+      title: "The Policy of Science",
       description:
-        "A stunning capture of our neighboring Andromeda Galaxy takes home the £10,000 grand prize and coveted Astronomy Photographer of the Year title",
-      url: "https://www.digitalcameraworld.com/news/out-of-this-world-discovery-lands-scientist-trio-astronomy-photographer-of-the-year-2023",
-      urlToImage:
-        "https://cdn.mos.cms.futurecdn.net/9NT8wP5gy53uNiALQ3hz4n-1200-80.jpg",
-      publishedAt: "2023-09-24T09:05:57Z",
-      content:
-        'The 15th Astronomy Photographer of the Year competition has crowned Marcel Drechsler, Xavier Strottner, and Yann Sainty as the overall winners. Their winning photograph, "Andromeda, Unexpected," reve… [+3765 chars]',
+        "The scientific community draws on effective strategies and innovative approaches to inform decisionmakers and influence academia.",
+      url: "https://eos.org/agu-news/the-policy-of-science",
+      source: "Eos: Earth And Space Science News",
+      image:
+        "https://i0.wp.com/eos.org/wp-content/uploads/2023/06/july-cover-crop.png?fit=780%2C439&ssl=1",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T13:56:41+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "indy100",
-      },
-      author: "Alex Daniel",
-      title:
-        "Flowers have started to grow in Antarctica – that is not good news - indy100",
+      author: null,
+      title: "A tailored and rapid approach for ozonation catalyst design",
       description:
-        "Newly budding flowers are usually a welcome hint of life – but in Antarctica, it is an alarming sign of global warming.There are just two species of flowering plant native to the Antarctic peninsula, and they are now growing at unprecedented rates, according …",
-      url: "https://www.indy100.com/science-tech/flowers-antarctic-climate-change",
-      urlToImage:
-        "https://www.indy100.com/media-library/a-small-grassy-shrub-growing-among-a-patch-of-grey-rock.jpg?id=44369951&width=1200&height=600&coordinates=0%2C179%2C0%2C30",
-      publishedAt: "2023-09-24T08:02:55Z",
-      content:
-        "Newly budding flowers are usually a welcome hint of life but in Antarctica, it is an alarming sign of global warming.\r\nThere are just two species of flowering plant native to the Antarctic peninsula,… [+2247 chars]",
+        "In a new study published in the journal Environmental Science and Ecotechnology, researchers from the Chinese Research Academy of Environment Sciences have employed machine learning, specifically the artificial neural network (ANN) model, to predict catalyst performance based on data collected from 52 different catalysts.",
+      url: "https://phys.org/news/2023-06-tailored-rapid-approach-ozonation-catalyst.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/a-tailored-and-rapid-a.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T15:58:03+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
+      author: null,
+      title: "Researchers publish the first grape T2T reference genome",
+      description:
+        'A new article titled "The complete reference genome for grapevine (Vitis vinifera L.) genetics and breeding" has been published in Horticulture Research.',
+      url: "https://phys.org/news/2023-06-publish-grape-t2t-genome.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/the-first-grape-t2t-re.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T20:06:27+00:00",
+    },
+    {
       author: null,
       title:
-        "Fly Fitness: How the Iditarod Protein Connects Exercise, Cold Resistance & Cell Repair - SciTechDaily",
+        "Research questions value of sagebrush control in conserving sage grouse",
       description:
-        "The gene, dubbed Iditarod, seems responsible for exercise’s ability to clean up damaged cells. As the days get shorter and chillier in the northern hemisphere, those who choose to work out in the mornings might find it harder to get up and running. A new stud…",
-      url: "https://scitechdaily.com/fly-fitness-how-the-iditarod-protein-connects-exercise-cold-resistance-cell-repair/",
-      urlToImage:
-        "https://scitechdaily.com/images/Man-Fitness-Snow-Cold-Art-Concept.jpg",
-      publishedAt: "2023-09-23T22:08:46Z",
-      content:
-        "Researchers identified a protein in fruit flies that impacts exercise in cold conditions. This protein is related to human irisin, which plays a role in exercise benefits and cold adaptation. The stu… [+3835 chars]",
+        "Efforts to improve sage grouse habitat through conventional management practices may be ineffective—and even counterproductive—according to research by University of Wyoming and other scientists.",
+      url: "https://phys.org/news/2023-06-sagebrush-sage-grouse.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/research-questions-val.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T20:53:03+00:00",
     },
     {
-      source: {
-        id: "usa-today",
-        name: "USA Today",
-      },
-      author: "Saman Shafiq, Doyle Rice",
-      title:
-        "Will Bennu hit Earth? NASA projection, size, what to know - USA TODAY",
-      description:
-        "The subject of NASA's OSIRIS-REx mission that's set to return home Sunday has a small chance to hit Earth in 2182.",
-      url: "https://www.usatoday.com/story/news/nation/2023/09/23/asteroid-bennu-nasa/70919391007/",
-      urlToImage:
-        "https://www.usatoday.com/gcdn/presto/2020/10/19/USAT/85fe10b4-b7c9-463c-9cd8-e9c7f5295534-AP_Space_Asteroid_Grab.jpg?crop=1991,1120,x0,y0&width=1991&height=1120&format=pjpg&auto=webp",
-      publishedAt: "2023-09-23T22:03:45Z",
-      content:
-        "A space rock is making big news this weekend. And it could make even bigger news next century.\r\nPotentially hazardous near-Earth asteroid Bennu, the subject of NASA's OSIRIS-REx mission that's set to… [+2904 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "ScienceAlert",
-      },
-      author: "Felicity Nelson",
-      title:
-        "Twists in Spacetime Might Explain Some of The Brightest Objects in The Universe - ScienceAlert",
-      description:
-        "A 3D model of a black hole's erratic feeding pattern reveals a potential explanation for the bizarre behavior of quasars with a dimmer switch.",
-      url: "https://www.sciencealert.com/twists-in-spacetime-might-explain-some-of-the-brightest-objects-in-the-universe",
-      urlToImage:
-        "https://www.sciencealert.com/images/2023/09/black-hole-accretion-disk-angle.gif",
-      publishedAt: "2023-09-23T21:01:19Z",
-      content:
-        "A 3D model of a black hole's erratic feeding pattern reveals a potential explanation for the bizarre behavior of quasars with a dimmer switch.\r\nIt's highly unusual for galaxies to do anything in a hu… [+3470 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "6x Tougher Than Kevlar: Spider Silk Is Spun by Genetically Modified Silkworms for the First Time - SciTechDaily",
+        "Broadband and continuous wave pumped second-harmonic generation from microfiber coated with layered GaSe crystal",
       description:
-        "Scientists in China have developed a method to produce spider silk from genetically modified silkworms, offering a strong, sustainable alternative to synthetic fibers with applications in various industries. Researchers have synthesized spider silk from genet…",
-      url: "https://scitechdaily.com/?p=311226",
-      urlToImage:
-        "https://scitechdaily.com/images/Strong-Spider-Silk-Concept-Art.jpg",
-      publishedAt: "2023-09-23T20:41:47Z",
-      content:
-        "Chinese scientists have successfully synthesized spider silk from genetically modified silkworms, producing fibers far stronger than Kevlar. Published in the journal Matter, this groundbreaking study… [+3839 chars]",
+        "Second-order optical nonlinear effects have received widespread attention from researchers since its first discovery in the 1960s.",
+      url: "https://phys.org/news/2023-06-broadband-second-harmonic-generation-microfiber-coated.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/broadband-and-continuo.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T21:05:59+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Interesting Engineering",
-      },
-      author: "Rizwan Choudhury",
-      title:
-        "Earth's crust and mantle grew in sync, study finds - Interesting Engineering",
+      author: null,
+      title: "Football pitch of tropical forest lost every 5 seconds",
       description:
-        "The researchers said that this finding could help solve a fundamental mystery about our planet and also shed light on the formation of other planets.",
-      url: "https://interestingengineering.com/science/earths-crust-and-mantle-grew-in-sync-study-finds",
-      urlToImage:
-        "https://dnd2oi6izkvoi.cloudfront.net/2023/09/23/image/jpeg/9fsKSWRxyPmZZ6TbJoC0urwAKJUdeMfRlPRYW3CR.jpg",
-      publishedAt: "2023-09-23T18:58:00Z",
-      content:
-        "Using this information, they calibrated the reworking rate in the rock record and then calculated the Earths crustal growth curve, which shows how much new crust was added over time. They compared th… [+2327 chars]",
+        "Earth lost an area of carbon-absorbing rainforest larger than Switzerland or the Netherlands in 2022, most of it destroyed to make way for cattle and commodity crops, an analysis of satellite data released Tuesday revealed.",
+      url: "https://phys.org/news/2023-06-football-pitch-tropical-forest-lost.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/nearly-a-football-pitc.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T08:16:44+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Interesting Engineering",
-      },
-      author: "Loukia Papadopoulos",
-      title:
-        "Upcoming Northern Lights to be the strongest in 20 years - Interesting Engineering",
-      description:
-        "Sunspot observations, a crucial predictor of the probability of seeing the Northern Lights, also known as the Aurora Borealis, have substantially grown since the end of 2022.",
-      url: "https://interestingengineering.com/science/upcoming-northern-lights-to-be-the-strongest-in-20-years",
-      urlToImage:
-        "https://dnd2oi6izkvoi.cloudfront.net/2023/09/23/image/jpeg/EkaUs1PFMs22T2bo39a8T3BslgZ8qxot4rm0p91i.jpg",
-      publishedAt: "2023-09-23T18:38:00Z",
-      content:
-        "These charged particles strike gas molecules like oxygen and nitrogen as they enter the atmosphere of the earth. These collisions cause the release of energy in the form of vivid photons, or light pa… [+1360 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "Cracking the Nucleolar Code: MIT Unravels Evolutionary Secrets of the Nucleolus - SciTechDaily",
+        "Q&A: Astrophysicists study primordial gases to investigate how galaxies are born",
       description:
-        "A single protein can self-assemble to build the scaffold for a biomolecular condensate that makes up a key nucleolar compartment. Inside all living cells, loosely formed assemblies known as biomolecular condensates perform many critical functions. However, it…",
-      url: "https://scitechdaily.com/cracking-the-nucleolar-code-mit-unravels-evolutionary-secrets-of-the-nucleolus/",
-      urlToImage:
-        "https://scitechdaily.com/images/Human-Cell-Rendering-Nucleus.jpg",
-      publishedAt: "2023-09-23T18:18:44Z",
-      content:
-        "ByAnne Trafton, Massachusetts Institute of TechnologySeptember 23, 2023\r\nMIT biologists discovered that a scaffolding protein called TCOF1 is responsible for the formation of a biomolecular condensat… [+12238 chars]",
+        "Studying the universe isn't easy, and not just because of the massive distances involved. If you want to study the galactic nurseries where stars and galaxies form, you often have to look at areas of the universe where there isn't any visible light, due to the aforementioned absence of stars.",
+      url: "https://phys.org/news/2023-06-qa-astrophysicists-primordial-gases-galaxies.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/where-do-new-galaxies.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T13:58:47+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Interesting Engineering",
-      },
-      author: "Loukia Papadopoulos",
-      title:
-        "NASA plans to use blockchain to store data on the moon - Interesting Engineering",
-      description:
-        "Space agency NASA, computer startup Lonestar and the Isle of Man are joining forces to spearhead a new data storage solution: using blockchain to safely store data on the moon.",
-      url: "https://interestingengineering.com/innovation/nasa-plans-to-use-blockchain-to-store-data-on-the-moon",
-      urlToImage:
-        "https://dnd2oi6izkvoi.cloudfront.net/2023/09/23/image/jpeg/W8VllCYlULTY8opeushL1wtniKbXOU8z3GD7sUl0.jpg",
-      publishedAt: "2023-09-23T16:39:00Z",
-      content:
-        "Prof Peter Bentley, a computer scientist at University College London, told the science news outlet that the project is too expensive and that better solutions for safe storage can be found right her… [+1286 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "YouTube",
-      },
       author: null,
       title:
-        "Tracking a Mission’s Historic Return to Earth on This Week @NASA – September 22, 2023 - NASA",
+        "New protein scaffolds for assembling multi-enzyme systems with unprecedented control",
       description:
-        "Tracking a mission’s historic return to Earth, a year of science onboard the space station, and the safe arrival of the station’s newest resident astronaut …...",
-      url: "https://www.youtube.com/watch?v=-VIM6LSRLIA",
-      urlToImage: "https://i.ytimg.com/vi/-VIM6LSRLIA/maxresdefault.jpg",
-      publishedAt: "2023-09-23T14:00:00Z",
-      content: null,
+        "Cell-free biocatalysis is being increasingly used as a substitute for conventional chemical catalysts, given that enzymes (biological catalysts) are more sustainable and selective in the manufacture of valuable chemicals. Chemical biomanufacturing has benefited from extraordinary advances in molecular and synthetic biology, which have stimulated the creation of new enzymatic cascades (sequences of reactions in which each newly formed product is subsequently transformed into the next).",
+      url: "https://phys.org/news/2023-06-protein-scaffolds-multi-enzyme-unprecedented.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/new-protein-scaffolds.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T13:57:44+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
+      author: null,
+      title: "Better predictions of wildfire spread may sit above the treetops",
+      description:
+        "When the skies above Palo Alto darkened with smoke from the Camp Fire in 2018, Stanford researcher Hayoon Chung was in a fluid mechanics lab on campus studying how ocean currents flowed over patches of seagrass. She wondered if patterns similar to the ones she observed in her lab experiments might exist in the rapid and seemingly random spread of the nearby wildfires.",
+      url: "https://phys.org/news/2023-06-wildfire-treetops.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/better-predictions-of.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T13:56:41+00:00",
+    },
+    {
       author: null,
       title:
-        "Thinner Than the Photon Itself – Scientists Invent Smallest Known Way To Guide Light - SciTechDaily",
+        "Researchers study diversity and impact of broad host range plasmids in human gut",
       description:
-        "2D optical waveguides could pave the way for innovative technology. Channeling light from one location to another is the backbone of our modern world. Across deep oceans and vast continents, fiber optic cables transport light containing data ranging from YouT…",
-      url: "https://scitechdaily.com/thinner-than-the-photon-itself-scientists-invent-smallest-known-way-to-guide-light/",
-      urlToImage:
-        "https://scitechdaily.com/images/Hanyu-Hong-Holding-Material.jpg",
-      publishedAt: "2023-09-23T13:21:11Z",
-      content:
-        "ByUniversity of ChicagoSeptember 23, 2023\r\nScientists at the University of Chicago found a glass crystal just a few atoms thick can trap and carry lightand could be used for applications. The materia… [+5552 chars]",
+        "The human gut hosts a complex ecosystem comprising an intricate plasmidome with abundant undiscovered plasmids, driving horizontal gene transfer events.",
+      url: "https://phys.org/news/2023-06-diversity-impact-broad-host-range.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/researchers-study-dive.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T14:12:01+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Interesting Engineering",
-      },
-      author: "Amal Jos Chacko",
-      title:
-        "Miracle or not? Magnetized sand flows uphill against gravity - Interesting Engineering",
-      description:
-        "A recent paper published by researchers at Lehigh University discusses a perplexing phenomenon: sand flowing uphill. What's the magic behind it?",
-      url: "https://interestingengineering.com/science/miracle-or-not-magnetized-sand-flows-uphill-against-gravity",
-      urlToImage:
-        "https://dnd2oi6izkvoi.cloudfront.net/2023/09/23/image/jpeg/6FWG1425f2sDtw6ySPRNGPgQZOtkfEzhLaqhWXD9.jpg",
-      publishedAt: "2023-09-23T13:05:00Z",
-      content:
-        "However, on applying torque using magnets, each particle was observed to rotate, forming temporary doublets that exhibited cohesion and resulted in a negative angle of repose due to a negative coeffi… [+1463 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "SciTechDaily",
-      },
       author: null,
       title:
-        "Cambridge Researchers Discover New Way To Measure Dark Energy - SciTechDaily",
+        "Keetoowah Cherokee tribe struggles with motherhood tied to cultural trauma",
       description:
-        "Researchers from the University of Cambridge have discovered a new way to measure dark energy – the mysterious force that makes up more than two-thirds of the universe and is responsible for its accelerating expansion – in our own cosmic backyard. The researc…",
-      url: "https://scitechdaily.com/cambridge-researchers-discover-new-way-to-measure-dark-energy/",
-      urlToImage:
-        "https://scitechdaily.com/images/Dark-Energy-Abstract-Space.jpg",
-      publishedAt: "2023-09-23T12:09:22Z",
-      content:
-        "ByUniversity of CambridgeSeptember 23, 2023\r\nResearchers have discovered a method to potentially detect and measure dark energy by examining the motion between the Milky Way and Andromeda galaxies. T… [+6317 chars]",
+        "For many native peoples, colonization has had devastating effects on their way of life and traditions. The United Keetoowah Band of Cherokee Indians in Tahlequah, Oklahoma is no exception to this reality.",
+      url: "https://phys.org/news/2023-06-keetoowah-cherokee-tribe-struggles-motherhood.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/mother-and-child-silho.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T15:19:35+00:00",
     },
     {
-      source: {
-        id: null,
-        name: "Live Science",
-      },
-      author: "Sascha Pare",
+      author: null,
       title:
-        "Pacific lamprey: The jawless fish that survived 4 mass extinctions and sucks prey dry of blood and body fluids - Livescience.com",
+        "Opinion: We have forgotten what a 'natural' river even looks like",
       description:
-        "Lampreys belong to an ancient group of fish called Agnatha that evolved 450 million years ago, predating both dinosaurs and trees.",
-      url: "https://www.livescience.com/animals/fish/pacific-lamprey-the-jawless-fish-that-survived-4-mass-extinctions-and-sucks-prey-dry-of-blood-and-body-fluids",
-      urlToImage:
-        "https://cdn.mos.cms.futurecdn.net/jTRQKvcYBwcBqSekchnYEJ-1200-80.jpg",
-      publishedAt: "2023-09-23T12:00:00Z",
-      content:
-        "Instead of a jaw, lampreys have a sucker mouth that they use to latch onto prey.  (Image credit: Marli Miller/UCG/Universal Images Group via Getty Images)\r\nName: Pacific lamprey (Entosphenus tridenta… [+1791 chars]",
+        "Britain's rivers are under the spotlight because of an untreated sewage crisis, and the pendulum of floods and droughts that are the hallmark of a warming world. But hidden within these policy debates is a pervasive and under reported issue: quite simply, people have forgotten what a natural river even looks like.",
+      url: "https://phys.org/news/2023-06-opinion-forgotten-natural-river.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/we-have-forgotten-what.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T15:44:03+00:00",
+    },
+    {
+      author: null,
+      title: "Pacific oysters are dominant on Sweden's west coast, shows study",
+      description:
+        "The Pacific oyster has taken over in the Swedish west coast county of Bohuslän. Researchers at the University of Gothenburg have found that the invasive species accounts for two-thirds of the biomass of all mussel and oyster species. This is not necessarily a bad thing, except for beachgoers, who can cut themselves easily on the razor-sharp shells.",
+      url: "https://phys.org/news/2023-06-pacific-oysters-dominant-sweden-west.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/asian-oysters-are-domi.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T16:14:03+00:00",
+    },
+    {
+      author: null,
+      title: "Probiotics positively influence honeybee health, study shows",
+      description:
+        "Widespread pesticide-use and diminished floral diversity in the environment have contributed to the worsening susceptibility of honeybees to infectious disease, threatening their support of adequate pollination of food crops. With the aim of tackling honeybee decline, a collaborative team including researchers at Western University have shown certain probiotic bacteria can be used to help ward off disease and promote overall hive health.",
+      url: "https://phys.org/news/2023-06-probiotics-positively-honeybee-health.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/probiotics-positively.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T16:51:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Songbird study shows one-hit wonder must change his tune to attract a mate",
+      description:
+        "Male birds that are able to precisely repeat song notes stand the best chance of attracting a female mate, according to a new study published in Nature Communications.",
+      url: "https://phys.org/news/2023-06-songbird-one-hit-tune.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/songbird-study-shows-o.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T17:14:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Zhurong rover detects extremely weak magnetic fields on surface of Mars' Utopia Basin",
+      description:
+        "A joint research team led by Prof. Du Aimin from the Institute of Geology and Geophysics of the Chinese Academy of Sciences (IGGCAS) has found extremely weak magnetic fields during the Zhurong rover's first 1-km traverse on Mars. This indicates no detectable magnetization anomalies below Zhurong's landing site. The work was published in Nature Astronomy on June 19.",
+      url: "https://phys.org/news/2023-06-zhurong-rover-extremely-weak-magnetic.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/zhurong-rover-detects.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T13:52:07+00:00",
+    },
+    {
+      author: null,
+      title: "Researchers model and test ground conditions on the moon",
+      description:
+        "From 1967 to 1972, the American space agency NASA conducted a series of space missions to the moon. Nearly 400 kilograms of soil samples were transported back to Earth. NGI—The Norwegian Geotechnical Institute is now using CT-scans of 10,000 lunar particles from the Apollo expeditions to study how lunar soils will behave when humans start engineering structures for the lunar surface.",
+      url: "https://phys.org/news/2023-06-ground-conditions-moon.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/ngi-models-and-tests-g.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T17:11:55+00:00",
+    },
+    {
+      author: null,
+      title:
+        "New analysis of tooth minerals confirms megalodon shark was warm-blooded",
+      description:
+        "The largest marine predator that ever lived was no cold-blooded killer. A new analysis by environmental scientists from UCLA, UC Merced and William Paterson University sheds light on the warm-blooded animal's ability to regulate its body temperature—and might help explain why it went extinct.",
+      url: "https://phys.org/news/2023-06-analysis-tooth-minerals-megalodon-shark.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/megalodon-was-no-cold.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T19:00:02+00:00",
+    },
+    {
+      author: null,
+      title: "Study finds human impact on wildlife even in protected areas",
+      description:
+        'By 2030, if the "30 by 30" initiative supported by more than 100 countries is successful, 30% of our land and ocean ecosystems will be designated protected areas meant to safeguard biodiversity and help limit the impacts of climate change.',
+      url: "https://phys.org/news/2023-06-human-impact-wildlife-areas.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/study-finds-human-impa.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T19:11:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Research shows more than 90% of global aquaculture faces substantial risk from environmental change",
+      description:
+        "Many of the world's largest aquatic food producers are highly vulnerable to human-induced environmental change, with some of the highest-risk countries in Asia, Latin America and Africa demonstrating the lowest capacity for adaptation, a landmark study has shown.",
+      url: "https://phys.org/news/2023-06-global-aquaculture-substantial-environmental.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/research-shows-more-th.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T19:51:34+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Researchers estimate that gray whales off Oregon Coast consume millions of microparticles per day",
+      description:
+        "Oregon State University researchers estimate that gray whales feeding off the Oregon Coast consume up to 21 million microparticles per day, a finding informed in part by poop from the whales.",
+      url: "https://phys.org/news/2023-06-gray-whales-oregon-coast-consume.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/poop-and-prey-help-res-1.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T20:48:04+00:00",
+    },
+    {
+      author: "Victoria Corless",
+      title: "Nobel Laureate John B. Goodenough dies at 100",
+      description:
+        "Goodenough's visionary efforts in developing lithium ion batteries played an instrumental role in revolutionizing the way we generate, store, and use energy.The post Nobel Laureate John B. Goodenough dies at 100 appeared first on Advanced Science News.",
+      url: "https://www.advancedsciencenews.com/nobel-laureate-john-b-goodenough-dies-at-100/",
+      source: "Advanced Science News",
+      image: null,
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T09:02:30+00:00",
+    },
+    {
+      author: null,
+      title: "New study sheds light on the evolution of animals",
+      description:
+        'A study led by the University of Oxford has brought us one step closer to solving a mystery that has puzzled naturalists since Charles Darwin: when did animals first appear in the history of Earth? The study, "Fossilization processes and our reading of animal antiquity," has been published in Trends in Ecology & Evolution.',
+      url: "https://phys.org/news/2023-06-evolution-animals.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/new-study-sheds-light-1.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:00:06+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Researchers develop new base editing tools using AI-predicted protein structure clustering",
+      description:
+        "Gao Caixia's group from the Institute of Genetics and Developmental Biology of the Chinese Academy of Sciences has pioneered the use of artificial intelligence (AI)-assisted methods to discover novel deaminase proteins with unique functions through structural prediction and classification.",
+      url: "https://phys.org/news/2023-06-base-tools-ai-predicted-protein-clustering.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/researchers-develop-ne-21.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:00:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Orangutans can make two sounds at the same time, similar to human beatboxing, study finds",
+      description:
+        'Orangutans can make two separate sounds simultaneously, much like songbirds or human beatboxers, according to a study led by the University of Warwick. The paper, "Wild orangutans can simultaneously use two independent vocal sound sources similarly to songbirds and human beatboxers," is published by PNAS Nexus.',
+      url: "https://phys.org/news/2023-06-orangutans-similar-human-beatboxing.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2022/orangutan.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T14:58:00+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Digitally designed protein works like an antifreeze for biological material",
+      description:
+        "Dutch and American researchers have used computer simulations to develop a protein that works like an anti-freeze agent. Researchers could use this protein to freeze and defrost biological material such as immune cells, sperm and perhaps even donor organs in the future, without causing any damage to the material. This was reported by chemists at Wageningen University & Research (WUR), Eindhoven University of Technology (TU/e) and Washington University in the journal Proceedings of the National Academy of Sciences.",
+      url: "https://phys.org/news/2023-06-digitally-protein-antifreeze-biological-material.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/digitally-designed-pro.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T14:57:33+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Dehydrated cellulose nanofiber: New method to keep thickening agents tiny in transport and big in application",
+      description:
+        "Many commercial products such as food, cosmetics, and inks contain cellulose nanofiber (CNF) as a thickening agent. However, CNFs have some limitations that prevent their more widespread use. Now, researchers from Osaka University have demonstrated a method of dehydrating CNFs to a dense powder without affecting their three key properties.",
+      url: "https://phys.org/news/2023-06-dehydrated-cellulose-nanofiber-method-thickening.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/a-new-method-to-keep-t-1.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:26:57+00:00",
+    },
+    {
+      author: null,
+      title:
+        "New report, tool suggest how Washington can better protect against extreme heat",
+      description:
+        'In June 2021, the "heat dome" that struck the Pacific Northwest sent temperatures in Seattle to an unprecedented 107° Fahrenheit and set 128 all-time high temperature records across the state. The event was partly due to climate change. As the climate continues to warm, these hotter stretches are projected to hit the region with increasing frequency.',
+      url: "https://phys.org/news/2023-06-tool-washington-extreme.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/new-report-tool-sugges.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T18:27:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Discovery of pair density wave state in a two-dimensional high-Tc iron-based superconductor",
+      description:
+        "As a macroscopic quantum state of matter, superconductivity has attracted tremendous attention in the field of scientific research and industry over the past century. According to the BCS (Bardeen-Cooper-Schrieffer) microscopic theory, superconductivity arises from the condensation of coherent Cooper pairs, and each Cooper pair is formed by two electrons with opposite spins and momenta.",
+      url: "https://phys.org/news/2023-06-discovery-pair-density-state-two-dimensional.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/discovery-of-pair-dens.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T14:34:12+00:00",
+    },
+    {
+      author: "The New York Times",
+      title: "Sync Your Calendar With the Solar System",
+      description:
+        "Never miss an eclipse, a meteor shower, a rocket launch or any other astronomical and space event that’s out of this world.",
+      url: "https://www.nytimes.com/explain/2023/01/01/science/astronomy-space-calendar",
+      source: "The New York Times",
+      image:
+        "https://static01.nyt.com/images/2023/01/03/multimedia/live-blog-exp-20230101-astronomy-space-calendar-header-1-f59d/live-blog-exp-20230101-astronomy-space-calendar-header-1-f59d-moth.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T15:08:16+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Molecular signals key to malaria parasite's development, shows study",
+      description:
+        "A key developmental step in the life cycle of the most virulent species of malaria parasite depends in part on a series of molecular signals, detailed in a new study led by researchers at Weill Cornell Medicine. The findings may help scientists develop new ways to prevent malaria from spreading.",
+      url: "https://phys.org/news/2023-06-molecular-key-malaria-parasite.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/molecular-signals-key-1.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T18:19:03+00:00",
+    },
+    {
+      author: null,
+      title: "New tool predicts crop yields in the southeastern US",
+      description:
+        "Researchers have developed a computer model that forecasts yield for four key crops in the southeastern United States: cotton, corn, sorghum, and soybeans. The tool is designed to help farmers and government water resource managers make informed decisions about crop selection and irrigation techniques in the face of a changing climate.",
+      url: "https://phys.org/news/2023-06-tool-crop-yields-southeastern.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2023/small-corn-plants.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T20:08:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "A dog's breed can affect pain sensitivity, but not necessarily the way your vet may think",
+      description:
+        "Dog breeds differ in pain sensitivity, but these differences don't always match up with the beliefs people—including veterinarians—hold about breed-specific pain sensitivity. The results appear in a new study from North Carolina State University published in Frontiers in Pain Research, which also found that a dog's temperament (specifically in the way they interact with strangers) may influence the way veterinarians view breed pain sensitivity.",
+      url: "https://phys.org/news/2023-06-dog-affect-pain-sensitivity-necessarily.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/a-dogs-breed-can-affec.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T20:27:41+00:00",
+    },
+    {
+      author: null,
+      title:
+        "First misinformation susceptibility test finds 'very online' Gen Z and millennials are most vulnerable to fake news",
+      description:
+        'University of Cambridge psychologists have developed the first validated "misinformation susceptibility test": a quick two-minute quiz that gives a solid indication of how vulnerable a person is to being duped by the kind of fabricated news that floods online spaces.',
+      url: "https://phys.org/news/2023-06-misinformation-susceptibility-online-gen-millennials.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2017/fakenews.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T00:00:02+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Research proposes extending Earth's internet to Mars with orbital data servers",
+      description:
+        "You've done it. After years of effort and training, sacrifice, and pain, you become an astronaut and have finally set foot on Mars. Time to post your triumph on TikTok for that sweet social media cred. If only you can get a signal.",
+      url: "https://phys.org/news/2023-06-earth-internet-mars-orbital-servers.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/extending-earths-inter.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-26T17:09:02+00:00",
+    },
+    {
+      author: null,
+      title: "A new theory to explain fast radio bursts",
+      description:
+        "A pair of astrophysicists, one with Princeton University, the other the University of Maryland, has developed a new theory to explain fast radio bursts (FSBs). In their paper published in the journal Physical Review Letters, Elias Most and Alexander Philippov, describe their theory and how it fits in with other theories surrounding FSBs.",
+      url: "https://phys.org/news/2023-06-theory-fast-radio.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/a-new-theory-to-explai-1.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T14:42:52+00:00",
+    },
+    {
+      author: null,
+      title: "New tool maps south Florida fire risk pixel by pixel",
+      description:
+        'North Carolina State University researchers have designed and tested a new computer model to allow fire managers to map current fire risk in Everglades National Park and across South Florida daily. The new modeling tool, called "FireHydro," can help park managers plan prescribed burns to reduce the potential for large wildfires for the region, taking into account the area\'s unique water resources.',
+      url: "https://phys.org/news/2023-06-tool-south-florida-pixel.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/new-tool-maps-south-fl.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T15:42:20+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Saudi Arabia's 'The Line' isn't a revolution in urban living, say researchers",
+      description:
+        'In October, the excavation work for the superlative construction project, "The Line," began. What some consider an ideal ecological city, others call a promotional gimmick. Researchers from the Complexity Science Hub now show why The Line should not be a showcase for future cities.',
+      url: "https://phys.org/news/2023-06-saudi-arabia-line-isnt-revolution.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/why-saudi-arabias-quot.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T16:47:20+00:00",
+    },
+    {
+      author: null,
+      title: "Synthesis of peripherally annulated phenanthroporphyrins",
+      description:
+        "Prof. Okujima, in collaboration with Prof. Kobayashi at Shinshu University, have reported the synthesis, molecular structure, optical properties and electronic structure of unusual phenanthrene-fused porphyrins in Organic Letters.",
+      url: "https://phys.org/news/2023-06-synthesis-peripherally-annulated-phenanthroporphyrins.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/synthesis-of-periphera.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T16:47:05+00:00",
+    },
+    {
+      author: null,
+      title: "A roadmap for entrepreneurship policy in rural Texas",
+      description:
+        "In a new study published in PLOS One, a University of Texas at Arlington political scientist and UT System colleagues identified the factors that predict business creation in rural Texas.",
+      url: "https://phys.org/news/2023-06-roadmap-entrepreneurship-policy-rural-texas.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/a-roadmap-for-entrepre.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T18:53:12+00:00",
+    },
+    {
+      author: null,
+      title: "Q&A: How can climate scientists better communicate risk?",
+      description:
+        "A new study authored by an international group of climate scientists, including an expert at Brown University, found that climate scientists have long struggled to find the best ways to present crucial facts about future sea level rise to policymakers, stakeholders and the general public.",
+      url: "https://phys.org/news/2023-06-qa-climate-scientists-communicate.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2023/flooding-houses.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-27T20:39:36+00:00",
+    },
+    {
+      author: null,
+      title: "Senegalese go wild for prized 'maad' fruit",
+      description:
+        "Outside a bustling fruit market in Senegal's Dakar region, three trucks are blocking the road while a dozen men sweat to unload the precious cargo.",
+      url: "https://phys.org/news/2023-06-senegalese-wild-prized-maad-fruit.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/maad-has-soft-juicy-se.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T08:09:57+00:00",
+    },
+    {
+      author: null,
+      title: "The hidden role of lipid droplets in fertility and beyond",
+      description:
+        "Once thought of merely as fat storages, lipid droplets are now believed to play important roles in human health and fertility.",
+      url: "https://phys.org/news/2023-06-hidden-role-lipid-droplets-fertility.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/the-hidden-role-of-lip.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T16:47:03+00:00",
+    },
+    {
+      author: null,
+      title: "Canada wildfires again bring more unhealthy air in North America",
+      description:
+        "Smoke from Canada's wildfires was wreaking havoc on air quality across Ontario and a dozen US states Wednesday, with monitors warning of very unhealthy or emergency conditions facing millions of people, particularly in Detroit and Chicago.",
+      url: "https://phys.org/news/2023-06-canada-wildfires-unhealthy-air-north.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/a-jogger-runs-along-th.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T17:22:55+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Stronger winds shift water from the Labrador Current eastward, with dire consequences for marine ecosystems",
+      description:
+        "Changes to the flow of the Labrador Current along the coast of Newfoundland and Labrador to Nova Scotia are leading to sudden warmings or drops in the oxygen levels of the waters in several regions including the St. Lawrence Gulf and Estuary. This change has dire consequences for marine ecosystems and fisheries.",
+      url: "https://phys.org/news/2023-06-stronger-shift-labrador-current-eastward.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/what-controls-the-path.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T18:28:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "New technology enhances measurement reliability of methane gas emissions from rice paddy fields",
+      description:
+        "The joint research team of Dr. Namgoo Kang from the Korea Research Institute of Standards and Science (KRISS) and Dr. Minseok Kang from the National Center for Agro Meteorology (NCAM) has developed a novel technology that enhances the reliability of measurement of methane emissions from rice paddy fields. They report on their work in Agricultural and Forest Meteorology.",
+      url: "https://phys.org/news/2023-06-technology-reliability-methane-gas-emissions.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/kriss-technology-enhan.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T18:59:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Undergrad-driven project reveals drought's effects on painted turtles",
+      description:
+        "A projected rise in droughts could muddy the waters for painted turtles and some fellow freshwater-dwelling reptiles, according to 11 years of data collected by 50-plus undergraduates from the University of Nebraska–Lincoln.",
+      url: "https://phys.org/news/2023-06-undergrad-driven-reveals-drought-effects-turtles.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/undergrad-driven-proje.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-28T19:29:04+00:00",
+    },
+    {
+      author: "",
+      title:
+        "Test the accuracy of your liquid handling robot or multi-channel pipette in seconds.",
+      description:
+        "The Checkit Go is an easy-to-use, stand-alone, disposable cartridge that allows you to check the accuracy of your liquid handling robot or multi-channel pipette in just seconds. No additional equipment is required. The Checkit Go is interchangeable with well plates, so it works with all robots that handle 96 well plates. Compatible with all makes of multi-channel or electronic pipettes. Checkit Go has a range of labware definitions and liquid classes, supplied by robot manufacturers...",
+      url: "https://www.labbulletin.com/articles/test-the-accuracy-your-liquid-handling-robot-or",
+      source: "Lab Bulletin",
+      image: null,
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T06:40:17+00:00",
+    },
+    {
+      author: "Darren Incorvaia",
+      title: "Race car drivers usually blink at the same places in each lap",
+      description:
+        "Blinking is usually thought to be somewhat random. But a new study tracking blinks in Formula One drivers shows it can be predictable — and strategic.",
+      url: "https://www.snexplores.org/article/race-car-drivers-blink-strategy",
+      source: "Science News For Students",
+      image:
+        "https://www.snexplores.org/wp-content/uploads/2023/05/051823_DI_race-car-blink_feat-800x450.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T10:30:00+00:00",
+    },
+    {
+      author: "Jennifer Szalai",
+      title: "Book Review: ‘The Heat Will Kill You First,’ by Jeff Goodell",
+      description:
+        "In “The Heat Will Kill You First,” Jeff Goodell documents the lethal effects of rising temperatures and argues that we need to take hot weather a lot more seriously.",
+      url: "https://www.nytimes.com/2023/06/29/books/review/the-heat-will-kill-you-first-jeff-goodell.html",
+      source: "The New York Times",
+      image:
+        "https://static01.nyt.com/images/2023/06/29/multimedia/29Goodell-review1-qzlw/29Goodell-review1-qzlw-moth.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T14:16:43+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Deforestation in Brazilian Amazon caused emission of 90 million metric tons of CO2 in 2013–21, reports study",
+      description:
+        "Deforestation in Indigenous Territories (ITs) in the Brazilian Amazon caused the emission of 96 million metric tons of carbon dioxide (CO2) between 2013 and 2021, modifying the forest's role as a carbon sink in these areas. Emissions in the last three years of the period (2019–21) accounted for 59%, reflecting intensification of the destruction.",
+      url: "https://phys.org/news/2023-06-deforestation-brazilian-amazon-emission-million.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/deforestation-in-brazi.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T18:18:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Microscopy techniques combine to create more powerful imaging device",
+      description:
+        "If you imagine yourself peering through a microscope, you probably picture looking at a glass slide with an amoeba, or maybe a human cell, or perhaps even a small insect of some kind.",
+      url: "https://phys.org/news/2023-06-microscopy-techniques-combine-powerful-imaging.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/microscopy-techniques-1.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T19:16:03+00:00",
+    },
+    {
+      author: null,
+      title: "Drone deployed to fight mosquitoes in Southern California",
+      description:
+        "A drone flies over a peaceful Southern California marsh and unleashes a rain of larvae-killing bacterial spore pellets. Its target: a surging population of mosquitoes that can spread diseases to humans.",
+      url: "https://phys.org/news/2023-06-drone-deployed-mosquitoes-southern-california.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/drone-deployed-to-figh.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T20:04:01+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Study finds 1.3 million disabled workers trapped in insecure work in UK",
+      description:
+        "New research by the Work Foundation at Lancaster University reveals 1.3 million disabled workers are trapped in severely insecure work in the U.K.—and 430,000 say they want to work more hours.",
+      url: "https://phys.org/news/2023-06-million-disabled-workers-insecure-uk.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2023/job-application.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T23:00:02+00:00",
+    },
+    {
+      author: "Victoria Corless",
+      title: "Tracing life’s origins with early Earth chemistry",
+      description:
+        "What role could non-biological molecules have played in helping primitive biological and chemical systems evolve into their current, complex forms?The post Tracing life&#8217;s origins with early Earth chemistry appeared first on Advanced Science News.",
+      url: "https://www.advancedsciencenews.com/tracing-lifes-origins-with-early-earth-chemistry/",
+      source: "Advanced Science News",
+      image: null,
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T07:18:02+00:00",
+    },
+    {
+      author: null,
+      title: "Canada wildfire smoke chokes millions in North America",
+      description:
+        "A deep orange-brown sun shined through hazy skies as smoke from Canadian wildfires spread across North America and beyond, choking millions of people and triggering severe air quality alerts.",
+      url: "https://phys.org/news/2023-06-canada-wildfire-millions-north-america.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/two-women-look-at-mont.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T08:31:19+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Australia has a strong hand to tackle gambling harm. Will it go all in or fold?",
+      description:
+        "A ban on all gambling advertising within three years has attracted the most attention of the 31 recommendations made by the Australian parliamentary inquiry into online gambling, which reported this week.",
+      url: "https://phys.org/news/2023-06-australia-strong-tackle-gambling.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/australia-has-a-strong.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T17:40:01+00:00",
+    },
+    {
+      author: null,
+      title: "New ferroelectric material could give robots muscles",
+      description:
+        'A new type of ferroelectric polymer that is exceptionally good at converting electrical energy into mechanical strain holds promise as a high-performance motion controller or "actuator" with great potential for applications in medical devices, advanced robotics, and precision positioning systems, according to a team of international researchers led by Penn State.',
+      url: "https://phys.org/news/2023-06-ferroelectric-material-robots-muscles.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/new-ferroelectric-mate.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T21:38:16+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Social experiment in women's amateur soccer: Is a foreign name a disadvantage?",
+      description:
+        "To find out if we discriminate against people with foreign-sounding names an experiment with fictional girls who wanted to play soccer yields some answers.",
+      url: "https://phys.org/news/2023-06-social-women-amateur-soccer-foreign.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/is-a-foreign-name-a-di.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T17:03:14+00:00",
+    },
+    {
+      author: null,
+      title: "A deadly heat wave is blanketing the South and spreading east",
+      description:
+        "An oppressive heat wave blamed for at least 13 deaths in Texas and one in Louisiana blanketed the South on Thursday, as authorities warned of dangerous, triple-digit temperatures.",
+      url: "https://phys.org/news/2023-06-deadly-blanketing-south-east.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/a-deadly-heat-wave-is.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T17:13:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Complex organosulfur molecules on comet 67P: Evidence from Rosetta orbiter and the lab",
+      description:
+        "The Rosetta orbiter spectrometer for ion and neutral analysis (ROSINA) instrument orbited comet 67P to revolutionize our understanding of cometary material composition. A key finding of the satellite was to explore the composition of comet 67P/Churyumov-Gerasimenko. In a new report published in Science Advances, Ahmed Mahjoub and a team of planetary scientists in the Jet Propulsion Lab at CalTech, the Space Science Institute Colorado, and the University of Bern in Switzerland, used the ROSINA data to study dust particles volatilized during a dust event in September 2016.",
+      url: "https://phys.org/news/2023-06-complex-organosulfur-molecules-comet-67p.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/complex-organosulfur-m.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T13:20:01+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Team working on Hera mission discusses what it would be like to walk on an asteroid",
+      description:
+        "The team working on ESA's Hera asteroid mission has glimpsed its destination. Last September NASA's DART mission returned images of the boulder-strewn Dimorphos moonlet just before impacting it, in an audacious and ultimately successful attempt to shift its orbit around its parent asteroid Didymos.",
+      url: "https://phys.org/news/2023-06-team-hera-mission-discusses-asteroid.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/imagine-walking-on-her.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T15:57:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Use of roadmapping as a strategic planning tool in industrial and research organizations",
+      description:
+        "The Fraunhofer Group for Innovation Research, which includes Fraunhofer IAO among other Fraunhofer Institutes, has collaborated with the Institute for Manufacturing (IfM) Cambridge, the Massachusetts Institute of Technology (MIT) and TIM Consulting to publish a field study that discusses the status of the use of roadmapping as a strategic planning instrument in organizations.",
+      url: "https://phys.org/news/2023-06-roadmapping-strategic-tool-industrial.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2023/road-map.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T16:42:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Visual misinformation is widespread on Facebook, and often undercounted by researchers",
+      description:
+        "How much misinformation is on Facebook? Several studies have found that the amount of misinformation on Facebook is low or that the problem has declined over time.",
+      url: "https://phys.org/news/2023-06-visual-misinformation-widespread-facebook-undercounted.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2019/5-facebook.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T17:09:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "By 'helping' wild animals, you could end their freedom or even their lives—here's why you should keep your distance",
+      description:
+        "For anyone who enjoys nature, summer is a fascinating time to be outside. Animals are on the move: Turtles are nesting, baby birds are testing their wings, snakes are foraging and young mammals are emerging.",
+      url: "https://phys.org/news/2023-06-wild-animals-freedom-liveshere-distance.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/by-helping-wild-animal.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T17:20:01+00:00",
+    },
+    {
+      author: null,
+      title: "Ingenuity Mars Helicopter phones home",
+      description:
+        "The 52nd flight of NASA's Ingenuity Mars Helicopter is now in the official mission logbook as a success. The flight took place back on April 26, but mission controllers at NASA's Jet Propulsion Laboratory in Southern California lost contact with the helicopter as it descended toward the surface for landing.",
+      url: "https://phys.org/news/2023-06-ingenuity-mars-helicopter-home.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/ingenuity-mars-helicop.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T17:52:02+00:00",
+    },
+    {
+      author: "Penelope Green",
+      title:
+        "Peg Yorkin, Who Helped Bring the Abortion Pill to the U.S., Dies at 96",
+      description:
+        "A Hollywood producer’s wife who was emboldened by second-wave feminism, she was a founder of the Feminist Majority and worked to get female candidates elected.",
+      url: "https://www.nytimes.com/2023/06/30/us/peg-yorkin-dead.html",
+      source: "The New York Times",
+      image:
+        "https://static01.nyt.com/images/2023/07/01/obituaries/28yorkin-print1/28yorkin-moth.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T21:33:20+00:00",
+    },
+    {
+      author: null,
+      title:
+        "No more crying over rotting onions? Researchers gain insight into bacteria threatening Vidalia onion production",
+      description:
+        "The Vidalia onion is a trademarked variety of sweet onion that can only be grown in several counties in Georgia by law. These prized vegetables are currently threatened by the bacterial pathogen Pantoea ananatis, which severely damages the plant by rotting the onion bulbs and leaves. This results in substantial losses for onion growers in Georgia, as there are no disease resistant cultivars available. The plant toxin pantaphos, produced by the P. ananatis pathogen, causes the rotting symptoms in onion. More specifically, the eleven genes responsible for producing this toxin are grouped together...",
+      url: "https://phys.org/news/2023-06-crying-onions-gain-insight-bacteria.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/no-more-crying-over-ro.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T16:39:50+00:00",
+    },
+    {
+      author: null,
+      title:
+        "WhatsApp's 'forwarded' and 'forwarded many times' tags are misunderstood by users: Report",
+      description:
+        'The purpose of WhatsApp\'s "forwarded" and "forwarded many times" tags are often misunderstood by users and consequently may not stop the spread of misinformation, a new report suggests.',
+      url: "https://phys.org/news/2023-06-whatsapp-forwarded-tags-misunderstood-users.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/whatsapps-forwardedfor.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T16:38:03+00:00",
+    },
+    {
+      author: null,
+      title: "The science of BBQ: A 'complicated circus of chemicals'",
+      description:
+        "Cooking the perfect brisket is a lot like conducting a science experiment. And Dr. Jeremiah Gassensmith should know—he's both a chemist and backyard barbecue chef.",
+      url: "https://phys.org/news/2023-06-science-bbq-complicated-circus-chemicals.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/the-science-of-bbq-a-c.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T16:41:21+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Cosmological models are built on a simple, century-old idea, but new observations demand a radical rethink",
+      description:
+        "Our ideas about the universe are based on a century-old simplification known as the cosmological principle. It suggests that when averaged on large scales, the Cosmos is homogeneous and matter is distributed evenly throughout.",
+      url: "https://phys.org/news/2023-06-cosmological-built-simple-century-old-idea.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/cosmological-models-ar.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T16:57:38+00:00",
+    },
+    {
+      author: null,
+      title: "The Mars Sample Return mission is starting to look expensive",
+      description:
+        "Getting to space is hard. It's even more hard to do new and interesting things in space. And when projects get hard, that usually means they cost more money. That is certainly the case for one of the most anticipated missions on NASA's current docket—the Mars Sample Return (MSR) mission. And it's not looking like it's going to get any easier anytime soon.",
+      url: "https://phys.org/news/2023-06-mars-sample-mission-expensive.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2018/5-mars.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T16:57:03+00:00",
+    },
+    {
+      author: null,
+      title: "Virus-like transposons cross the species barrier, study shows",
+      description:
+        "Scientists have known for decades that genes can be transferred from one species to another, both in animals and plants. However, the mechanism of how such an unlikely event occurs remained unknown. Now, researchers from Alejandro Burga's lab at the Institute of Molecular Biotechnology (IMBA) of the Austrian Academy of Sciences identify a vector of horizontal gene transfer (HGT) in worms. The findings, published in Science, could lead to the discovery of further vectors of HGT in eukaryotes and might find applications in pathogen control.",
+      url: "https://phys.org/news/2023-06-virus-like-transposons-species-barrier.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/virus-like-transposons.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T18:00:01+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Study finds that wildfire smoke levels have yet to affect attendance numbers at US national parks",
+      description:
+        "More Americans than ever are heeding the call of the outdoors—spending time recreating outside and enjoying national parks. Simultaneously, smoky skies are worsening as the size and severity of wildfires increase and adversely affect air quality across the country.",
+      url: "https://phys.org/news/2023-06-wildfire-affect-national.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/where-theres-smoke-the-2.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T20:47:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Consumers more likely to use virtual apparel try-on software if interactive",
+      description:
+        "While more and more people are shopping online, purchasing clothes on the internet poses a unique challenge: What if it doesn't fit? The apparel industry's latest solution is virtual try-on sessions that allow consumers to share photos or measurements of themselves to create a similar-sized avatar.",
+      url: "https://phys.org/news/2023-06-consumers-virtual-apparel-try-on-software.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2020/shopping.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-29T21:33:48+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Humans found to prey on approximately one-third of all vertebrate species",
+      description:
+        "An international team of ecologists, life scientists, conservationists and biologists has found that humans prey on approximately one-third of all vertebrate species in existence. In their study, reported in the journal Communications Biology, the group analyzed data collected by members of the International Union for Conservation of Nature (IUCN).",
+      url: "https://phys.org/news/2023-06-humans-prey-approximately-one-third-vertebrate.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/humans-found-to-prey-o.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T13:01:56+00:00",
+    },
+    {
+      author: null,
+      title:
+        "The brain-bending secret behind hundreds of optical illusions has finally been revealed",
+      description:
+        '"Simultaneous contrast illusions" rely on altering the backgrounds of images to change how we perceive the colors and brightness of objects within them. Now, a computer model may have revealed exactly how they fool us.',
+      url: "https://www.livescience.com/health/mind/the-brain-bending-secret-behind-hundreds-of-optical-illusions-has-finally-been-revealed",
+      source: "Live Science: The Most Interesting Articles",
+      image: "https://cdn.mos.cms.futurecdn.net/wocYuuRoEcGCpAkjQJEGLo.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T14:35:11+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Scientists discover clues to aging and healing from a squishy sea creature",
+      description:
+        "Insights into healing and aging were discovered by National Institutes of Health researchers and their collaborators, who studied how a tiny sea creature regenerates an entire new body from only its mouth. The researchers sequenced RNA from Hydractinia symbiolongicarpus, a small, tube-shaped animal that lives on the shells of hermit crabs. Just as the Hydractinia were beginning to regenerate new bodies, the researchers detected a molecular signature associated with the biological process of aging, also known as senescence.",
+      url: "https://phys.org/news/2023-06-scientists-clues-aging-squishy-sea.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/scientists-discover-cl.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T15:00:02+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Space debris: A quantitative analysis of the in-orbit collision risk and its effects on the Earth",
+      description:
+        "The amount of space debris has not stopped increasing since the first satellite was launched in 1957. The European Space Agency (ESA) estimates that there are more than 131,000,000 useless space waste objects, between 1 millimeter and 10 centimeters, currently orbiting around the Earth at an average speed of 36,000 kilometers per hour, which come from different sources such as last stages of rockets, satellites that are no longer operational, and even tools lost in space by astronauts.",
+      url: "https://phys.org/news/2023-06-space-debris-quantitative-analysis-in-orbit.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2020/spacedebris.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T15:29:03+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Climate disasters, traumatic events shown to have long-term impacts on youths' academics",
+      description:
+        "Experiencing traumatic events such as natural disasters may have long-term consequences for the academic progress and future food security of youth—a problem researchers said could worsen with the increased frequency of extreme weather events due to climate change.",
+      url: "https://phys.org/news/2023-06-climate-disasters-traumatic-events-shown.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2023/wildfire-1.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T15:53:04+00:00",
+    },
+    {
+      author: null,
+      title:
+        "'Disappearing' Y chromosome in aging men may worsen bladder cancer, mouse study shows",
+      description:
+        "As men get older, they can lose Y chromosomes in a portion of their cells. This could be helping certain cancers evade the immune system.",
+      url: "https://www.livescience.com/health/cancer/disappearing-y-chromosome-in-aging-men-may-worsen-bladder-cancer-mouse-study-shows",
+      source: "Live Science: The Most Interesting Articles",
+      image: "https://cdn.mos.cms.futurecdn.net/EE9CaBtt5M5raai9vw2SWk.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T16:17:32+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Scientists identify gene crucial for male meiosis during homologous pairing and synapsis",
+      description:
+        "Meiotic recombination-related gene (e.g., DMC1, HFM1, MEIOB, MAJIN, C14ORF39/SIX6OS1, STAG3, SYCE1, SYCP2-3, TERB1-2) mutations have been identified in human subfertility or infertility. Surprisingly, most patients have been found to have aberrant splicing of genes such as MEIOB, C14ORF39/SIX6OS1, STAG3, and SYCE1. Therefore, it is imperative to understand the mechanism of alternative splicing (AS) and its role in human reproduction to provide new insights for clinical diagnosis.",
+      url: "https://phys.org/news/2023-06-scientists-gene-crucial-male-meiosis.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/srsf1-is-crucial-for-m.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T17:28:46+00:00",
+    },
+    {
+      author: null,
+      title: "Study offers strategy for green synthesis of 15N-amino acids",
+      description:
+        "15N isotope-labeled amino acids (15N-amino acids) provide a safe and effective tracer tool for studying the synthesis of natural products, protein metabolism, and disease diagnosis and treatment in living organisms. In addition, it is an important synthetic block for the synthesis of 15N-labeled drugs.",
+      url: "https://phys.org/news/2023-06-strategy-green-synthesis-15n-amino-acids.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/electrosynthesis-of-15.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T17:27:01+00:00",
+    },
+    {
+      author: null,
+      title:
+        "New AI system can decode fruit fly behaviors: Why that's pivotal for future human genetics research",
+      description: "How can you tell if a fruit fly is hungry? Ask a computer.",
+      url: "https://phys.org/news/2023-06-ai-decode-fruit-fly-behaviors.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2014/fruitfly.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T18:00:03+00:00",
+    },
+    {
+      author: null,
+      title: "The invisible plant technology of the prehistoric Philippines",
+      description:
+        "Stone tools bear microscopic evidence of ancient plant technology, according to a study published June 30, 2023 in the open-access journal PLOS ONE by Hermine Xhauflair of the University of the Philippines Diliman and colleagues.",
+      url: "https://phys.org/news/2023-06-invisible-technology-prehistoric-philippines.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image:
+        "https://scx1.b-cdn.net/csz/news/tmb/2023/the-invisible-plant-te.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T18:00:01+00:00",
+    },
+    {
+      author: null,
+      title:
+        "A new bacterial blueprint to aid in the war on antibiotic resistance",
+      description:
+        "A team of scientists from around the globe, including those from Trinity College Dublin, has gained high-res structural insights into a key bacterial enzyme that may help chemists design new drugs to inhibit it and thus suppress disease-causing bacteria. Their work is important as fears continue to grow around rising rates of antibiotic resistance.",
+      url: "https://phys.org/news/2023-06-bacterial-blueprint-aid-war-antibiotic.html",
+      source: "Phys.org - News And Articles On Science And Technology",
+      image: "https://scx1.b-cdn.net/csz/news/tmb/2023/microscope-2.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T18:00:01+00:00",
+    },
+    {
+      author: null,
+      title:
+        "Complete Bronze Age town with elite tombs discovered in northern China",
+      description:
+        "The site is one of the largest ever discovered dating from China's early Shang Dynasty.",
+      url: "https://www.livescience.com/archaeology/complete-bronze-age-town-with-elite-tombs-discovered-in-northern-china",
+      source: "Live Science: The Most Interesting Articles",
+      image: "https://cdn.mos.cms.futurecdn.net/8cxsyZRpTjec8n3y8WZpS6.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-06-30T19:28:52+00:00",
+    },
+    {
+      author: "hannah.osborne@futurenet.com (Hannah Osborne)",
+      title:
+        "'I knew it was circling me': Man attacked by shark was waiting to die, then dolphins saved his life",
+      description:
+        "NatGeo Sharkfest episode focuses on stories of whales and dolphins saving people from sharks. But are they really trying to protect us?",
+      url: "https://www.livescience.com/animals/sharks/i-knew-it-was-circling-me-man-attacked-by-shark-was-waiting-to-die-then-dolphins-saved-his-life",
+      source: "Live Science: The Most Interesting Articles",
+      image: "https://cdn.mos.cms.futurecdn.net/Lngw5FzmsbcdvSCwxttaC7.jpg",
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-07-01T07:00:26+00:00",
+    },
+    {
+      author: "Brian Wang",
+      title: "What SpaceX Starship Will Look Like When Hot Staging",
+      description:
+        "Tony Bela of Infographic News has put together images of what the SpaceX Super Heavy Starship will look like while hot staging. I just put this together as to what the hot staging of Starship might look like. I’m curious as to how many Raptors would be used. In this illustration I depict it with ... Read more",
+      url: "https://www.nextbigfuture.com/2023/07/what-spacex-starship-will-look-like-when-hot-staging.html",
+      source: "Next Big Future",
+      image: null,
+      category: "science",
+      language: "en",
+      country: "us",
+      published_at: "2023-07-01T20:40:50+00:00",
     },
   ],
 };

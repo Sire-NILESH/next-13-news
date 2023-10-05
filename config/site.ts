@@ -21,8 +21,8 @@ export const siteConfig = {
       href: "/science",
     },
     {
-      label: "Gaming",
-      href: "/gaming",
+      label: "Crypto",
+      href: "/crypto",
     },
     {
       label: "Sports",
@@ -59,8 +59,8 @@ export const siteConfig = {
       href: "/science",
     },
     {
-      label: "Gaming",
-      href: "/gaming",
+      label: "Crypto",
+      href: "/crypto",
     },
     {
       label: "Sports",

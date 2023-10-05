@@ -15,11 +15,7 @@ const MediumImgCard = ({ article, showAuthor }: Props) => {
   return (
     <Link
       isExternal
-      href={
-        article.url && !article.url.startsWith("https://removed.com")
-          ? article.url
-          : undefined
-      }
+      href={article.url ? article.url : undefined}
       aria-label="News article"
       className="max-w-md min-h-[8rem] h-full w-full"
     >
@@ -28,9 +24,9 @@ const MediumImgCard = ({ article, showAuthor }: Props) => {
           <div className="w-[70%] space-y-2 py-4 px-3">
             <div className="flex justify-between items-center">
               <p className="block text-tiny font-semibold">
-                {article.publishedAt &&
-                article.publishedAt !== "1970-01-01T00:00:00Z"
-                  ? format(parseISO(article.publishedAt), "LLLL d, yyyy")
+                {article.published_at &&
+                article.published_at !== "1970-01-01T00:00:00Z"
+                  ? format(parseISO(article.published_at), "LLLL d, yyyy")
                   : "unknown"}
               </p>
             </div>
@@ -40,8 +36,8 @@ const MediumImgCard = ({ article, showAuthor }: Props) => {
             {showAuthor && (
               <p className="mt-5 block text-sm font-semibold">
                 {`Author : ${article.author ? article.author : "unknown"}`}
-                <span className="text-primary">{`, ${
-                  article.source.name ? article.source.name : "unknown"
+                <span className="text-secondary">{`, ${
+                  article.source ? article.source : "unknown"
                 }`}</span>
               </p>
             )}
@@ -52,11 +48,8 @@ const MediumImgCard = ({ article, showAuthor }: Props) => {
               alt="Card image"
               removeWrapper
               className="object-cover rounded-none h-full w-full bg-gray-100"
-              // src={article.urlToImage ? article.urlToImage : undefined}
               src={
-                article.urlToImage
-                  ? article.urlToImage
-                  : "/images/photo-placeholder.jpg"
+                article.image ? article.image : "/images/photo-placeholder.jpg"
               }
               fallbackSrc={"/images/photo-placeholder.jpg"}
             />
