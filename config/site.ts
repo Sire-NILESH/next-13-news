@@ -78,11 +78,17 @@ export const siteConfig = {
       label: "General",
       href: "/general",
     },
-    {
-      label: "Logout",
-      href: "/logout",
-    },
   ],
+  authMenu: {
+    login: {
+      label: "Login",
+      href: "/login",
+    },
+    register: {
+      label: "Register",
+      href: "/register",
+    },
+  },
   footerMenuItems: [
     {
       label: "About",

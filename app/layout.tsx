@@ -6,6 +6,7 @@ import "@/styles/globals.css";
 import clsx from "clsx";
 import { Metadata } from "next";
 import { Providers } from "./providers";
+import { AuthProvider } from "@/hooks/useAuth";
 
 export const metadata: Metadata = {
   title: {
@@ -39,15 +40,19 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <Navbar />
+          {/* <NextAuthSessionProvider> */}
+          <AuthProvider>
+            <div className="relative flex flex-col min-h-screen">
+              <Navbar />
 
-            <main className="2xl:w-[80%] xl:w-[90%] md:w-[95%] max-w-[1568px] mx-auto pt-4 lg:pt-16 px-4 md:px-6 flex-grow">
-              {children}
-            </main>
+              <main className="2xl:w-[80%] xl:w-[90%] md:w-[95%] max-w-[1568px] mx-auto pt-4 lg:pt-16 px-4 md:px-6 flex-grow">
+                {children}
+              </main>
 
-            <Footer />
-          </div>
+              <Footer />
+            </div>
+          </AuthProvider>
+          {/* </NextAuthSessionProvider> */}
         </Providers>
       </body>
     </html>

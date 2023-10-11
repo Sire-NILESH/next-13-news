@@ -18,6 +18,7 @@ const BannerImgCard = ({ article }: Props) => {
           {article.title}
         </h4>
       </CardHeader>
+
       <Image
         alt="News Cover Image"
         isZoomed

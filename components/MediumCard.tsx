@@ -17,7 +17,10 @@ const MediumCard = ({ article }: Props) => {
       aria-label="News article"
       className="max-w-md h-full w-full"
     >
-      <Card shadow="sm" className="h-full w-full py-4 space-y-4">
+      <Card
+        shadow="sm"
+        className="card-custom-styles h-full w-full py-4 space-y-4"
+      >
         <CardBody className="overflow-visible py-2 space-y-2">
           <div className="flex justify-between">
             <p className="block text-tiny font-semibold">

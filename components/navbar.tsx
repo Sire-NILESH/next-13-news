@@ -1,5 +1,9 @@
 "use client";
 
+import { Logo } from "@/components/icons";
+import { ThemeSwitch } from "@/components/theme-switch";
+import { siteConfig } from "@/config/site";
+import useAuth from "@/hooks/useAuth";
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import {
@@ -12,18 +16,14 @@ import {
   Navbar as NextUINavbar,
 } from "@nextui-org/navbar";
 import { link as linkStyles } from "@nextui-org/theme";
-import { siteConfig } from "@/config/site";
 import clsx from "clsx";
 import NextLink from "next/link";
-import { HeartFilledIcon } from "@/components/icons";
-import { ThemeSwitch } from "@/components/theme-switch";
-import { Logo } from "@/components/icons";
 import { usePathname } from "next/navigation";
-
-// The category you want to get headlines for. Possible options: business, entertainment, general, health, science, sports, technology. Note: you can't mix this param with the sources param.
+import NavbarAvatar from "./NavbarAvatar";
 
 export const Navbar = () => {
   const pathname = usePathname();
+  const { user, logout } = useAuth();
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
@@ -45,7 +45,7 @@ export const Navbar = () => {
                     linkStyles({ color: "foreground" }),
                     "data-[active=true]:text-primary data-[active=true]:font-medium"
                   )}
-                  // color={isActive ? "primary" : "foreground"}
+                  color={isActive ? "primary" : "foreground"}
                   href={item.href}
                 >
                   {item.label}
@@ -60,26 +60,43 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        <NavbarItem className="hidden sm:flex">
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden md:flex">
-          <Button
-            // isExternal
-            as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
-            // href={siteConfig.links.sponsor}
-            href={"#"}
-            startContent={<HeartFilledIcon className="text-danger" />}
-            variant="flat"
-          >
-            Subscribe
-          </Button>
-        </NavbarItem>
+
+        {/* <NavbarItem className="hidden sm:flex">
+          <NavbarAvatar />
+        </NavbarItem> */}
+
+        {user && (
+          <NavbarItem className="hidden sm:flex">
+            <NavbarAvatar />
+          </NavbarItem>
+        )}
+
+        {!user && (
+          <NavbarItem className="hidden md:flex">
+            <Button
+              as={NextLink}
+              color="secondary"
+              className="text-sm font-normal"
+              href={siteConfig.authMenu.login.href}
+            >
+              Login
+            </Button>
+          </NavbarItem>
+        )}
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <ThemeSwitch />
+
+        {user && (
+          <NavbarItem>
+            <NavbarAvatar />
+          </NavbarItem>
+        )}
+
         <NavbarMenuToggle />
       </NavbarContent>
 
@@ -93,13 +110,7 @@ export const Navbar = () => {
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
                   as={NextLink}
-                  color={
-                    isActive
-                      ? "primary"
-                      : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                  }
+                  color={isActive ? "primary" : "foreground"}
                   className="hover:text-primary-500"
                   href={item.href}
                   size="lg"
@@ -109,6 +120,19 @@ export const Navbar = () => {
               </NavbarMenuItem>
             );
           })}
+          {!user && (
+            <NavbarMenuItem>
+              <Link
+                as={NextLink}
+                color={"primary"}
+                className="hover:text-primary-500"
+                href={siteConfig.authMenu.login.href}
+                size="lg"
+              >
+                {siteConfig.authMenu.login.label}
+              </Link>
+            </NavbarMenuItem>
+          )}
         </div>
       </NavbarMenu>
     </NextUINavbar>

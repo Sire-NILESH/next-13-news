@@ -35,6 +35,12 @@ export interface Headline {
   data: Article[];
 }
 
+export interface CustomError {
+  errorType: "Firebase auth createUserWithEmailAndPassword Error" | string;
+  message: string;
+  description: string;
+}
+
 export type Country =
   | "ae"
   | "ar"

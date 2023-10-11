@@ -18,7 +18,10 @@ const MainCard = ({ article }: Props) => {
       aria-label="News article"
       className="max-w-lg w-full"
     >
-      <Card shadow="sm" className="h-full w-full py-4 space-y-4">
+      <Card
+        shadow="sm"
+        className="card-custom-styles h-full w-full py-4 space-y-4"
+      >
         <CardBody className="overflow-visible py-2 space-y-2">
           <div className="w-full h-[15rem] mb-4 overflow-hidden rounded-xl">
             <Image

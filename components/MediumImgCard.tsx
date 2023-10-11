@@ -19,7 +19,7 @@ const MediumImgCard = ({ article, showAuthor }: Props) => {
       aria-label="News article"
       className="max-w-md min-h-[8rem] h-full w-full"
     >
-      <Card shadow="sm" className="w-full h-full">
+      <Card shadow="sm" className="card-custom-styles w-full h-full">
         <CardBody className="overflow-visible p-0 flex flex-row justify-between">
           <div className="w-[70%] space-y-2 py-4 px-3">
             <div className="flex justify-between items-center">

@@ -1,6 +1,6 @@
 // The category you want to get headlines for. Possible options: business, entertainment, general, health, science, sports, technology. Note: you can't mix this param with the sources param.
 
-import { Category, Country, KeywordNews } from "@/types";
+import { Category, KeywordNews } from "@/types";
 import { getDateXDaysAgo, getToday } from "./utility";
 
 // https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=API_KEY

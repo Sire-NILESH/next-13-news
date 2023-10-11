@@ -18,7 +18,7 @@ export default async function Home() {
         <h1 className={title()}>that matters, wherever you are.</h1>
 
         <h2 className={subtitle({ class: "mt-4" })}>
-          {"Your Source for Today's Headlines and Tomorrow's Insights!"}
+          {"Your source for Today's Headlines and Tomorrow's Insights!"}
         </h2>
       </div>
 

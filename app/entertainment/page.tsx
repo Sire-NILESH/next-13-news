@@ -16,7 +16,7 @@ export default async function EntertainmentPage() {
 
   return (
     <Suspense fallback={<LoadingSpinner />}>
-      <section className="flex flex-col items-center justify-center gap-5 w-full">
+      <div className="flex flex-col items-center justify-center gap-5 w-full">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Highlights in&nbsp;</h1>
           <h1 className={title({ color: "violet" })}>Entertainment&nbsp;</h1>
@@ -31,7 +31,7 @@ export default async function EntertainmentPage() {
         </div>
 
         <InfoPageCards articles={entertainmentNews.data} />
-      </section>
+      </div>
     </Suspense>
   );
 }
