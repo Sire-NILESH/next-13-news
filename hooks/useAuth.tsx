@@ -143,7 +143,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         router.push("/");
       })
       .catch((error) => {
-        setError(error);
+        const customisedError = customiseClientError(error);
+        setError(customisedError);
       })
       .finally(() => {
         setLoading(false);
