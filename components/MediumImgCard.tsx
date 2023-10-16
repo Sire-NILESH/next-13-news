@@ -6,10 +6,11 @@ import { format, parseISO } from "date-fns";
 
 type Props = {
   article: Article;
+  isTextClamped?: boolean;
   showAuthor?: boolean;
 };
 
-const MediumImgCard = ({ article, showAuthor }: Props) => {
+const MediumImgCard = ({ article, isTextClamped, showAuthor }: Props) => {
   if (!article) return null;
 
   return (
@@ -30,11 +31,21 @@ const MediumImgCard = ({ article, showAuthor }: Props) => {
                   : "unknown"}
               </p>
             </div>
-            <h4 className="font-bold text-sm">
+
+            <h4
+              className={`font-bold text-sm ${
+                isTextClamped ? "line-clamp-2" : ""
+              }`}
+            >
               {article.title ? article.title : ""}
             </h4>
+
             {showAuthor && (
-              <p className="mt-5 block text-sm font-semibold">
+              <p
+                className={`mt-5 block text-sm font-semibold ${
+                  isTextClamped ? "line-clamp-2" : ""
+                }`}
+              >
                 {`Author : ${article.author ? article.author : "unknown"}`}
                 <span className="text-secondary">{`, ${
                   article.source ? article.source : "unknown"

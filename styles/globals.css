@@ -3,8 +3,5 @@
 @tailwind utilities;
 
 .card-custom-styles {
-  /* @apply border-[0.5px] border-zinc-100 dark:border-zinc-900/80; */
-  /* @apply border dark:border-zinc-800 dark:shadow-none shadow-[#f2f2ff] !shadow-lg hover:!shadow-md; */
-  @apply rounded-2xl dark:shadow-none bg-sky-50 dark:bg-zinc-900 shadow-[#f2f2ff] !shadow-lg hover:!shadow-md;
-  /* @apply border-t-2 border-l-2 border-[#fdfbfb] dark:border-none dark:shadow-none dark:bg-zinc-900; */
+  @apply rounded-2xl dark:shadow-none bg-sky-50 dark:bg-zinc-900 shadow-[#f2f2ff] !shadow-lg hover:!shadow-md ring-1 ring-gray-200/70 dark:ring-zinc-800/80;
 }

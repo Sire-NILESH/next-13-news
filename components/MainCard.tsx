@@ -6,9 +6,10 @@ import { Link } from "@nextui-org/link";
 
 type Props = {
   article: Article;
+  isTextClamped?: boolean;
 };
 
-const MainCard = ({ article }: Props) => {
+const MainCard = ({ article, isTextClamped }: Props) => {
   if (!article) return null;
 
   return (
@@ -43,13 +44,25 @@ const MainCard = ({ article }: Props) => {
                 : "unknown"}
             </p>
           </div>
-          <h4 className="font-bold text-large">
+          <h4
+            className={`font-bold text-large ${
+              isTextClamped ? "line-clamp-2" : ""
+            }`}
+          >
             {article.title ? article.title : ""}
           </h4>
-          <small className="text-default-500">
+          <small
+            className={`text-default-500 ${
+              isTextClamped ? "line-clamp-3" : ""
+            }`}
+          >
             {article.description ? article.description : ""}
           </small>
-          <p className="block text-sm font-semibold">
+          <p
+            className={`block text-sm font-semibold ${
+              isTextClamped ? "line-clamp-2" : ""
+            }`}
+          >
             {`Author : ${article.author ? article.author : "unknown"}`}
             <span className="text-secondary">{`, ${
               article.source ? article.source : "unknown"

@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { siteConfig } from "@/config/site";
 import useAuth from "@/hooks/useAuth";
 
-export default function CryptoNewsLayout({
+export default function AuthProtectedRoutesLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -12,7 +12,7 @@ export default function CryptoNewsLayout({
   const { user } = useAuth();
 
   if (!user) {
-    redirect(siteConfig.authMenu.login.href);
+    return redirect(siteConfig.authMenu.login.href);
   }
 
   return <section className="py-8">{user ? children : null}</section>;

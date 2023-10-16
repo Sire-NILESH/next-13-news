@@ -23,7 +23,7 @@ import NavbarAvatar from "./NavbarAvatar";
 
 export const Navbar = () => {
   const pathname = usePathname();
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
 
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
@@ -43,9 +43,8 @@ export const Navbar = () => {
                 <NextLink
                   className={clsx(
                     linkStyles({ color: "foreground" }),
-                    "data-[active=true]:text-primary data-[active=true]:font-medium"
+                    "data-[active=true]:text-primary data-[active=true]:font-extrabold"
                   )}
-                  color={isActive ? "primary" : "foreground"}
                   href={item.href}
                 >
                   {item.label}

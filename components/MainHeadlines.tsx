@@ -59,9 +59,9 @@ const MainHeadlines = ({
         </header>
 
         <div className="flex flex-col justify-center items-start space-y-5">
-          <MainCard article={filteredMainArticlesWithImgs[0]} />
-          <MainCard article={filteredMainArticlesWithImgs[7]} />
-          <MainCard article={filteredMainArticlesWithImgs[4]} />
+          <MainCard article={filteredMainArticlesWithImgs[0]} isTextClamped />
+          <MainCard article={filteredMainArticlesWithImgs[7]} isTextClamped />
+          <MainCard article={filteredMainArticlesWithImgs[4]} isTextClamped />
         </div>
       </div>
 
@@ -89,9 +89,9 @@ const MainHeadlines = ({
         </header>
 
         <div className="space-y-5">
-          {mediumArticles.slice(0, 5).map((article, i) => (
+          {mediumArticles.slice(0, 6).map((article, i) => (
             <div key={i} className="flex justify-center">
-              <MediumCard article={article} />
+              <MediumCard article={article} isTextClamped />
             </div>
           ))}
         </div>
@@ -124,7 +124,7 @@ const MainHeadlines = ({
               key={i}
               className="col-span-4 md:col-span-2 lg:col-span-4 justify-self-center"
             >
-              <MediumImgCard article={article} showAuthor />
+              <MediumImgCard article={article} showAuthor isTextClamped />
             </div>
           ))}
         </div>

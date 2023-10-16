@@ -35,12 +35,11 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          "min-h-screen bg-background antialiased",
+          fontSans.className
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          {/* <NextAuthSessionProvider> */}
           <AuthProvider>
             <div className="relative flex flex-col min-h-screen">
               <Navbar />
@@ -52,7 +51,6 @@ export default function RootLayout({
               <Footer />
             </div>
           </AuthProvider>
-          {/* </NextAuthSessionProvider> */}
         </Providers>
       </body>
     </html>
