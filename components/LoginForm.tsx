@@ -150,7 +150,7 @@ const LoginForm = () => {
           type="submit"
           endContent={
             loading ? (
-              <Spinner size="sm" color="default" />
+              <Spinner size="sm" color="white" />
             ) : (
               <RightArrowIcon className="w-4" />
             )
