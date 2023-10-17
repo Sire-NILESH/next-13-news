@@ -35,6 +35,7 @@ const RegisterForm = () => {
   const {
     register: registerUser,
     loading,
+    loginWithGoogle,
     error: submitError,
     clearError: clearSubmitError,
   } = useAuth();
@@ -225,7 +226,7 @@ const RegisterForm = () => {
             fullWidth
             variant="bordered"
             type="button"
-            // onPress={onClickHandler}
+            onPress={loginWithGoogle}
             startContent={<GoogleIcon className="h-5 w-5" />}
           >
             Sign in with Google
