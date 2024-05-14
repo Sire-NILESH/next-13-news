@@ -9,16 +9,7 @@ type Props = {
 
 const BannerImgCard = ({ article }: Props) => {
   return (
-    <Card className="w-full h-full">
-      <CardHeader className="absolute z-10 top-0 pb-10 flex-col items-start bg-gradient-to-b from-black/80 to-transparent">
-        <p className="text-tiny text-gray-200 uppercase font-bold">
-          {article.source}
-        </p>
-        <h4 className="text-white/90 font-medium text-large text-left">
-          {article.title}
-        </h4>
-      </CardHeader>
-
+    <Card className="w-full h-full overflow-hidden">
       <Image
         alt="News Cover Image"
         isZoomed
@@ -27,6 +18,15 @@ const BannerImgCard = ({ article }: Props) => {
         src={article.image ? article.image : "/images/photo-placeholder.jpg"}
         fallbackSrc={"/images/photo-placeholder.jpg"}
       />
+
+      <CardHeader className="absolute z-10 -bottom-8 pb-10 flex-col items-start bg-gradient-to-t from-black/80 via-black/60 to-transparent">
+        <p className="text-tiny text-white uppercase font-bold">
+          {article.source}
+        </p>
+        <h4 className="text-gray-50 font-medium text-large text-left line-clamp-3">
+          {article.title}
+        </h4>
+      </CardHeader>
     </Card>
   );
 };
