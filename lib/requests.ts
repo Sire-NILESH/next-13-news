@@ -7,6 +7,7 @@ export async function getNews(category: Category) {
   const params = new URLSearchParams({
     categories: category,
     languages: "en",
+    countries: "in, us, gb, au",
     date: `${getDateXDaysAgo(10)},${getToday()}`,
     limit: "100",
     access_key: process.env.API_KEY as string,

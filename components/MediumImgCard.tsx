@@ -1,3 +1,4 @@
+import { getHTMLParsedString } from "@/lib/utility";
 import { Article } from "@/types";
 import { Card, CardBody } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
@@ -18,7 +19,7 @@ const MediumImgCard = ({ article, isTextClamped, showAuthor }: Props) => {
       isExternal
       href={article.url ? article.url : undefined}
       aria-label="News article"
-      className="max-w-md min-h-[8rem] h-full w-full"
+      className="max-w-lg min-h-[8rem] h-full w-full"
     >
       <Card shadow="sm" className="card-custom-styles w-full h-full">
         <CardBody className="overflow-visible p-0 flex flex-row justify-between">
@@ -37,7 +38,7 @@ const MediumImgCard = ({ article, isTextClamped, showAuthor }: Props) => {
                 isTextClamped ? "line-clamp-2" : ""
               }`}
             >
-              {article.title ? article.title : ""}
+              {article.title ? getHTMLParsedString(article.title, 4) : ""}
             </h4>
 
             {showAuthor && (

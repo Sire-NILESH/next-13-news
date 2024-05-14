@@ -3,6 +3,7 @@ import { Card, CardBody } from "@nextui-org/card";
 import { Image } from "@nextui-org/image";
 import { parseISO, format } from "date-fns";
 import { Link } from "@nextui-org/link";
+import { getHTMLParsedString } from "@/lib/utility";
 
 type Props = {
   article: Article;
@@ -49,14 +50,16 @@ const MainCard = ({ article, isTextClamped }: Props) => {
               isTextClamped ? "line-clamp-2" : ""
             }`}
           >
-            {article.title ? article.title : ""}
+            {article.title ? getHTMLParsedString(article.title, 5) : ""}
           </h4>
           <small
             className={`text-default-500 ${
               isTextClamped ? "line-clamp-3" : ""
             }`}
           >
-            {article.description ? article.description : ""}
+            {article.description
+              ? getHTMLParsedString(article.description, 5)
+              : ""}
           </small>
           <p
             className={`block text-sm font-semibold ${

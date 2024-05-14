@@ -27,7 +27,7 @@ const MediumCardsSection = ({ articles, title, subtitle }: Props) => {
             key={i}
             className="col-span-4 md:col-span-2 lg:col-span-1 justify-self-center w-full"
           >
-            <MediumCard article={article} />
+            <MediumCard article={article} isTextClamped />
           </div>
         ))}
       </div>

@@ -22,9 +22,9 @@ const MainCardsSection = ({ articles, title, subtitle }: Props) => {
       </header>
 
       <div className="flex flex-col items-center lg:flex-row lg:items-stretch gap-4 justify-center w-full">
-        <MainCard article={articles[0]} />
-        <MainCard article={articles[1]} />
-        <MainCard article={articles[2]} />
+        <MainCard article={articles[0]} isTextClamped />
+        <MainCard article={articles[1]} isTextClamped />
+        <MainCard article={articles[2]} isTextClamped />
       </div>
     </section>
   );

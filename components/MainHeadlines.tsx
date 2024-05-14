@@ -35,7 +35,7 @@ const MainHeadlines = ({
 
   return (
     <div className="w-full grid grid-cols-12 gap-x-5 gap-y-28">
-      <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5">
+      <div className="col-span-12 md:col-span-6 xl:col-span-4 space-y-5">
         <header className="mx-4 space-y-2">
           <div className="flex items-center gap-5">
             <h4 className="font-semibold uppercase text-xl">
@@ -58,14 +58,14 @@ const MainHeadlines = ({
           </small>
         </header>
 
-        <div className="flex flex-col justify-center items-start space-y-5">
+        <div className="flex flex-col justify-start items-start space-y-5">
           <MainCard article={filteredMainArticlesWithImgs[0]} isTextClamped />
           <MainCard article={filteredMainArticlesWithImgs[7]} isTextClamped />
           <MainCard article={filteredMainArticlesWithImgs[4]} isTextClamped />
         </div>
       </div>
 
-      <div className="col-span-12 md:col-span-6 lg:col-span-4 space-y-5">
+      <div className="col-span-12 md:col-span-6 xl:col-span-4 space-y-5">
         <header className="mx-4 space-y-2">
           <div className="flex items-center gap-5">
             <h4 className="font-semibold uppercase text-xl">
@@ -90,14 +90,14 @@ const MainHeadlines = ({
 
         <div className="space-y-5">
           {mediumArticles.slice(0, 6).map((article, i) => (
-            <div key={i} className="flex justify-center">
+            <div key={i} className="flex justify-start">
               <MediumCard article={article} isTextClamped />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="col-span-12 lg:col-span-4 space-y-5">
+      <div className="col-span-12 xl:col-span-4 space-y-5">
         <header className="mx-4 space-y-2">
           <div className="flex items-center gap-5">
             <h4 className="font-semibold uppercase text-xl">{"Technology"}</h4>
@@ -122,7 +122,7 @@ const MainHeadlines = ({
           {filteredMediumImgArticles.slice(3, 13).map((article, i) => (
             <div
               key={i}
-              className="col-span-4 md:col-span-2 lg:col-span-4 justify-self-center"
+              className="col-span-4 md:col-span-2 xl:col-span-4 justify-self-start"
             >
               <MediumImgCard article={article} showAuthor isTextClamped />
             </div>

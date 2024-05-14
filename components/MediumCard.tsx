@@ -1,3 +1,4 @@
+import { getHTMLParsedString } from "@/lib/utility";
 import { Article } from "@/types";
 import { Card, CardBody } from "@nextui-org/card";
 import { Link } from "@nextui-org/link";
@@ -16,7 +17,7 @@ const MediumCard = ({ article, isTextClamped }: Props) => {
       isExternal
       href={article.url ? article.url : undefined}
       aria-label="News article"
-      className="max-w-md h-full w-full"
+      className="max-w-lg h-full w-full"
     >
       <Card
         shadow="sm"
@@ -36,14 +37,16 @@ const MediumCard = ({ article, isTextClamped }: Props) => {
               isTextClamped ? "line-clamp-2" : ""
             }`}
           >
-            {article.title ? article.title : ""}
+            {article.title ? getHTMLParsedString(article.title, 5) : ""}
           </h4>
           <small
             className={`text-default-500 ${
               isTextClamped ? "line-clamp-4" : ""
             }`}
           >
-            {article.description ? article.description : ""}
+            {article.description
+              ? getHTMLParsedString(article.description, 8)
+              : ""}
           </small>
           <p
             className={`block text-sm font-semibold ${
