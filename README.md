@@ -1,40 +1,46 @@
-# Next.js & NextUI Template
+# Atlas Today News - Your Source for Global News
 
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+▶️ Click the image below to watch it on **Youtube**.
 
-## Technologies Used
-
-- [Next.js 13](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
-
-## How to Use
+<div  align="center">
+	<br />
+	<a  href="https://youtu.be/o3T01YWO0XM?si=ORQXDcRfZ3OdBsUC"  target="_blank">
+		<img  src="https://img.youtube.com/vi/o3T01YWO0XM/maxresdefault.jpg"  alt="Project Banner">
+	</a>
+	<br />
+</div>
 
 
-### Use the template with create-next-app
+## 🤖 Introduction
 
-To create a new project based on this template using `create-next-app`, run the following command:
+Welcome to Atlas Today News, your go-to platform for the latest news from around the world. Built with the latest web technologies, Atlas Today News offers a seamless and dynamic experience, covering a wide range of topics including entertainment, technology, cryptocurrency, science, and more. With secure authentication and real-time updates, stay informed with the most current events happening globally.
+
+## ⚙️ Tech Stack
+
+- React.js 
+- Next.js 13.5 (ISR) 
+- TypeScript
+- Tailwind CSS 
+- NextUI 
+- Firebase Auth
+
+## 🚀 Features
+
+- 🔐 Secure authentication using Firebase Auth
+- 🌐 Latest news from around the world
+- 🎭 Covers various topics from entertainment, technology, crypto, science, and more.
+- ⚡ Built with Next.js 13.5 and Incremental Static Regeneration (ISR) for fast performance 
+- 🎨 Modern and responsive UI with Tailwind CSS and NextUI
+- 🔄 Real-time updates for the freshest content
+- 🛠️ Developed with TypeScript for type safety and better developer experience
+- 🎁 ...and much more
+
+
+## 🛠️ Getting Started
+
+To get started with this project, run
 
 ```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
+git  clone  https://github.com/Sire-NILESH/next-13-news.git
 ```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-## License
-
-Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
+and copy the **.env.example** variables into a separate **.env file**, fill them out and that's all you need to get started!
