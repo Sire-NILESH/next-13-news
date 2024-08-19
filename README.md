@@ -15,6 +15,8 @@
 
 Welcome to Atlas Today News, your go-to platform for the latest news from around the world. Built with the latest web technologies, Atlas Today News offers a seamless and dynamic experience, covering a wide range of topics including entertainment, technology, cryptocurrency, science, and more. With secure authentication and real-time updates, stay informed with the most current events happening globally.
 
+Built with NextJS13.5 ISR (Incremental Static Regeneration) pattern that builds and caches the pages on every 24H intervals and servers them from fast CDN for a snappy and minimum load time performance. 
+
 ## ⚙️ Tech Stack
 
 - React.js 
